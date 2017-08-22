@@ -537,26 +537,7 @@
 	/*-- /Section 1 Main Page --*/
 
 	/*-- Section 2 Main Page --*/
-
-/*	.bottom-block .col {
-		display: block;
-		border-right: none;
-		border-bottom: 2px solid #1d1d1d;
-	}
-
-	.bottom-block .col:last-child {
-		border-bottom: none;
-	}
-
-	.bottom-block .col-1 {
-	    width: 100%;
-	    padding: 18px 1%;
-	}
-
-	.bottom-block .col-2 {
-	    width: 100%;
-	}*/
-
+	
 	.section-nav-block {
 	    border-bottom: 1px solid #1d1d1d;
 	}
