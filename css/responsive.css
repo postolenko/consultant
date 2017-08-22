@@ -20,6 +20,14 @@
 		padding: 0 2%;
 	}
 
+	/*-- Header --*/
+
+	.main-nav li {
+	    padding: 5px 2%;
+	}
+
+	/*-- /Header --*/
+
 	/*-- Footer --*/
 
 	.footer .col-1 {
@@ -81,6 +89,10 @@
 	    width: 32%;
 	}
 
+	.main-nav li {
+	    padding: 5px 1.6%;
+	}
+
 	/*-- /Header --*/
 
 	/*-- Section 2 Main Page --*/
@@ -128,13 +140,13 @@
 @media only screen and (max-width: 1024px) {
 
 	.main-wrapper {
-	    padding: 0 14px;
+	    padding: 0 14px 14px 14px;
 	}
 
 	/*-- Header --*/
 
 	.main-nav li {
-	    padding: 5px 3px;
+	    padding: 5px 1%;
 	}
 
 	.main-nav li a {
@@ -152,6 +164,10 @@
 }
 
 @media only screen and (max-width: 900px) {
+
+	.wrapper {
+	    margin: 0 auto;
+	}
 
 	.section-header .h-cell h2 {
 	    padding: 0 27px;
@@ -263,6 +279,12 @@
 
 	/*-- Section 1 Main Page --*/
 
+	.form-box {
+	    display: block;
+	    line-height: 0;
+	    font-size: 0;
+	}
+
 	.form-col {
 	    display: inline-block;
 	    width: 33.33% !important;
@@ -279,6 +301,14 @@
 
 	.section-2 .row {
 	    padding-bottom: 20px;
+	}
+
+	.bottom-block .col-1 {
+	    width: 84%;
+	}
+
+	.bottom-block .col-2 {
+	    width: 26%;
 	}
 
 	.section-nav li a {
@@ -384,6 +414,33 @@
 
 	/*-- Section 2 Main Page --*/
 
+	.main-slider .slide img.desctop-img {
+	    display: none;
+	}
+
+	.main-slider .slide img.resp-img {
+	    display: block;
+	}
+
+	.bottom-block .col {
+		display: block;
+		border-right: none;
+		border-bottom: 2px solid #1d1d1d;
+	}
+
+	.bottom-block .col:last-child {
+		border-bottom: none;
+	}
+
+	.bottom-block .col-1 {
+	    width: 100%;
+	    padding: 18px 1%;
+	}
+
+	.bottom-block .col-2 {
+	    width: 100%;
+	}
+
 	.thumbnails-1 {
 		max-width: 100%;
 	}
@@ -481,7 +538,7 @@
 
 	/*-- Section 2 Main Page --*/
 
-	.bottom-block .col {
+/*	.bottom-block .col {
 		display: block;
 		border-right: none;
 		border-bottom: 2px solid #1d1d1d;
@@ -498,7 +555,7 @@
 
 	.bottom-block .col-2 {
 	    width: 100%;
-	}
+	}*/
 
 	.section-nav-block {
 	    border-bottom: 1px solid #1d1d1d;
@@ -580,7 +637,7 @@
 @media only screen and (max-width: 480px) {
 
 	.main-wrapper {
-	    padding: 0 4px;
+	    padding: 0 4px 4px 4px;
 	}
 
 	/*-- Header --*/
