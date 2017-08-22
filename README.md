@@ -1,1 +1,1 @@
-# http://postolenko.github.io/home_consultant/index.html
+# http://postolenko.github.io/consultant/index.html
