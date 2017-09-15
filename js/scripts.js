@@ -56,7 +56,6 @@ $(document).ready(function() {
 
     });
 
-
     $(function() {
 
         $(".select-block").click(function() {
