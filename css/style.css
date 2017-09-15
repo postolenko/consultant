@@ -190,11 +190,10 @@ textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity .3s e
 section {
     position: relative;
     padding: 0;
-    border-top: 3px solid #1d1d1d;
 }
 
-section.no-border {
-    border-top: none;
+section.border {
+    border-top: 3px solid #1d1d1d;
 }
 
 section.shape-2 {
@@ -1811,17 +1810,15 @@ a.tel-link-resp:hover {
 }
 
 .search-block-blog {
-    /*display: inline-block;
-    vertical-align: top;*/
     display: inline-table;
     width: auto;
+    text-align: right;
     position: absolute;
     top: -3px;
     right: -3px;
 }
 
 .search-block-blog .search {
-    /*display: inline-block;*/
     display: table-cell;
     vertical-align: top;
 
@@ -2347,7 +2344,7 @@ a.tel-link-resp:hover {
 .two-cols-article .img-box {
     display: block;
     width: 100%;
-    max-width: 283px;
+    max-width: 285px;
     height: 148px;
     overflow: hidden;
 }
