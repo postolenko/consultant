@@ -2331,17 +2331,17 @@ a.tel-link-resp:hover {
 
 .two-cols-article {
     margin: 15px 0;
-    padding: 0 1% 0 0;
+    padding: 0 3% 0 0;
 }
 
 .two-cols-article .article-col-1 {
-    width: 39%;
+    width: 38%;
     max-width: 300px;
 }
 
 .two-cols-article .article-col-2 {
-    width: 61%;
-    padding: 0 0 0 3%;
+    width: 62%;
+    padding: 0 0 0 2%;
 }
 
 .two-cols-article .img-box {
