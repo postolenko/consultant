@@ -2806,13 +2806,13 @@ a.tel-link-resp:hover {
 }
 
 .question-thumbnail .descript {
-    margin: 5px 0 13px -10px;
+    margin: 5px 0 13px -8px;
 }
 
 .question-thumbnail .descript li {
     display: inline-block;
     vertical-align: top;
-    padding: 0 10px;
+    padding: 0 10px 0 8px;
     font-family: "Geometria", Arial, Verdana, sans-serif;
     font-size: 12px;
     line-height: 18px;
