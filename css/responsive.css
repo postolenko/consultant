@@ -493,6 +493,10 @@
 
 	/*-- /Header --*/
 
+	.favorites-block {
+	    left: -29px;
+	}
+
 	.section-nav li a {
 	    font-size: 14px;
 	    line-height: 14px;
