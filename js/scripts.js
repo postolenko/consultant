@@ -14,9 +14,17 @@ $(document).ready(function() {
 
     // ----------------------------
 
+    var flexibleAttr;
+    var bottomCoord;
+    var flexHeight;
+
+    // ----------------------------
+
     getFooterPosition();
 
     getDocumentOffsetTop();
+
+    getFullHeight();
 
     $(window).resize(function() {
 
@@ -31,6 +39,8 @@ $(document).ready(function() {
         // -------------------------
 
         getDocumentOffsetTop();
+
+        getFullHeight();
 
         // -------------------------
 
@@ -239,5 +249,29 @@ $(document).ready(function() {
         }, 35);
 
     }
+
+
+    function getFullHeight() {
+
+        $(".full-height").css({
+            "height" : "auto"
+        });
+
+        $(".full-height").each( function() {
+
+            flexibleAttr = $(this).attr("data-flexible");
+
+            bottomCoord = $("body, html").find("[data-coord = '"+ flexibleAttr +"']").offset().top;
+
+            flexHeight = bottomCoord - $(this).offset().top;
+
+            $(this).css({
+                "height" : flexHeight + "px"
+            });
+
+        });
+
+    }
+
 
 });

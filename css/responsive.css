@@ -437,9 +437,11 @@
 
 	.two-cols-templ .col-2 {
 		float: none;
-	    width: 100%;
+		width: 100%;
+		padding: 10px 3%;
+		border-left: none;
 	}
-
+	
 	.two-cols-article {
 	    padding: 0;
 	}
@@ -599,6 +601,17 @@
 
 	/*-- /Section 3 Blog Page --*/
 
+	/*-- Section 1 Soveti Page --*/
+
+	.questions-block {
+	    -webkit-columns: 2;
+	    columns: 2;
+	}
+
+	/*-- /Section 1 Soveti Page --*/
+
+	/*-- Footer --*/
+
 	.footer-table {
 		display: block;
 	}
@@ -636,6 +649,8 @@
 	.web-studio-box {
 	    text-align: center;
 	}
+
+	/*-- /Footer --*/
 
 }
 
@@ -964,6 +979,37 @@
 	}
 
 	/*-- /Section 3 Blog Page --*/
+
+	/*-- Section 1 Soveti Page --*/
+
+	.questions-search-col {
+		width: 100%;
+	    padding: 13px 0;
+	}
+
+	.questions-search input {
+	    width: 35%;
+	}
+
+	.questions-search input:nth-child(2) {
+	    width: 53%;
+	}
+
+	.questions-search .search-btn {
+	    width: 12%;
+	}
+
+	.questions-block {
+		padding: 12px 3% 0 3%;
+	    -webkit-columns: 1;
+	    columns: 1;
+	}
+
+	.question-thumbnail {
+	    padding: 16px 0 23px 0;
+}
+
+	/*-- /Section 1 Soveti Page --*/
 
 }
 

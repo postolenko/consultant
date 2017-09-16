@@ -2672,6 +2672,298 @@ a.tel-link-resp:hover {
 
 /*-- /Section 4 Blog Page --*/
 
+/*-- Section 1 Soveti Page --*/
+
+.questions-sort {
+    padding: 17px 3% 20px 3%;
+}
+
+.questions-search-col {
+    display: inline-block;
+    vertical-align: top;
+    padding: 13px 3% 13px 0;
+}
+
+.questions-sort h2 {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #1d1d1d;
+    text-transform: uppercase;
+    padding: 0 0 13px 0;
+}
+
+.questions-search {
+    display: table;
+    width: 100%;
+    max-width: 500px;
+    border-collapse: collapse;
+    border: 3px solid #1d1d1d;
+}
+
+.questions-search input {
+    display: table-cell;
+    vertical-align: top;
+    width: 36%;
+    height: 40px;
+    border: none;
+    border-right: 3px solid #1d1d1d;
+    padding: 10px 4%;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #1d1d1d;
+}
+
+.questions-search input:nth-child(2) {
+    width: 55%;
+}
+
+.questions-search .search-btn {
+    display: table-cell;
+    vertical-align: top;
+    border: none;
+    height: 40px;
+    width: 9%;
+}
+
+.questions-search-col .select-block {
+    width: 180px;
+    border: 3px solid #1d1d1d;
+}
+
+.questions-search-col .select-block .select2-container {
+    width: 174px !important;
+}
+
+.questions-search-col .select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 16px;
+}
+
+.questions-search-col .select2-container .select2-selection--single {
+    height: 40px;
+}
+
+.questions-block {
+    padding: 32px 3% 0 3%;
+    border-top: 3px solid #1d1d1d;
+    -webkit-columns: 3;
+    columns: 3;
+}
+
+.question-thumbnail {
+    padding: 16px 4% 44px 0;
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.question-thumbnail .question-title {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #1d1d1d;
+    margin: 4px 0 7px 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+
+}
+
+.question-thumbnail .question-title:link,
+.question-thumbnail .question-title:visited {
+    border-bottom: 2px solid transparent;
+}
+
+.question-thumbnail .question-title:active,
+.question-thumbnail .question-title.active {
+    border-bottom: 2px solid #9c9c9c;
+}
+
+.question-thumbnail .question-title:hover {
+    border-bottom: 2px solid #9c9c9c;
+}
+
+.question-thumbnail .descript {
+    margin: 5px 0 13px -10px;
+}
+
+.question-thumbnail .descript li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #1d1d1d;
+    border-right: 1px solid #1d1d1d;
+}
+
+.question-thumbnail .descript li:last-child {
+    border-right: none;
+}
+
+.red-link {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #eb3340;
+    margin: 4px 0;
+    border-bottom: 2px solid transparent;
+
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+
+}
+
+.red-link:link,
+.red-link:visited {
+    border-bottom: 2px solid transparent;
+}
+
+.red-link:active,
+.red-link.active {
+    border-bottom: 2px solid #eb3340;
+}
+
+.red-link:hover {
+    border-bottom: 2px solid #eb3340;
+}
+
+.questions-pagination {
+    padding: 6px 0 7px 0;
+    border: none;
+}
+
+.questions-pagination .pagination {
+    margin: 0 0 40px 0;
+}
+
+.question-miniature {
+    padding: 7px 0;
+}
+
+.question-miniature .red-link {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #eb3340;
+    border-bottom: 1px solid transparent;
+}
+
+.question-miniature .red-link:link,
+.question-miniature .red-link:visited {
+    border-bottom: 1px solid transparent;
+}
+
+.question-miniature .red-link:active,
+.question-miniature .red-link.active {
+    border-bottom: 1px solid #eb3340;
+}
+
+.question-miniature .red-link:hover {
+    border-bottom: 1px solid #eb3340;
+}
+
+.question-miniature p {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #1d1d1d;
+    padding: 0;
+}
+
+.more-link_2 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 27px 0 13px 0;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #eb3340;
+    border-bottom: 1px solid transparent;
+
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+
+}
+
+.more-link_2:link,
+.more-link_2:visited {
+    border-bottom: 1px solid transparent;
+}
+
+.more-link_2:active,
+.more-link_2.active {
+    border-bottom: 1px solid #eb3340;
+}
+
+.more-link_2:hover {
+    border-bottom: 1px solid #eb3340;
+}
+
+/*-- /Section 1 Soveti Page --*/
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
