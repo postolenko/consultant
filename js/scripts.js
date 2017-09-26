@@ -26,6 +26,8 @@ $(document).ready(function() {
 
     getFullHeight();
 
+    getMapParams();
+
     $(window).resize(function() {
 
         $(".wrapper").css({"min-height" : $(window).height() + "px"});
@@ -41,6 +43,8 @@ $(document).ready(function() {
         getDocumentOffsetTop();
 
         getFullHeight();
+
+        getMapParams();
 
         // -------------------------
 
@@ -254,7 +258,7 @@ $(document).ready(function() {
     function getFullHeight() {
 
         $(".full-height").css({
-            "height" : "auto"
+            "min-height" : "auto"
         });
 
         $(".full-height").each( function() {
@@ -266,10 +270,26 @@ $(document).ready(function() {
             flexHeight = bottomCoord - $(this).offset().top;
 
             $(this).css({
-                "height" : flexHeight + "px"
+                "min-height" : flexHeight + "px"
             });
 
         });
+
+    }
+
+
+    function getMapParams() {
+
+        if( $(".map-block").length > 0 ) {
+
+            $(".map-block").css({
+                "height" : $(window).height() - $(".content").offset().top + "px",
+                "width" : $(".content").offset().left - $(".wrapper").offset().left - 3 + "px",
+                "top" : $(".content").offset().top + "px",
+                "left" : $(".wrapper").offset().left + 3 + "px"
+            });
+
+        }
 
     }
 

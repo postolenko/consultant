@@ -1980,7 +1980,7 @@ a.tel-link-resp:hover {
     height: 0;
     border-style: solid;
     border-color: #1c1c1c transparent transparent transparent;
-    border-width: 9px 6px 0 6px;
+    border-width: 8px 6px 0 6px;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -1990,7 +1990,7 @@ a.tel-link-resp:hover {
 
 .dropdown-menu-btn.active span:before {
     border-color: transparent transparent #eb3340 transparent;
-    border-width: 0 6px 9px 6px;
+    border-width: 0 6px 8px 6px;
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -2963,6 +2963,132 @@ a.tel-link-resp:hover {
 }
 
 /*-- /Section 1 Soveti Page --*/
+
+/*-- Sell Page --*/
+
+.map-block {
+    display: block;
+    width: 49%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #dfdfdf;
+}
+
+.sell-page {
+    border-bottom: 3px solid #1d1d1d;
+}
+
+.sell-header {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 3px solid #1d1d1d;
+}
+
+.sell-header .col {
+    display: table-cell;
+    vertical-align: middle;
+    width: auto;
+    padding: 2px 18px;
+    border-left: 3px solid #1d1d1d;
+}
+
+.sell-header .col:nth-child(1) {
+    border-left: none;
+}
+
+.sell-header .col-7 {
+    width: 117px;
+    background-image: url(../img/stairs.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.sell-header .dropdown-menu-block {
+    display: block;
+}
+
+.sell-header .dropdown-menu-btn {
+    border: none;
+    min-width: 100%;
+    padding: 10px 2%;
+}
+
+.dropdown-menu-btn span {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.sell-search {
+    position: relative;
+}
+
+.sell-search input {
+    display: block;
+    width: 100%;
+}
+
+.sell-search .search-btn {
+    width: 46px;
+    height: 41px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    outline: 1px solid red;
+    border: none;
+}
+
+.sell-page .content {
+    width: 51%;
+    min-width: auto;
+    float: right;
+    outline: 1px solid red;
+    border-left: 3px solid #1d1d1d;
+}
+
+.sell-page .footer {
+    width: 51%;
+    float: right;
+}
+
+.sell-page .footer-table {
+    display: block;
+}
+
+.sell-page .footer-table .col {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sell-page .footer-table .col-1,
+.sell-page .footer-table .col-2 {
+    width: 100%;
+}
+
+.sell-page .footer-table .col-3 {
+    display: none;
+}
+
+.sell-page .footer .col-2 {
+    border-left: none;
+    border-right: none;
+}
+
+.sell-page ul.footer-nav {
+    padding-left: 3%;
+}
+
+.sell-page ul.footer-nav li {
+    margin: 5px 3% 5px 0;
+}
+
+/*-- /Sell Page --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

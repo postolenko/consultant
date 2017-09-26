@@ -558,7 +558,13 @@
 	/*-- Section 2 Blog Page --*/
 
 	.favorite-thumbnails .thumbnail {
-	    width: 50%;
+		display: block;
+	    width: 100%;
+	    margin: 0 auto;
+	}
+
+	.favorite-thumbnails .thumbnail .img-box {
+	    height: 213px;
 	}
 
 	/*-- /Section 2 Blog Page --*/
@@ -734,7 +740,7 @@
 		display: block;
 		width: 80%;	    
 		margin: 0 auto;
-		padding: 0 0 5px 0;
+		padding: 9px 0 5px 0;
 	}
 
 	.goods-thumbnails {
@@ -787,9 +793,7 @@
 	/*-- Section 2 Blog Page --*/
 
 	.favorite-thumbnails .thumbnail {
-		display: block;
-	    width: 76%;
-	    margin: 0 auto;
+	    width: 98%;
 	}
 
 	.favorite-thumbnails .thumbnail {
@@ -955,14 +959,6 @@
 	    width: 100%;
 	    padding: 9px 3% 18px 3%;
 	}
-
-	/*-- Section 2 Blog Page --*/
-
-	.favorite-thumbnails .thumbnail {
-	    width: 90%;
-	}
-
-	/*-- /Section 2 Blog Page --*/
 
 	/*-- Section 3 Blog Page --*/
 
