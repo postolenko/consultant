@@ -2189,6 +2189,7 @@ a.tel-link-resp:hover {
 
 .favorite-thumbnails {
     width: 102%;
+    overflow: hidden;
     margin: 9px 0 10px -1%;
 }
 

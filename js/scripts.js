@@ -20,6 +20,13 @@ $(document).ready(function() {
 
     // ----------------------------
 
+    var thumbnailsHeightsArr = [];
+    var maxHeight;
+    var lastThumbnail;
+    var lastThimbMobileIndex = 2;
+
+    // ----------------------------
+
     getFooterPosition();
 
     getDocumentOffsetTop();
@@ -27,6 +34,8 @@ $(document).ready(function() {
     getFullHeight();
 
     getMapParams();
+
+    getFavoriteArticlesBlockHeight();
 
     $(window).resize(function() {
 
@@ -45,6 +54,8 @@ $(document).ready(function() {
         getFullHeight();
 
         getMapParams();
+
+        getFavoriteArticlesBlockHeight();
 
         // -------------------------
 
@@ -287,6 +298,63 @@ $(document).ready(function() {
                 "width" : $(".content").offset().left - $(".wrapper").offset().left - 3 + "px",
                 "top" : $(".content").offset().top + "px",
                 "left" : $(".wrapper").offset().left + 3 + "px"
+            });
+
+        }
+
+    }
+
+    function getFavoriteArticlesBlockHeight() {
+
+        // var thumbnailsHeightsArr = [];
+        // var maxHeight;
+
+        for(var favoriteIndex = 0; favoriteIndex <= $(".favorite-thumbnails").length - 1; favoriteIndex++) {
+
+            thumbnailsHeightsArr[favoriteIndex] = [];
+
+            var thumbnails = $(".favorite-thumbnails:eq("+ favoriteIndex +")").find(".thumbnail");
+
+            $(".favorite-thumbnails:eq("+ favoriteIndex +")").css({
+                "height" : "auto"
+            });
+
+            if(bodyWidth > 768 ) {
+
+                for(var favoriteThumbIndex = 0; favoriteThumbIndex <= thumbnails.length - 1; favoriteThumbIndex++) {
+
+                    var thumbnailHeight = $(".favorite-thumbnails:eq("+ favoriteIndex +") .thumbnail:eq("+ favoriteThumbIndex +")").outerHeight();
+
+                    thumbnailsHeightsArr[favoriteIndex][favoriteThumbIndex] = thumbnailHeight;
+
+                }
+
+                maxHeight = thumbnailsHeightsArr[favoriteIndex][0];
+
+                for (favoriteThumbIndex = 0; favoriteThumbIndex < thumbnailsHeightsArr[favoriteIndex].length - 1; favoriteThumbIndex++) {
+
+                    if (thumbnailsHeightsArr[favoriteIndex][favoriteThumbIndex] > maxHeight) maxHeight = myArray[favoriteThumbIndex];
+
+                }                
+
+            } else {
+
+                if( thumbnails.length < 3) {
+
+                    lastThumbnail = $(".favorite-thumbnails:eq("+ favoriteIndex +") .thumbnail:last-child()");
+
+                } else {
+
+                    lastThumbnail = $(".favorite-thumbnails:eq("+ favoriteIndex +") .thumbnail:eq("+ ( lastThimbMobileIndex) +") ");              
+
+                }
+
+                maxHeight = lastThumbnail.offset().top + lastThumbnail.outerHeight() - $(".favorite-thumbnails:eq("+ favoriteIndex +")").offset().top;           
+
+            }
+
+            $(".favorite-thumbnails:eq("+ favoriteIndex +")").css({
+                "height" : maxHeight + "px"
             });
 
         }
