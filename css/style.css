@@ -255,6 +255,7 @@ h3 {
     line-height: 18px;
     font-weight: 500;
     color: #1d1d1d;
+    /*padding: 10px 0;*/
 }
 
 p {
@@ -263,6 +264,7 @@ p {
     line-height: 18px;
     font-weight: 500;
     color: #1c1c1c;
+    /*padding: 10px 0;*/
 }
 
 li {
@@ -274,8 +276,60 @@ li {
     color: #1c1c1c;
 }
 
+ol {
+    padding-left: 5%;
+}
+
+ol.mark li {
+    list-style: disc;
+}
+
 a {
     text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ec3340;
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+
+}
+
+a:link,
+a:visited {
+     color: #eb3340;
+}
+
+a:active,
+a.active {
+     color: #1c1c1c;
+}
+
+a:hover {
+     color: #1c1c1c;
 }
 
 p a {
@@ -2288,6 +2342,7 @@ a.tel-link-resp:hover {
 
 .two-cols-templ .col-1 {
     width: 78%;
+    padding: 20px 0 0 0;
 }
 
 .two-cols-templ .col-1 .inner-row {
@@ -2304,7 +2359,7 @@ a.tel-link-resp:hover {
 /*-- Main Content Right --*/
 
 .thumbnails-header {
-    padding: 20px 0 0 0;
+    /*padding: 20px 0 0 0;*/
 }
 
 .thumbnails-header h2,
@@ -2366,7 +2421,7 @@ a.tel-link-resp:hover {
     transform: translate(-50%, -50%);
 }
 
-.two-cols-article h3 {
+/*.two-cols-article h3 {
     font-family: "Geometria", Arial, Verdana, sans-serif;
     font-size: 14px;
     line-height: 18px;
@@ -2374,6 +2429,53 @@ a.tel-link-resp:hover {
     color: #1d1d1d;
     text-transform: uppercase;
     padding: 0 0 13px 0;
+}*/
+
+.two-cols-article .article-title {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+    color: #1c1c1c;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+
+}
+
+.two-cols-article .article-title:link,
+.two-cols-article .article-title:visited {
+    color: #1c1c1c;
+}
+
+.two-cols-article .article-title:active,
+.two-cols-article .article-title.active {
+    color: #eb3340;
+}
+
+.two-cols-article .article-title:hover {
+    color: #eb3340;
 }
 
 .two-cols-article p {
@@ -2465,6 +2567,22 @@ a.tel-link-resp:hover {
 
 .pagination li a.active {
     background: rgba(236, 53, 62, 1);
+}
+
+.article-content img {
+    display: block;
+    float: right;    
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 20px 0 12px 2%;
+}
+
+.article-content h3,
+.article-content h2,
+.article-content p {
+    padding: 10px 0;
 }
 
 /*-- /Main Content Right --*/
