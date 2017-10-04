@@ -2585,6 +2585,35 @@ a.tel-link-resp:hover {
     padding: 10px 0;
 }
 
+.video-block {
+    margin: 15px 0 25px 0;
+}
+
+.video-block iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 419px;
+    max-width: 728px;
+}
+
+.socials-block.inner-socials {
+    margin: 30px 0 0 0;
+    padding: 10px 0;
+    text-align: right;
+}
+
+.socials-block.border {
+    border-top: 3px solid #1d1d1d;
+}
+
+.socials-block.inner-socials h2,
+.socials-block.inner-socials .socials-list {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 2%;
+}
+
 /*-- /Main Content Right --*/
 
 /*-- Sidebar --*/
@@ -3362,6 +3391,21 @@ ul.footer-nav li a:hover {
 }
 
 .socials-list li a:hover .fa {
+    color: #ec3340;
+}
+
+.socials-list.dark li a:link .fa,
+.socials-list.dark li a:visited .fa {
+    color: #1c1c1c;
+}
+
+
+.socials-list.dark li a:active .fa,
+.socials-list.dark li a.active .fa {
+    color: #ec3340;
+}
+
+.socials-list.dark li a:hover .fa {
     color: #ec3340;
 }
 

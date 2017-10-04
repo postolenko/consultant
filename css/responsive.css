@@ -439,15 +439,12 @@
 		float: none;
 		width: 100%;
 		padding: 10px 3%;
+		border-top: 3px solid #1d1d1d;
 		border-left: none;
 	}
 	
 	.two-cols-article {
 	    padding: 0;
-	}
-
-	.pagination-block {
-	    border-bottom: 3px solid #1d1d1d;
 	}
 
 	/*-- /Section 3 Blog Page --*/
@@ -603,6 +600,10 @@
 	.two-cols-article .img-box {
 	    max-width: 100%;
 	    height: 260px;
+	}
+
+	.video-block iframe {
+	    height: 368px;
 	}
 
 	/*-- /Section 3 Blog Page --*/
@@ -802,6 +803,14 @@
 
 	/*-- /Section 2 Blog Page --*/
 
+	/*-- Section 3 Blog Page --*/
+
+	.video-block iframe {
+	    height: 286px;
+	}
+
+	/*-- /Section 3 Blog Page --*/
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -974,6 +983,10 @@
 		margin: 0 0 0 8px;
 	}
 
+	.video-block iframe {
+	    height: 236px;
+	}
+
 	/*-- /Section 3 Blog Page --*/
 
 	/*-- Section 1 Soveti Page --*/
@@ -1018,6 +1031,14 @@
 	}
 
 	/*-- /Section 2 Blog Page --*/
+
+	/*-- Section 3 Blog Page --*/
+
+	.video-block iframe {
+	    height: 171px;
+	}
+
+	/*-- /Section 3 Blog Page --*/
 
 }
 
