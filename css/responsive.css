@@ -176,6 +176,36 @@
 
 	/*-- /Section 5 Main Page --*/
 
+	/*-- Section 4 - Agents Page --*/
+
+	.agents-header .col-1,
+	.agents-info .col-1 {
+	    width: 55%;
+	}
+
+	.agents-header .col-2,
+	.agents-info .col-2 {
+	    width: 45%;
+	   	text-align: right;
+	}
+
+	.agents-header .col-3 {
+	    display: none;
+	}
+
+	.agents-info .col-3 {
+	    width: 100%;
+	    padding-top: 5px;
+    	padding-bottom: 15px;
+	    padding-left: 0;
+	}
+
+	.agents-info .col-1 .agent-thumb {
+	    top: 0;
+	}
+
+	/*-- /Section 4 - Agents Page --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -209,6 +239,14 @@
 	}
 
 	/*-- /Section 2 Blog Page --*/
+
+	/*-- Section 3 - Agents Page --*/
+
+	.agent-thumbnails .agent-thumb {
+		width: 33.33%;
+	}
+
+	/*-- Section 3 - Agents Page --*/
 
 }
 
@@ -448,6 +486,14 @@
 	}
 
 	/*-- /Section 3 Blog Page --*/
+
+	/*-- Section 3 - Agents Page --*/
+
+	.agent-thumbnails .agent-thumb {
+		width: 50%;
+	}
+
+	/*-- Section 3 - Agents Page --*/
 
 	/*-- Footer --*/
 
@@ -810,6 +856,29 @@
 	}
 
 	/*-- /Section 3 Blog Page --*/
+
+	/*-- Section 3 - Agents Page --*/
+
+	.agent-thumbnails .agent-thumb {
+		width: 100%;
+	}
+
+	/*-- Section 3 - Agents Page --*/
+
+	/*-- Section 4 - Agents Page --*/
+
+	.agents-header .col-1,
+	.agents-info .col-1 {
+	    width: 100%;
+	}
+
+	.agents-header .col-2,
+	.agents-info .col-2 {
+	    width: 100%;
+	   	text-align: left;
+	}
+
+	/*-- /Section 4 - Agents Page --*/
 
 }
 
