@@ -3725,6 +3725,7 @@ a.tel-link-resp:hover {
 .agents-info .col-2 {
     padding-top: 10px;
     padding-bottom: 10px;
+    text-align: right;
 }
 
 .agents-info .col-3 {
