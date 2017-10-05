@@ -228,6 +228,48 @@ $(document).ready(function() {
 
     });
 
+    $(function() {
+
+        $(".sort-sliding-block").each(function(){
+
+            if($(this).hasClass("active-default")) {
+
+                $(this).css({
+                    "height" : "auto"
+                });
+
+            } else {
+
+                $(this).slideUp(100);
+
+            }
+
+        });
+
+        $(".slide-btn").click(function() {
+
+            var sldeBlockName = $(this).attr("data-sliding-btn");
+
+            var slidingBox = $(".sort-sliding-block").filter("[ data-sliding-box = '"+ sldeBlockName +"' ]");
+
+            if( slidingBox.is(":hidden") ) {
+
+                slidingBox.slideDown(300);
+
+                $(this).text("Скрыть");
+
+            } else {
+
+                slidingBox.slideUp(300);
+
+                $(this).text("Больше");
+
+            }
+
+        });
+
+    });
+
     function getDocumentOffsetTop() {
 
          if( bodyWidth <= 900) {
