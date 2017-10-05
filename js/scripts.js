@@ -40,6 +40,8 @@ $(document).ready(function() {
 
     getFavoriteArticlesBlockHeight();
 
+    // getRespHeaderPosition();
+
     $(window).resize(function() {
 
         $(".wrapper").css({"min-height" : $(window).height() + "px"});
@@ -59,6 +61,8 @@ $(document).ready(function() {
         getMapParams();
 
         getFavoriteArticlesBlockHeight();
+
+        // getRespHeaderPosition();
 
         // -------------------------
 
@@ -203,24 +207,56 @@ $(document).ready(function() {
 
     $(function() {
 
-        $(".show-resp-nav").click(function() {
+        var navName;
+        var mainNav;
+        var topOffset;
 
-            if( $(".main-nav-box").is(":hidden") ) {
+        $(".show_nav").click(function() {
 
-                $(".main-nav-box").fadeIn(300);
+            navName = $(this).attr("data-navbtn");
 
-                $(".main-nav-box").css({
-                    "top" : $(".header-site ").outerHeight() + "px",
-                    "height" : $(window).height() - $(".header-site").outerHeight() + "px"
+            mainNav = $("[data-respnav = '"+ navName +"']");
+
+            if( mainNav.is(":hidden") ) {
+
+                mainNav.fadeIn(300);
+
+                topOffset = $(".header-site").height();
+
+                console.log(topOffset);
+
+                mainNav.css({
+                    "top" : topOffset + "px",
+                    "height" : $(window).height() - topOffset + "px"
                 });
 
                 $(this).addClass("active");
 
             } else {
 
-                $(".main-nav-box").fadeOut(300);
+                mainNav.fadeOut(300);
 
                 $(this).removeClass("active");
+
+            }
+
+        });
+
+        $(this).keydown(function(eventObject){
+
+            if (eventObject.which == 27) {
+
+                $(".show_nav").removeClass("active");
+
+                $("[data-respnav]").each(function() {
+
+                    if ( $(this).is(":visible") ) {
+
+                        $(this).fadeOut(300);
+
+                    }
+
+                });                
 
             }
 
@@ -402,6 +438,40 @@ $(document).ready(function() {
                 "height" : maxHeight + "px"
             });
 
+        }
+
+    }
+
+    function getRespHeaderPosition() {
+
+        if( bodyWidth <= 900 ) {
+
+            var respNavigationIndex;
+            var topCoord;
+
+            $(".resp-navigation").each(function() {
+
+                respNavigationIndex = parseInt($(this).attr("data-header-index"));
+
+                console.log(respNavigationIndex);
+
+                if( respNavigationIndex == 0 ) {
+
+                    topCoord = 0;
+
+                } else {
+
+                    topCoord = $(".resp-navigation").eq(respNavigationIndex - 1).outerHeight();
+
+                }
+
+                $(".resp-navigation").eq(respNavigationIndex).css({
+                    "top" : topCoord + "px"
+                });
+
+
+            });
+            
         }
 
     }

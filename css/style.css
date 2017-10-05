@@ -504,7 +504,7 @@ a:active {
 /*--  Breadcrumbs --*/
 
 .breadcrumbs-block {
-    margin: 10px 0 7px 0;
+    margin: 10px 0 19px 0;
 }
 
 .breadcrumbs {
@@ -3232,26 +3232,87 @@ a.tel-link-resp:hover {
 /*-- Navigation 2 --*/
 
 .navigation-2 {
+    background: rgba(255, 255, 255, 1);
+    position: relative;
+    z-index: 4;
+}
+
+.nav-2-respbtn {
+    /*display: block;*/
+    display: none;
+    width: 56px;
+    height: 44px;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    margin: 0 auto;
+    padding: 0 0 1px 0;
+
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
 
 }
 
-.nav-2-block {
+.nav-2-respbtn.active {
+    top: 3px;
+}
+
+.nav-2-respbtn span {
+    display: block;
+    width: 36px;
+    height: 2px;
+    background: rgb(29, 29, 29);
+    margin: 0 auto 4px auto;
+}
+
+.nav-2-respbtn.active span {
+    position: relative;
+    width: 28px;
+    top: -2px;
+    left: 0;
+    margin: 0 auto;
+}
+
+.nav-2-respbtn.active span:first-child {
+    margin: 3px auto 0 auto;
+    top: 0;
+    left: 1px;
+}
+
+.nav-2 {
     display: -webkit-flex;
     display: flex;
     border-bottom: 3px solid #1d1d1d;
 }
 
-.nav-2-block li {
+.nav-2 li {
     -webkit-flex-grow: 1;
     flex-grow: 1;
     border-left: 3px solid #1d1d1d;
 }
 
-.nav-2-block li:nth-child(1) {
+.nav-2 li:nth-child(1) {
     border-left: none;
 }
 
-.nav-2-block li a {
+.nav-2 li a {
     display: block;
     text-align: center;
     padding: 16px 1% 17px 1%;
@@ -3283,21 +3344,21 @@ a.tel-link-resp:hover {
 
 }
 
-.nav-2-block li a:link,
-.nav-2-block li a:visited {
+.nav-2 li a:link,
+.nav-2 li a:visited {
     color: #231f20;
 }
 
-.nav-2-block li a:active,
-.nav-2-block li a.active {
+.nav-2 li a:active,
+.nav-2 li a.active {
     color: #eb3340;
 }
 
-.nav-2-block li a:hover {
+.nav-2 li a:hover {
     color: #eb3340;
 }
 
-.nav-2-block li.dekor-item {
+.nav-2 li.dekor-item {
     width: 116px !important;
     background-image: url(../img/stairs.jpg);
     background-repeat: no-repeat;
@@ -3312,7 +3373,7 @@ a.tel-link-resp:hover {
 .sort-wrapp {
     width: 102%;
     /*margin: 0 0 0 -1%;*/
-    margin: 13px 0 10px -1%;
+    margin: 13px 0 16px -1%;
 }
 
 .sort-row {
@@ -3338,7 +3399,7 @@ a.tel-link-resp:hover {
 .sort-block.big {
     -webkit-flex-grow: 2;
     flex-grow: 2;
-    width: 391px;
+    width: 388px;
 }
 
 .sort-block h3 {
@@ -3384,14 +3445,16 @@ a.tel-link-resp:hover {
 }
 
 .sort-block-two-cols .sort-item:nth-child(odd) {
-    width: 46%;
-    margin-right: 4%;
+    /*width: 46%;*/
+    width: 183px;
+    margin-right: 2%;
     float: left;
 }
 
 .sort-block-two-cols .sort-item:nth-child(even) {
-    width: 46%;
-    margin-left: 4%;
+    /*width: 46%;*/
+    width: 183px;
+    margin-left: 2%;
     float: right;
 }
 
@@ -3695,7 +3758,7 @@ a.tel-link-resp:hover {
 }
 
 .agents-info {
-    margin: 5px 0;
+    margin: 5px 0 6px 0;
 }
 
 .agents-header .col-1,
@@ -3846,7 +3909,7 @@ a.tel-link-resp:hover {
 }
 
 .agent-pagination {
-    margin: 24px 0 30px 0;
+    margin: 24px 0 62px 0;
 }
 
 /*-- /Section 4 - Agents Page --*/
@@ -3882,9 +3945,11 @@ a.tel-link-resp:hover {
 }
 
 .agents-list-block {
+    display: inline-block;
+    vertical-align: top;
     width: 25%;
     margin: 10px 0 23px 0;
-    padding-right: 2%;
+    padding-right: 4%;
 }
 
 .agents-list-block h3 {

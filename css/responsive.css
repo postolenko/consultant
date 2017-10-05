@@ -248,6 +248,14 @@
 
 	/*-- Section 3 - Agents Page --*/
 
+	/*-- Section 6 - Agents Page --*/
+
+	.agents-list-block {
+	    width: 33.33%;
+	}
+
+	/*-- /Section 6 - Agents Page --*/
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -363,6 +371,112 @@
 	}
 
 	/*-- /Header --*/
+
+	/*-- Navigation 2 --*/
+
+	.navigation-2 {
+		/*display: none;*/
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 4;
+		-webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
+		-moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
+		box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
+	}
+
+	.nav-2-respbtn {
+		display: block;
+	}
+
+	.nav-2-block {
+		display: none;
+		height: 100vh !important;
+	}
+
+	 ul.nav-2 {
+		/*display: none;
+		height: 100vh !important;*/
+		display: block;
+	 /*   position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100vh;
+	    z-index: 3;*/
+	    padding: 30px 0;
+	    border-bottom: none;
+	    background: rgba(255, 255, 255, .9);
+	}
+
+	ul.nav-2 li {
+		display: block;
+		text-align: center;
+		padding: 0;
+		-webkit-flex-grow: none !important;
+		flex-grow: none !important;
+		border-left: none;
+	}
+
+	ul.nav-2 li a {
+		display: block;
+		text-align: center;
+		font-size: 19px;
+	    line-height: 19px;
+	    font-weight: 600;
+	    padding: 8px 1%;
+	    border-bottom: none;
+	    background: rgba(236, 51, 64, 0);
+	
+	    -webkit-transition-property: border, color, background;
+	    -webkit-transition-duration: .3s;
+	    -webkit-transition-timing-function: ease;
+
+	    -moz-transition-property: border, color, background;
+	    -moz-transition-duration: .3s;
+	    -moz-transition-timing-function: ease;
+
+	    -ms-transition-property: border, color, background;
+	    -ms-transition-duration: .3s;
+	    -ms-transition-timing-function: ease;
+
+	    -o-transition-property: border, color, background;
+	    -o-transition-duration: .3s;
+	    -o-transition-timing-function: ease;
+
+	    transition-property: border, color, background;
+	    transition-duration: .3s;
+	    transition-timing-function: ease;
+
+	}
+
+	.nav-2 li a:link,
+	.nav-2 li a:visited {
+	     color: #1d1d1b;
+	     border-bottom: 1px solid none;
+	     background: rgba(236, 51, 64, 0);
+	}
+
+	.nav-2 li a:active,
+	.nav-2 li a.active {
+	     color: #ffffff;
+	     border-bottom: 1px solid none;
+	     background: rgba(236, 51, 64, 1);
+	}
+
+	.nav-2 li a:hover {
+	     color: #ffffff;
+	     border-bottom: 1px solid none;
+	     background: rgba(236, 51, 64, 1);
+	}
+
+	.show-resp-nav {
+	    display: inline-block;
+	}
+
+	 /*-- /Navigation 2 --*/
 
 	/*-- Section 1 Main Page --*/
 
@@ -494,6 +608,14 @@
 	}
 
 	/*-- Section 3 - Agents Page --*/
+
+	/*-- Section 6 - Agents Page --*/
+
+	.agents-list-block {
+	    width: 50%;
+	}
+
+	/*-- /Section 6 - Agents Page --*/
 
 	/*-- Footer --*/
 
@@ -879,10 +1001,27 @@
 	}
 
 	.agents-info {
-		
+		border-bottom: 1px solid #efefef;
+	}
+
+	.agents-info:last-child {
+		border-bottom: none;
+	}
+
+	.agents-info .col-3 {
+	    padding-bottom: 26px;
 	}
 
 	/*-- /Section 4 - Agents Page --*/
+
+	/*-- Section 6 - Agents Page --*/
+
+	.agents-list-block {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	/*-- /Section 6 - Agents Page --*/
 
 }
 
@@ -1093,6 +1232,41 @@
 
 	/*-- /Section 1 Soveti Page --*/
 
+	/*-- Section 2 - Agents Page --*/
+
+	.sort-block.big {
+	    width: 98%;
+	}
+
+	.sort-radio-btns {
+	    display: block;
+	}
+
+	.sort-radio-block {
+		display: inline-block;
+		vertical-align: top;
+	    -webkit-flex-grow: none;
+	    flex-grow: none;
+	    padding: 9px 3%;
+	}
+
+	.sort-block-two-cols .sort-item:nth-child(odd) {
+		display: inline-block;
+		vertical-align: top;
+	    margin-right: 1%;
+	    float: none;
+	}
+
+	.sort-block-two-cols .sort-item:nth-child(even) {
+		display: inline-block;
+		vertical-align: top;
+	    margin-left: 0;
+	    margin-right: 1%;
+	    float: none;
+	}
+
+	/*-- /Section 2 - Agents Page --*/
+
 }
 
 @media only screen and (max-width: 350px) {
@@ -1121,6 +1295,17 @@
 		display: block !important;
 		top: 0 !important;
 		height : auto;
+	}
+
+	.nav-2-block {
+		display: block !important;
+		height: auto !important;
+	}
+
+	.nav-2 {
+	    display: -webkit-flex !important;
+	    display: flex !important;
+	    height : auto !important;
 	}
 
 }

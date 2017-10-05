@@ -39,7 +39,7 @@
 
 		<header>
 
-			<div class="header-site offset-ziro">
+			<div class="header-site resp-navigation offset-ziro" data-header-index = "0">
 
 				<div class="logo-box">
 					<a href="#" class="logo">
@@ -52,7 +52,7 @@
 					<div class="col col-1"></div>
 
 					<div class="col col-2">
-						<div class="main-nav-box scroll">
+						<div class="main-nav-box scroll" data-respnav = "nav_1">
 
 							<ul class="main-nav">
 								<li><a href="#">Купить</a></li>
@@ -65,7 +65,7 @@
 
 						</div>
 
-						<button type="button" class="show-resp-nav"><span>Меню</span><span class="resp-sp">Скрыть</span></button>
+						<button type="button" class="show-resp-nav show_nav" data-navbtn = "nav_1"><span>Меню</span><span class="resp-sp">Скрыть</span></button>
 
 					</div>
 
@@ -98,20 +98,30 @@
 
 	<!-- Navigation 2 -->
 
-		<section class="navigation-2">
+		<div class="navigation-2 resp-navigation" data-header-index = "1">
 
-			<ul class="nav-2-block">
-				<li><a href="#">Агенты</a></li>
-				<li><a href="#">Домашнии улучшения</a></li>
-				<li><a href="#">Управление объектом</a></li>
-				<li><a href="#">Строители</a></li>
-				<li><a href="#">Инспекторы</a></li>
-				<li><a href="#">Фотографы</a></li>
-				<li><a href="#">Другие</a></li>
-				<li class="dekor-item"></li>
-			</ul>
+			<button class="respmenubtn nav-2-respbtn show_nav" data-navbtn = "nav_2">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
 
-		</section>
+			<div class="nav-2-block scroll" data-respnav = "nav_2">
+
+				<ul class="nav-2">
+					<li><a href="#">Агенты</a></li>
+					<li><a href="#">Домашнии улучшения</a></li>
+					<li><a href="#">Управление объектом</a></li>
+					<li><a href="#">Строители</a></li>
+					<li><a href="#">Инспекторы</a></li>
+					<li><a href="#">Фотографы</a></li>
+					<li><a href="#">Другие</a></li>
+					<li class="dekor-item"></li>
+				</ul>
+
+			</div>
+
+		</div>
 
 	<!--/Navigation 2 -->
 
@@ -835,9 +845,9 @@
 
 		<section class="dark-bg dashed-shape">
 
-			<div class="row agents-lists clearfix">
+			<div class="row agents-lists offset-ziro">
 
-				<div class="agents-list-block left">
+				<div class="agents-list-block">
 					<h3>Риэлторы</h3>
 					<ul class="agents-list">
 						<li><a href="#">Beverly Hills Real Estate Agents</a></li>
@@ -849,7 +859,7 @@
 					<a class="more-link">Больше</a>
 				</div>
 
-				<div class="agents-list-block left">
+				<div class="agents-list-block">
 					<h3>Ипотечные кредиторы</h3>
 					<ul class="agents-list">
 						<li><a href="#">Beverly Hills Mortgage Lenders</a></li>
@@ -861,7 +871,7 @@
 					<a class="more-link">Больше</a>
 				</div>
 
-				<div class="agents-list-block left">
+				<div class="agents-list-block">
 					<h3>Home Improvement Pros</h3>
 					<ul class="agents-list">
 						<li><a href="#">Beverly Hills Home Improvement Pros</a></li>
@@ -873,7 +883,7 @@
 					<a class="more-link">Больше</a>
 				</div>
 
-				<div class="agents-list-block left">
+				<div class="agents-list-block">
 					<h3>Управление недвижимостью</h3>
 					<ul class="agents-list">
 						<li><a href="#">Beverly Hills Property Managers</a></li>
