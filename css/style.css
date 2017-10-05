@@ -412,7 +412,7 @@ a:active {
 }
 
 .inner-row-2 {
-    max-width: 708px;
+    max-width: 718px;
     margin: 0 auto;
 }
 
@@ -3849,6 +3849,8 @@ a.tel-link-resp:hover {
 .agents-article {
     margin-top: 16px;
     margin-bottom: 105px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .agents-article p {
