@@ -2460,6 +2460,8 @@ a.tel-link-resp:hover {
 
 .two-cols-templ .col-1 .inner-row {
     padding: 0 3%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 .two-cols-templ .col-2 {
@@ -2720,9 +2722,9 @@ a.tel-link-resp:hover {
     text-align: right;
 }
 
-.socials-block.border {
+/*.socials-block.border {
     border-top: 3px solid #1d1d1d;
-}
+}*/
 
 .socials-block.inner-socials h2,
 .socials-block.inner-socials .socials-list {
