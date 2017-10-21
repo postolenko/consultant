@@ -242,7 +242,9 @@ $(document).ready(function() {
 
                 && hide_element.has(e.target).length === 0) {
 
-                    hide_element.fadeOut(300);            
+                    hide_element.fadeOut(300);
+
+                    $(".respmenubtn").removeClass("active");         
             }
 
         });
@@ -252,6 +254,8 @@ $(document).ready(function() {
             if (eventObject.which == 27) {
 
                 $('.dropdown-menu-right').fadeOut(300);
+
+                $(".respmenubtn").removeClass("active");
 
             }
 
@@ -304,7 +308,7 @@ $(document).ready(function() {
 
                 $("[data-respnav]").each(function() {
 
-                    if ( $(this).is(":visible") ) {
+                    if ( $(this).is(":visible")  && bodyWidth < 900 ) {
 
                         $(this).fadeOut(300);
 

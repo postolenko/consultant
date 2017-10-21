@@ -1297,7 +1297,7 @@
 		display: block !important;
 		top: 0 !important;
 		height : auto;
-		opacity: 1 !important;
+		/*opacity: 1 !important;*/
 	}
 
 	.nav-2-block {
