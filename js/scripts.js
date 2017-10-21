@@ -40,6 +40,8 @@ $(document).ready(function() {
 
     getFavoriteArticlesBlockHeight();
 
+    getAdaptivePositionElements();
+
     // getRespHeaderPosition();
 
     $(window).resize(function() {
@@ -61,6 +63,10 @@ $(document).ready(function() {
         getMapParams();
 
         getFavoriteArticlesBlockHeight();
+
+        getAdaptivePositionElements();
+
+        getDropdownRightMenuHeight();
 
         // getRespHeaderPosition();
 
@@ -198,6 +204,54 @@ $(document).ready(function() {
                     $(".dropdown-menu-btn").filter("[data-menu-index = '"+ dataAttrIndex +"']").removeClass("active");
 
                 }
+
+            }
+
+        });
+
+    });
+
+
+    $(function() {
+
+        $(".respmenubtn").click(function() {
+
+            if( $(".dropdown-menu-right").is(":hidden") ) {
+
+                $(".dropdown-menu-right").fadeIn(300);
+
+                getDropdownRightMenuHeight();
+
+                $(this).addClass("active");
+
+            } else {
+
+                $(".dropdown-menu-right").fadeOut(300);
+
+                $(this).removeClass("active");
+
+            }
+
+        });
+
+        $(document).mouseup(function (e){
+
+            hide_element = $('.dropdown-menu-right');
+
+            if (!hide_element.is(e.target)
+
+                && hide_element.has(e.target).length === 0) {
+
+                    hide_element.fadeOut(300);            
+            }
+
+        });
+
+        $(this).keydown(function(eventObject){
+
+            if (eventObject.which == 27) {
+
+                $('.dropdown-menu-right').fadeOut(300);
 
             }
 
@@ -436,6 +490,47 @@ $(document).ready(function() {
 
             $(".favorite-thumbnails:eq("+ favoriteIndex +")").css({
                 "height" : maxHeight + "px"
+            });
+
+        }
+
+    }
+
+    function getAdaptivePositionElements() {
+
+        $(".append-elem").each(function() {
+
+            if( $(this).hasClass("desktop-position") ) {
+
+                screenParam = parseInt( $(this).attr("data-min-screen") );
+
+                indexElem = $(this).attr("data-append-descktop-elem");
+
+                if( bodyWidth <= screenParam ) {
+
+                    $("[data-append-elem = '"+ indexElem +"']").append($(this).children());
+
+                }
+
+                 if( bodyWidth > screenParam ) {
+
+                    $("[data-append-descktop-elem = '"+ indexElem +"']").append($("[data-append-elem = '"+ indexElem +"']").children());
+
+                }
+
+            }
+
+        });
+
+    }
+
+    function getDropdownRightMenuHeight() {
+
+        if( $(".dropdown-menu-right").is(":visible") ) {
+
+            $(".dropdown-menu-right").css({
+                "top" : $(".respmenubtn").height() + "px",
+                "max-height" : $(window).height() - ( $(".dropdown-menu-right").offset().top - $(window).scrollTop() ) + "px"
             });
 
         }
