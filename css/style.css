@@ -2528,16 +2528,15 @@ a.tel-link-resp:hover {
 
 .two-cols-templ .col-1 .inner-row {
     padding: 0 3%;
-    max-width: 728px;
     margin: 0 auto;
 }
 
 .two-cols-templ .col-2 {
     width: 22%;
-    /*padding: 0 2%;*/
     padding: 10px 2% 10px 1.5%;
     border-left: 3px solid #1d1d1d;
 }
+
 
 /*-- Main Content Right --*/
 
@@ -2756,6 +2755,10 @@ a.tel-link-resp:hover {
     background: rgba(236, 53, 62, 1);
 }
 
+.two-cols-templ .col-1 .article-content {
+    max-width: 728px;
+}
+
 .article-content img {
     display: block;
     float: right;    
@@ -2902,6 +2905,7 @@ a.tel-link-resp:hover {
     display: inline-block;
     vertical-align: top;
     min-width: 183px;
+    cursor: pointer;
     padding: 14px 1% 15px 1%;
     border: 1px solid #ed343e;
     background: rgb(237, 52, 62);
@@ -4082,9 +4086,287 @@ a.tel-link-resp:hover {
      color: #ffffff;
      border-bottom: none;
 }
-
-
 /*-- /Section 6 - Agents Page --*/
+
+/*-- Section 1 - Agent Page --*/
+
+.agent-card {
+
+}
+
+.agent-col {
+    padding: 13px 0 8px 0;
+}
+
+.agent-col-1 {
+    width: 21%;
+    padding-top: 21px;
+}
+
+.agent-col-2 {
+    width: 79%;
+}
+
+.agent-card .img-box {
+    display: block;
+    max-width: 183px;
+    height: 183px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #1a1a1a;
+}
+
+.agent-card .img-box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.proicon {
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px 7px;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    z-index: 2;
+    background: #eb3340;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.proicon:before {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: -9px;
+    border-style: solid;
+    border-width: 0 10px 15px 0;
+    border-color: transparent #eb333f transparent transparent;
+}
+
+.proicon:after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: -9px;
+    border-style: solid;
+    border-width: 0 0 15px 10px;
+    border-color: transparent transparent #eb333f transparent;
+}
+
+.proicon p {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.agent-card h2 {
+    text-transform: uppercase;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #231f20;
+}
+
+.flag-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 16px;
+    height: 18px;
+    background-image: url(../img/flag.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+h2 .flag-icon {
+    position: relative;
+    top: 8px;
+    margin: 0 0 0 1.7%;
+}
+
+.agent-lists {
+    margin: 9px 0;
+}
+
+.agent-lists .col {
+    width: 50%;
+    padding-bottom: 3px;
+}
+
+.agent-lists h3 {
+    text-transform: uppercase;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #1c1c1c;
+    padding: 5px 0 10px 0;
+}
+
+.agent-lists p {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: normal;
+    color: #1d1b1c;
+}
+
+.agent-lists p a {
+    color: #1d1b1c;
+}
+
+.agent-lists p a:link,
+.agent-lists p a:visited {
+    color: #1d1b1c;
+}
+
+.agent-lists p a:active,
+.agent-lists p a.active {
+    color: #eb3340;
+}
+
+.agent-lists p a:hover {
+    color: #eb3340;
+}
+
+.red-link-line {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #eb3340;
+    margin: 4px 0;
+}
+
+.red-link-line:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #eb3340;
+    opacity: 1;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.red-link-line:link:after,
+.red-link-line:visited:after {
+    opacity: 1;
+}
+
+.red-link-line:active:after,
+.red-link-line.active:after {
+    opacity: 0;
+}
+
+.red-link-line:hover:after {
+    opacity: 0;
+}
+
+.rating.agent-rating {
+    margin: 14px 0 0 0;
+}
+
+.rating.agent-rating .star {
+    margin: 0 7px 0 0;
+}
+
+.rating.agent-rating .fa {
+    font-size: 33px;
+    line-height: 33px;
+}
+
+.agent-desc {
+    margin: 21px 0;
+}
+
+.agent-desc p {
+    padding: 15px 0;
+}
+
+.show-dropdown-desc span.active-txt {
+    display: none;
+}
+
+.show-dropdown-desc.active {
+    color: #eb3340;
+}
+
+.show-dropdown-desc.active span {
+    display: none;
+}
+
+.show-dropdown-desc.active span.active-txt {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.shape-header {
+    display: table;
+    width: 100%;
+}
+
+.shape-header h2 {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+    padding: 0 25px 0 24px;
+}
+
+.shape-header:before,
+.shape-header:after {
+    display: table-cell;
+    vertical-align: top;
+    content: "";
+}
+
+
+/*-- /Section 1 - Agent Page --*/
 
 /*-- Sell Page --*/
 

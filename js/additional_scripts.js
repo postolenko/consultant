@@ -30,10 +30,9 @@ $(document).ready(function() {
     fade: true
   });
 
-	$("select").select2({
-		minimumResultsForSearch: Infinity
-	});
 
-
+    $("select").select2({
+        minimumResultsForSearch: Infinity
+    });
 
 });
