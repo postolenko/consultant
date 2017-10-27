@@ -2051,15 +2051,14 @@ a.tel-link-resp:hover {
 .search-block-blog .search {
     display: table-cell;
     vertical-align: top;
-
-    /*height: 54px;*/
 }
 
-.input-block {
+.search .input-block {
     display: inline-block;
     vertical-align: top;
     width: 0;
     height: 54px;
+    margin: 0;
     overflow: hidden;
     position: relative;
     background-color: rgb(255, 255, 255);
@@ -2533,7 +2532,8 @@ a.tel-link-resp:hover {
 
 .two-cols-templ .col-2 {
     width: 22%;
-    padding: 10px 2% 10px 1.5%;
+    /*padding: 10px 2% 10px 1.5%;*/
+    padding: 10px 0 10px 0;
     border-left: 3px solid #1d1d1d;
 }
 
@@ -2809,7 +2809,7 @@ a.tel-link-resp:hover {
 /*-- Sidebar --*/
 
 .sidebar-block {
-    padding: 10px 0;
+    padding: 10px 9% 10px 7%;
 }
 
 .sidebar-block h2 {
@@ -4349,22 +4349,438 @@ h2 .flag-icon {
 .shape-header {
     display: table;
     width: 100%;
+    margin: 38px 0;
+}
+
+.shape-header .line {
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+}
+
+.shape-header .line:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5px;
+    background: #1d1d1d;
 }
 
 .shape-header h2 {
     display: table-cell;
     vertical-align: top;
-    width: auto;
+    word-wrap: nowrap;
     padding: 0 25px 0 24px;
+    text-transform: uppercase;
+    width: auto;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #231f20;
 }
 
-.shape-header:before,
-.shape-header:after {
+.shape-header .line-left {
+    width: 4%;
+}
+
+.shape-header .line-right {
+    width: 100%;
+}
+
+.map-sect {
+
+}
+
+.map-marks {
+    width: 100%;
+    padding: 2px 0;
+}
+
+.map-marks li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 9px 5% 9px 5px;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #231f20;
+}
+
+.map-marks li i {
+    position: relative;
+    top: 5px;
+    left: -5px;
+}
+
+.red-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 9px;
+    height: 9px;
+    background: #ed343e;
+}
+
+.yellow-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 9px;
+    height: 9px;
+    background: #ffae00;
+}
+
+.blue-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 9px;
+    height: 9px;
+    background: #0036ff;
+}
+
+.grey-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 9px;
+    height: 9px;
+    background: #8a8a8a;
+}
+
+.agent-map-wrapp {
+    width: 100%;
+    height: 414px;
+    margin: 20px 0 55px 0;
+}
+
+.agent-map-wrapp #map_2 {
+    width: 100%;
+    height: 414px;
+}
+
+.agent-map-wrapp img[src="https://maps.gstatic.com/mapfiles/api-3/images/google_white5.png"] {
+    display: none; 
+}
+
+.agent-map-wrapp button[title="Toggle fullscreen view"] {
+    display: none;
+}
+
+.agent-map-wrapp .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom {
+    display: none !important;
+}
+
+.agent-map-wrapp .gmnoprint {
+    display: none !important;
+}
+
+.sales-table-block {
+    margin: 41px 0 0 0;
+}
+
+.sales-table-block h2 {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    padding: 0 0 0 17px;
+    text-transform: uppercase;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #231f20;
+}
+
+.red-tr {
+    display: inline-block;
+    vertical-align: top;
+    width: 0;
+    height: 0;
+    position: relative;
+    top: 6px;
+    left: -17px;
+    border-style: solid;
+    border-width: 9px 5.5px 0 5.5px;
+    border-color: #eb333f transparent transparent transparent;
+}
+
+.sales-table {
+    margin: 27px 0;
+}
+
+.sales-table:last-child {
+    margin: 27px 0 0 0;
+}
+
+.sales-table .table-row {
+    border: none;
+}
+
+.sales-table .cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 14px 2% 14px 0;
+}
+
+.table-header .cell {
+    vertical-align: top;
+}
+
+.sales-table .cell-1 {
+    width: 104px;
+    padding-right: 2%;
+}
+
+.sales-table .cell-2 {
+    width: 24%;
+}
+
+.sales-table .cell-3 {
+    width: 24%;
+}
+
+.sales-table .cell-4 {
+    width: 16%;
+}
+
+.sales-table .cell-5 {
+    width: 23%;
+    padding-right: 0;
+}
+
+.sales-table .flag-icon {
+    display: inline-block;
+    vertical-align: top; 
+}
+
+.sales-table h3 {
+    text-transform: uppercase;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #1c1c1c;
+}
+
+.sales-table p {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.sales-table .cell-1 .img-box {
+    display: block;
+    width: 83px;
+    height: 56px;
+    overflow: hidden;
+    margin-top: 4px;
+}
+
+.sales-table .cell-1 .img-box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.sales-table .red-link-line {
+    margin: 1px 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.agent-sidebar .sidebar-block h2 {
+    padding: 8px 0 0 0;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: bold;
+    color: #1c1c1c;
+}
+
+.agent-contact-form {
+
+}
+
+.input-block {
+    width: 100%;
+    margin: 18px 0;
+}
+
+.input-block input {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 0 5%;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 38px;
+    font-weight: normal;
+    color: #1c1c1c;
+    border: 3px solid #1d1d1d;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 72px;
+    padding: 7px 5%;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #1c1c1c;
+    border: 3px solid #1d1d1d;
+}
+
+.agent-contact-form .submit-block {
+    margin: 35px 0 18px 0;
+}
+
+.agent-contact-form .submit-block .submit-btn {
+    width: 100%;
+}
+
+.sidebar-block.border {
+    border-bottom: 3px solid #1d1d1d;
+}
+
+.sidebar-table {
+
+}
+
+.sidebar-table .table-row {
+    display: table;
+    width: 100%;
+    border: none;
+    margin: 9px 0;
+}
+
+.sidebar-table .table-row .cell {
     display: table-cell;
     vertical-align: top;
-    content: "";
 }
 
+.sidebar-table .table-row .cell-1 {
+    width: 40%;
+}
+
+.sidebar-table .table-row .cell-2 {
+    width: 60%;
+}
+
+.sidebar-table h3 {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.sidebar-table p {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.sidebar-table a {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #000000;
+    text-decoration: none;
+}
+
+.sidebar-table a:link,
+.sidebar-table a:visited {
+    text-decoration: none;
+}
+
+.sidebar-table a:active,
+.sidebar-table a.active {
+    text-decoration: underline;
+}
+
+.sidebar-table a:hover {
+    text-decoration: underline;
+}
+
+.sidebar-cards .card-thumbnail {
+    margin: 20px 0 27px 0;
+}
+
+.sidebar-cards div.card-thumbnail:last-child {
+    margin: 20px 0 0 0;
+}
+
+.sidebar-cards .card-thumbnail .inner {
+
+}
+
+.sidebar-cards .card-thumbnail .img-box {
+    height: 135px;
+    overflow: hidden;
+}
+
+.sidebar-cards .card-thumbnail .img-box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.card-thumbnail .descript {
+    padding: 14px 0;
+}
+
+.card-thumbnail p {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #000000;
+    padding: 0;
+}
+
+.card-thumbnail .p-1 {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.sidebar-cards .btn-block button {
+    width: 100%;
+}
 
 /*-- /Section 1 - Agent Page --*/
 
