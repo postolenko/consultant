@@ -248,9 +248,9 @@
 
 						</div>
 
-						<div class="sales-table-block sliding-block">
-							<h2><i class="red-tr"></i>Активные Листинги</h2>
-							<div class="sales-table">
+						<div class="sales-table-block sliding-block-wrapp">
+							<h2 class="sliding-title active"><i class="red-tr"></i>Активные Листинги</h2>
+							<div class="sales-table sliding-block">
 								<div class="table-row table-header">
 									<div class="cell cell-1"></div>
 									<div class="cell cell-2"><h3>Адрес объекта</h3></div>
@@ -318,9 +318,9 @@
 							</div>
 						</div>
 
-						<div class="sales-table-block sliding-block">
-							<h2><i class="red-tr"></i>Предыдущие продажи</h2>
-							<div class="sales-table">
+						<div class="sales-table-block sliding-block-wrapp">
+							<h2 class="sliding-title active"><i class="red-tr"></i>Предыдущие продажи</h2>
+							<div class="sales-table sliding-block">
 								<div class="table-row table-header">
 									<div class="cell cell-1"></div>
 									<div class="cell cell-2"><h3>Адрес объекта</h3></div>
@@ -391,7 +391,7 @@
 							</div>
 						</div>
 
-						<div>
+						<div class="sales-pagination">
 							<ul class="pagination">
 								<li><a href="#" class="pagination-arrow prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
 								<li><a href="#" class="active">1</a></li>
@@ -497,7 +497,7 @@
 
 						</div>
 
-						<div class="sidebar-block border">
+						<div class="sidebar-block">
 
 							<h2>Доска объявлений</h2>
 
@@ -572,45 +572,67 @@
 
 		<!-- Section 2 - Agent Page -->
 
-		<!-- <section>
+		<section>
 
 			<div class="shape-header">
+				<span class="line line-left"></span>
 				<h2>Рейтинг и отзывы</h2>
+				<span class="line line-right"></span>
 			</div>
 
-			<div class="row">
+			<div class="inner-row">
 
-				<div class="rating-sort-block">
-					<div class="sort-item select-block select-sort">
-						<select>
-							<option>Покупка/продажа</option>
-							<option>Покупка</option>
-							<option>Продажа</option>
-						</select>
+				<div class="rating-sort-wrapp">
+
+					<div class="rating-sort-block clearfix">
+						<div class="sort-block">
+							<h3>Показывать:</h3>
+							<div class="sort-item select-block">
+								<select>
+									<option>Все отзывы</option>
+									<option>Опция 1</option>
+									<option>Опция 2</option>
+								</select>
+							</div>
+						</div>
+						<div class="sort-block">
+							<h3>Сортировать по:</h3>
+							<div class="sort-item select-block">
+								<select>
+									<option>Дате</option>
+									<option>Опция 1</option>
+									<option>Опция 2</option>
+								</select>
+							</div>
+						</div>
+						<div class="sort-block btn-block">
+							<a href="#" class="red-pill">Оставить отзыв</a>
+						</div>
 					</div>
-					<div class="sort-item select-block select-sort">
-						<select>
-							<option>Покупка/продажа</option>
-							<option>Покупка</option>
-							<option>Продажа</option>
-						</select>
-					</div>
-					<div class="sort-item">
-						<a href="#" class="red-pill">Оставить отзыв</a>
-					</div>
+
 				</div>
 
 				<div class="testimonials clearfix">
 
-					<div class="testimonial">
+					<div class="testimonial left">
 						<h2>Высокая вероятность рекомендации <i class="flag-icon"></i></h2>
-						<ul class="agent-rating">
-							<li><i class="fa fa-star" aria-hidden="true"></i></li>
-							<li><i class="fa fa-star" aria-hidden="true"></i></li>
-							<li><i class="fa fa-star" aria-hidden="true"></i></li>
-							<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-							<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-						</ul>
+						<div class="rating agent-rating">
+							<div class="star">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<div class="star">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<div class="star">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<div class="star">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<div class="star">
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+							</div>
+						</div>
 
 						<p>08/04/2017 - zuser20160121234811152. Bought and sold a Single Family homein 2017 in Encino, Sherman Oaks, CA.</p>
 
@@ -622,6 +644,9 @@
 								</div>
 								<div class="cell cell-2">
 									<div class="rating">
+										<div class="star">
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</div>
 										<div class="star">
 											<i class="fa fa-star" aria-hidden="true"></i>
 										</div>
@@ -656,6 +681,9 @@
 										<div class="star">
 											<i class="fa fa-star" aria-hidden="true"></i>
 										</div>
+										<div class="star">
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -678,6 +706,9 @@
 										<div class="star">
 											<i class="fa fa-star" aria-hidden="true"></i>
 										</div>
+										<div class="star">
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -688,6 +719,9 @@
 								</div>
 								<div class="cell cell-2">
 									<div class="rating">
+										<div class="star">
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</div>
 										<div class="star">
 											<i class="fa fa-star" aria-hidden="true"></i>
 										</div>
@@ -710,15 +744,25 @@
 
 					</div>
 
-					<div class="testimonial">
+					<div class="testimonial left">
 						<h2>Высокая вероятность рекомендации <i class="flag-icon"></i></h2>
-						<ul class="agent-rating">
-							<li><i class="fa fa-star" aria-hidden="true"></i></li>
-							<li><i class="fa fa-star" aria-hidden="true"></i></li>
-							<li><i class="fa fa-star" aria-hidden="true"></i></li>
-							<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-							<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-						</ul>
+						<div class="rating agent-rating">
+							<div class="star">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<div class="star">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<div class="star">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<div class="star">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<div class="star">
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+							</div>
+						</div>
 
 						<p>08/04/2017 - zuser20160121234811152. Bought and sold a Single Family homein 2017 in Encino, Sherman Oaks, CA.</p>
 
@@ -730,6 +774,9 @@
 								</div>
 								<div class="cell cell-2">
 									<div class="rating">
+										<div class="star">
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</div>
 										<div class="star">
 											<i class="fa fa-star" aria-hidden="true"></i>
 										</div>
@@ -764,6 +811,9 @@
 										<div class="star">
 											<i class="fa fa-star" aria-hidden="true"></i>
 										</div>
+										<div class="star">
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -786,6 +836,9 @@
 										<div class="star">
 											<i class="fa fa-star" aria-hidden="true"></i>
 										</div>
+										<div class="star">
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -796,6 +849,9 @@
 								</div>
 								<div class="cell cell-2">
 									<div class="rating">
+										<div class="star">
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</div>
 										<div class="star">
 											<i class="fa fa-star" aria-hidden="true"></i>
 										</div>
@@ -820,7 +876,7 @@
 
 				</div>
 
-				<div class="pagination-block">
+				<div class="testimonials-pagination">
 					<ul class="pagination">
 						<li><a href="#" class="pagination-arrow prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
 						<li><a href="#" class="active">1</a></li>
@@ -832,30 +888,68 @@
 					</ul>
 				</div>
 
-				<div class="sliding-block">
-					<h2><i class="red-icon"></i>Территория покрытия</h2>
-					<div class="place-two-cols clearfix">
-						<div class="col col-1 left">
-							<div class="place-thumbnails offset-ziro">
-								<div class="`thumbnail">
-									<div>
-										<p>8325 Utica Dr</p>
-										<p>Los Angeles, CA 90046</p>
-									</div>
-								</div>
+				<div class="sliding-block-wrapp">
+					<h2 class="sliding-title active"><i class="red-tr"></i>Территория покрытия</h2>
+					<div class="places-block">
+						<div class="place-thumbnails sliding-block offset-ziro">
+							<div class="thumbnail">
+								<a href="#" class="inner">
+									<p>8325 Utica Dr</p>
+									<p>Los Angeles, CA 90046</p>
+								</a>
+							</div>
+							<div class="thumbnail">
+								<a href="#" class="inner">
+									<p>8325 Utica Dr</p>
+									<p>Los Angeles, CA 90046</p>
+								</a>
+							</div>
+							<div class="thumbnail">
+								<a href="#" class="inner">
+									<p>8325 Utica Dr</p>
+									<p>Los Angeles, CA 90046</p>
+								</a>
+							</div>
+							<div class="thumbnail">
+								<a href="#" class="inner">
+									<p>8325 Utica Dr</p>
+									<p>Los Angeles, CA 90046</p>
+								</a>
+							</div>
+							<div class="thumbnail">
+								<a href="#" class="inner">
+									<p>8325 Utica Dr</p>
+									<p>Los Angeles, CA 90046</p>
+								</a>
+							</div>
+							<div class="thumbnail">
+								<a href="#" class="inner">
+									<p>8325 Utica Dr</p>
+									<p>Los Angeles, CA 90046</p>
+								</a>
+							</div>
+							<div class="thumbnail">
+								<a href="#" class="inner">
+									<p>8325 Utica Dr</p>
+									<p>Los Angeles, CA 90046</p>
+								</a>
+							</div>
+							<div class="thumbnail">
+								<a href="#" class="inner">
+									<p>8325 Utica Dr</p>
+									<p>Los Angeles, CA 90046</p>
+								</a>
 							</div>
 						</div>
-						<div class="col col-2 right">
-							<a href="#" class="print-link">
-								<i class="printer"></i>
-							</a>
-						</div>
+						<a href="#" class="print-link">
+							<i class="printer"></i>
+						</a>
 					</div>
 				</div>
 
 			</div>
 
-		</section> -->
+		</section>
 
 		<!-- Section 2 - Agent Page -->
 

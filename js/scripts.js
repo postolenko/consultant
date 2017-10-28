@@ -40,6 +40,8 @@ $(document).ready(function() {
 
     getFavoriteArticlesBlockHeight();
 
+    getShapeHeaderParams();
+
     getAdaptivePositionElements();
 
     getSelectWidth();
@@ -69,6 +71,8 @@ $(document).ready(function() {
         getAdaptivePositionElements();
 
         getDropdownRightMenuHeight();
+
+        getShapeHeaderParams();
 
         getSelectWidth();
 
@@ -419,6 +423,50 @@ $(document).ready(function() {
 
     });
 
+    $(function() {
+
+        $(".sliding-block-wrapp").each(function() {
+
+            var slideBlockTitle = $(this).find(".sliding-title");
+            var slidingBlock = $(this).find(".sliding-block");
+
+            if(slideBlockTitle.hasClass("active")) {
+
+                slidingBlock.slideDown(300);
+
+            } else {
+
+                slidingBlock.slideUp(300);
+
+            }
+
+        });
+
+
+        $(".sliding-title").click(function() {
+
+            var parentBlock = $(this).closest(".sliding-block-wrapp");
+
+            var slidingBlock = parentBlock.find(".sliding-block");
+
+            if(slidingBlock.is(":hidden")) {
+
+                slidingBlock.slideDown(300);
+
+                $(this).addClass("active");
+
+            } else {
+
+                slidingBlock.slideUp(300);
+
+                $(this).removeClass("active");
+
+            }
+
+        });
+
+    });
+
     function getDocumentOffsetTop() {
 
          if( bodyWidth <= 900) {
@@ -476,6 +524,29 @@ $(document).ready(function() {
 
             $(this).css({
                 "min-height" : flexHeight + "px"
+            });
+
+        });
+
+    }
+
+    function getShapeHeaderParams() {
+
+        $(".shape-header").each(function() {
+
+            var rightLine = $(this).find(".line-right");
+            var leftlineWidth = $(this).find(".line-left").outerWidth(true);
+            var titleWidth = $(this).find("h2").outerWidth(true);
+
+            rightLine.css({
+                "width" : $(this).width() - leftlineWidth - titleWidth + "px"
+            });
+
+            var marginOffset = ( $(this).height() + rightLine.height() ) / 2;
+
+            $(this).css({
+                "margin-top" : -marginOffset + "px",
+                "margin-bottom" : -marginOffset + "px"
             });
 
         });

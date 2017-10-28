@@ -4101,6 +4101,7 @@ a.tel-link-resp:hover {
 .agent-col-1 {
     width: 21%;
     padding-top: 21px;
+    padding-right: 3%;
 }
 
 .agent-col-2 {
@@ -4218,6 +4219,14 @@ h2 .flag-icon {
     padding-bottom: 3px;
 }
 
+.agent-lists .col:nth-child(odd) {
+    padding-right: 2%;
+}
+
+.agent-lists .col:nth-child(even) {
+    padding-left: 2%;
+}
+
 .agent-lists h3 {
     text-transform: uppercase;
     font-family: "Geometria", Arial, Verdana, sans-serif;
@@ -4321,7 +4330,7 @@ h2 .flag-icon {
 }
 
 .agent-desc {
-    margin: 21px 0;
+    margin: 21px 0 49px 0;
 }
 
 .agent-desc p {
@@ -4347,35 +4356,30 @@ h2 .flag-icon {
 
 
 .shape-header {
-    display: table;
-    width: 100%;
-    margin: 38px 0;
+    /*display: table;*/
+    /*width: 100%;*/
+    position: relative;
+    /*margin: 0;*/
+    font-size: 0;
+    line-height: 0;
 }
 
 .shape-header .line {
-    display: table-cell;
-    vertical-align: top;
+    /*display: table-cell;
+    vertical-align: top;*/
+    display: inline-block;
+    vertical-align: middle;
     position: relative;
-}
-
-.shape-header .line:before {
-    display: block;
-    content: "";
-    width: 100%;
     height: 3px;
-    position: absolute;
-    top: 50%;
-    margin-top: -1.5px;
     background: #1d1d1d;
 }
 
 .shape-header h2 {
-    display: table-cell;
-    vertical-align: top;
-    word-wrap: nowrap;
+    display: inline-block;
+    vertical-align: middle;
     padding: 0 25px 0 24px;
     text-transform: uppercase;
-    width: auto;
+    /*width: auto;*/
     font-family: "Geometria", Arial, Verdana, sans-serif;
     font-size: 24px;
     line-height: 24px;
@@ -4384,15 +4388,24 @@ h2 .flag-icon {
 }
 
 .shape-header .line-left {
-    width: 4%;
+    width: 2%;
+}
+
+.two-cols-templ .shape-header .line-left {
+    width: 2.6%;
 }
 
 .shape-header .line-right {
-    width: 100%;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -1.5px;
+    /*width: 100%;*/
 }
 
 .map-sect {
-
+    margin: 50px 0 0 0;
 }
 
 .map-marks {
@@ -4480,7 +4493,7 @@ h2 .flag-icon {
     margin: 41px 0 0 0;
 }
 
-.sales-table-block h2 {
+h2.sliding-title {
     display: inline-block;
     vertical-align: top;
     cursor: pointer;
@@ -4504,6 +4517,34 @@ h2 .flag-icon {
     border-style: solid;
     border-width: 9px 5.5px 0 5.5px;
     border-color: #eb333f transparent transparent transparent;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.sliding-title.active .red-tr {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 .sales-table {
@@ -4604,6 +4645,10 @@ h2 .flag-icon {
     font-weight: normal;
 }
 
+.sales-pagination {
+    margin-bottom: 45px;
+}
+
 .agent-sidebar .sidebar-block h2 {
     padding: 8px 0 0 0;
     font-family: "Geometria", Arial, Verdana, sans-serif;
@@ -4649,7 +4694,11 @@ textarea {
 }
 
 .agent-contact-form .submit-block {
-    margin: 35px 0 18px 0;
+    margin: 35px 0 25px 0;
+}
+
+.agent-contact-form .red-pill {
+    padding: 18px 1% 19px 1%;
 }
 
 .agent-contact-form .submit-block .submit-btn {
@@ -4783,6 +4832,143 @@ textarea {
 }
 
 /*-- /Section 1 - Agent Page --*/
+
+/*-- Section 2 - Agent Page --*/
+
+.rating-sort-wrapp {
+    padding: 41px 0 0 0;
+    overflow: hidden;
+}
+
+.rating-sort-block {
+    width: 101%;
+    margin: 0 0 0 -1%;
+}
+
+.rating-sort-block .sort-block.btn-block {
+    padding-top: 33px;
+}
+
+.sort-item-block .red-pill {
+    margin: 10px 0;
+}
+
+.testimonials {
+
+}
+
+.testimonials .testimonial {
+    width: 50%;
+    margin: 17px 0 18px 0;
+}
+
+.testimonials .testimonial:nth-child(odd) {
+    padding-right: 2%;
+}
+
+.testimonials .testimonial:nth-child(even) {
+    padding-left: 2%;
+}
+
+.testimonial .rating.agent-rating {
+    margin: 11px 0 0 0;
+}
+
+.testimonial h2 {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.testimonial h2 .flag-icon {
+    top: -2px;
+}
+
+.testimonial p {
+    padding: 11px 0;
+}
+
+.rating-table {
+    margin: 0 0 4px 0;
+}
+
+.rating-table .table-row {
+    display: table;
+    width: 100%;
+    border: none;
+}
+
+.rating-table .table-row .cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    padding: 3px 0;
+}
+
+.rating-table .table-row .cell-1 {
+
+}
+
+.rating-table .table-row .cell-2 {
+
+}
+
+.rating-table .table-row .cell-1 h3 {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.testimonials-pagination {
+    padding-bottom: 14px;
+}
+
+.places-block {
+
+}
+
+.places-block .col-1 {
+    width: 82%;
+}
+
+.place-thumbnails {
+    margin: 36px 0 15px -1%;
+}
+
+.places-block  {
+    position: relative;
+    padding-right: 28%;
+}
+
+.place-thumbnails .thumbnail {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    padding: 8px 1%;
+}
+
+.printer {
+    display: inline-block;
+    vertical-align: top;
+    width: 55px;
+    height: 54px;
+    background-image: url(../img/printer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.places-block .print-link {
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+}
+
+/*-- /Section 2 - Agent Page --*/
 
 /*-- Sell Page --*/
 
