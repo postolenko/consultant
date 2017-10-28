@@ -44,6 +44,8 @@ $(document).ready(function() {
 
     getAdaptivePositionElements();
 
+    getTableElemsPosition();
+
     getSelectWidth();
 
     // getRespHeaderPosition();
@@ -69,6 +71,8 @@ $(document).ready(function() {
         getFavoriteArticlesBlockHeight();
 
         getAdaptivePositionElements();
+
+        getTableElemsPosition();
 
         getDropdownRightMenuHeight();
 
@@ -647,6 +651,50 @@ $(document).ready(function() {
                     $("[data-append-descktop-elem = '"+ indexElem +"']").append($("[data-append-elem = '"+ indexElem +"']").children());
 
                 }
+
+            }
+
+        });
+
+    }
+
+    function getTableElemsPosition() {
+
+        $(".sales-table_1 .table-row").each(function() {
+
+            var cell_3 = $(this).find(".cell-3");
+            var cell_4 = $(this).find(".cell-4");
+            var inner_1 = $(this).find(".inner_1");
+
+            if( bodyWidth <= 768 ) {
+
+                cell_3.append(inner_1);
+   
+               } else {
+                cell_4.append(inner_1);
+
+            }
+
+        });
+
+        $(".sales-table_2 .table-row").each(function() {
+
+            var cell_2 = $(this).find(".cell-2");
+            var cell_3 = $(this).find(".cell-3");
+            var cell_4 = $(this).find(".cell-4");
+            var cell_5 = $(this).find(".cell-5");
+            var inner_1 = $(this).find(".inner_1");
+            var inner_2 = $(this).find(".inner_2");            
+
+            if( bodyWidth <= 768 ) {
+
+                cell_2.append(inner_1);
+                cell_3.append(inner_2);
+
+            } else {
+
+                cell_4.append(inner_1);
+                cell_5.append(inner_2);
 
             }
 

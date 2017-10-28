@@ -4091,26 +4091,31 @@ a.tel-link-resp:hover {
 /*-- Section 1 - Agent Page --*/
 
 .agent-card {
-
+    display: table;
+    width: 100%;
+    margin: 0 0 18px 0;
 }
 
-.agent-col {
+.agent-card-col {
+    display: table-cell;
+    vertical-align: top;
     padding: 13px 0 8px 0;
 }
 
-.agent-col-1 {
+.agent-card-col-1 {
     width: 21%;
+    min-width: 200px;
     padding-top: 21px;
     padding-right: 3%;
 }
 
-.agent-col-2 {
+.agent-card-col-2 {
     width: 79%;
 }
 
 .agent-card .img-box {
     display: block;
-    max-width: 183px;
+    width: 183px;
     height: 183px;
     overflow: hidden;
     position: relative;
@@ -4264,23 +4269,15 @@ h2 .flag-icon {
 }
 
 .red-link-line {
-    display: inline-block;
-    vertical-align: top;
+/*    display: inline-block;
+    vertical-align: top;*/
     font-family: "Geometria", Arial, Verdana, sans-serif;
     font-size: 16px;
     line-height: 16px;
     font-weight: bold;
     color: #eb3340;
-    margin: 4px 0;
-}
-
-.red-link-line:after {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: #eb3340;
-    opacity: 1;
+    /*margin: 2px 0;*/
+    border-bottom: 1px solid #eb3340;
     -webkit-transition-property: all;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -4302,18 +4299,18 @@ h2 .flag-icon {
     transition-timing-function: ease;
 }
 
-.red-link-line:link:after,
-.red-link-line:visited:after {
-    opacity: 1;
+.red-link-line:link,
+.red-link-line:visited {
+    border-bottom: 1px solid #eb3340;
 }
 
-.red-link-line:active:after,
-.red-link-line.active:after {
-    opacity: 0;
+.red-link-line:active,
+.red-link-line.active {
+    border-bottom: 1px solid transparent;
 }
 
-.red-link-line:hover:after {
-    opacity: 0;
+.red-link-line:hover {
+    border-bottom: 1px solid transparent;
 }
 
 .rating.agent-rating {
@@ -4329,8 +4326,16 @@ h2 .flag-icon {
     line-height: 33px;
 }
 
+.agent-card-wrapp .agent-thumbnails {
+    margin: 10px 0;
+}
+
+.agent-card-wrapp .agent-thumb {
+    width: 33.33%;
+}
+
 .agent-desc {
-    margin: 21px 0 49px 0;
+    margin: 21px 0 50px 0;
 }
 
 .agent-desc p {
@@ -4353,7 +4358,6 @@ h2 .flag-icon {
     display: inline-block;
     vertical-align: top;
 }
-
 
 .shape-header {
     /*display: table;*/
@@ -4551,16 +4555,15 @@ h2.sliding-title {
     margin: 27px 0;
 }
 
-.sales-table:last-child {
-    margin: 27px 0 0 0;
-}
-
 .sales-table .table-row {
+    display: block;
     border: none;
+    font-size: 0;
+    line-height: 0;
 }
 
 .sales-table .cell {
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
     padding: 14px 2% 14px 0;
 }
@@ -4569,25 +4572,43 @@ h2.sliding-title {
     vertical-align: top;
 }
 
-.sales-table .cell-1 {
-    width: 104px;
+.sales-table_1 .cell-1 {
+    width: 17%;
     padding-right: 2%;
 }
 
-.sales-table .cell-2 {
-    width: 24%;
+.sales-table_1 .cell-2 {
+    width: 29%;
 }
 
-.sales-table .cell-3 {
-    width: 24%;
+.sales-table_1 .cell-3 {
+    width: 26%;
 }
 
-.sales-table .cell-4 {
-    width: 16%;
+.sales-table_1 .cell-4 {
+    width: 28%;
+    padding-right: 0;
 }
 
-.sales-table .cell-5 {
-    width: 23%;
+.sales-table_2 .cell-1 {
+    width: 17%;
+    padding-right: 2%;
+}
+
+.sales-table_2 .cell-2 {
+    width: 22%;
+}
+
+.sales-table_2 .cell-3 {
+    width: 21%;
+}
+
+.sales-table_2 .cell-4 {
+    width: 21%;
+}
+
+.sales-table_2 .cell-5 {
+    width: 19%;
     padding-right: 0;
 }
 
@@ -4617,7 +4638,7 @@ h2.sliding-title {
 
 .sales-table .cell-1 .img-box {
     display: block;
-    width: 83px;
+    max-width: 83px;
     height: 56px;
     overflow: hidden;
     margin-top: 4px;
@@ -4639,8 +4660,12 @@ h2.sliding-title {
     transform: translate(-50%, -50%);
 }
 
+.map-link {
+    margin: 0 18% 0 0;
+}
+
 .sales-table .red-link-line {
-    margin: 1px 0;
+    /*margin: 1px 0;*/
     font-size: 14px;
     font-weight: normal;
 }
@@ -4710,14 +4735,14 @@ textarea {
 }
 
 .sidebar-table {
-
+    margin: 17px 0 33px 0;
 }
 
 .sidebar-table .table-row {
     display: table;
     width: 100%;
     border: none;
-    margin: 9px 0;
+    margin: 13px 0;
 }
 
 .sidebar-table .table-row .cell {
@@ -4736,7 +4761,7 @@ textarea {
 .sidebar-table h3 {
     font-family: "Geometria", Arial, Verdana, sans-serif;
     font-size: 14px;
-    line-height: 27px;
+    line-height: 16px;
     font-weight: bold;
     color: #000000;
 }
@@ -4871,13 +4896,13 @@ textarea {
 }
 
 .testimonial .rating.agent-rating {
-    margin: 11px 0 0 0;
+    margin: 7px 0 0 0;
 }
 
 .testimonial h2 {
     font-family: "Geometria", Arial, Verdana, sans-serif;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 23px;
     font-weight: bold;
     color: #000000;
     text-transform: uppercase;

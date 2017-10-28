@@ -206,6 +206,22 @@
 
 	/*-- /Section 4 - Agents Page --*/
 
+	/*-- Section 1 - Agent Page --*/
+
+	.agent-col-1 {
+	    width: 24%;
+	}
+
+	.agent-col-2 {
+	    width: 76%;
+	}
+
+	.agent-card-wrapp .agent-thumbnails .agent-thumb {
+		width: 50%;
+	}
+
+	/*-- /Section 1 - Agent Page --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -592,7 +608,7 @@
 	.two-cols-templ .col-2 {
 		float: none;
 		width: 100%;
-		padding: 10px 3%;
+		padding: 10px 0;
 		border-top: 3px solid #1d1d1d;
 		border-left: none;
 	}
@@ -618,6 +634,42 @@
 	}
 
 	/*-- /Section 6 - Agents Page --*/
+
+	/*-- Section 1 - Agent Page --*/
+
+	.sidebar-cards .card-thumbnail {
+		display: block;
+		width: 50%;
+		float: left;
+		padding: 0 2%;
+	    margin: 20px 0 27px 0;
+	}
+
+	/*-- Section 1 - Agent Page --*/
+
+	/*-- Section 2 - Agent Page --*/
+
+	.testimonials .testimonial {
+	    width: 100%;
+	}
+
+	.testimonials .testimonial:nth-child(odd) {
+	    padding-right: 0;
+	}
+
+	.testimonials .testimonial:nth-child(even) {
+	    padding-left: 0;
+	}
+
+	.places-block {
+	    padding-right: 10%;
+	}
+
+	.place-thumbnails .thumbnail {
+	    width: 50%;
+	}
+
+	/*-- Section 2 - Agent Page --*/
 
 	/*-- Footer --*/
 
@@ -786,6 +838,95 @@
 	}
 
 	/*-- /Section 1 Soveti Page --*/
+
+	/*-- Section 1 - Agent Page --*/
+
+	.agent-card {
+		display: block;
+	}
+
+	.agent-card-col {
+		display: block;
+	}
+
+	.agent-card-col-1 {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.agent-card-col-2 {
+	    width: 100%;
+	}
+
+	.agent-map-wrapp {
+	    height: 314px;
+	    margin: 20px 0 32px 0;
+	}
+
+	.agent-map-wrapp #map_2 {
+	    height: 314px;
+	}
+/*
+	.sales-table-block {
+	    margin: 38px 0 0 0;
+	}*/
+
+	h2.sliding-title {
+	    font-size: 20px;
+	    line-height: 21px;
+	}
+
+	.sales-table .table-row.table-header {
+		display: none;
+	}
+
+	.sales-table .cell {
+		vertical-align: top;
+		padding: 8px 3% 8px 0;
+	}
+
+	.sales-table_1 .cell-1,
+	.sales-table_2 .cell-1 {
+	    width: 26%;
+	}
+
+	.sales-table_1 .cell-2 {
+	    width: 37%;
+	}
+
+	.sales-table_1 .cell-3 {
+	    width: 37%;
+	}
+
+	.sales-table_1 .cell-4 {
+	    display: none;
+	}
+
+	.sales-table_2 .cell-2 {
+	    width: 37%;
+	}
+
+	.sales-table_2 .cell-3 {
+	    width: 37%;
+	}
+
+	.sales-table_2 .cell-4 {
+	    display: none;
+	}
+
+	.sales-table_2 .cell-5 {
+	    display: none;
+	}
+
+	.sales-table p {
+		padding: 5px 0;
+	}
+
+	.map-link {
+	    margin: 0 11% 0 0;
+	}
+
+	/*-- /Section 1 - Agent Page --*/
 
 	/*-- Footer --*/
 
@@ -1025,6 +1166,63 @@
 
 	/*-- /Section 6 - Agents Page --*/
 
+	/*-- Section 1 - Agent Page --*/
+
+	.shape-header h2 {
+	    padding: 0 15px;
+	    font-size: 19px;
+	    line-height: 19px;
+	}
+
+	.agent-card h2 {
+	    font-size: 21px;
+	    line-height: 30px;
+	}
+
+	.agent-lists .col {
+		width: 100%;
+	    padding-bottom: 10px;
+	}
+
+	.agent-lists .col:nth-child(odd) {
+	    padding-right: 0;
+	}
+
+	.agent-lists .col:nth-child(even) {
+	    padding-left: 0;
+	}
+
+	.agent-card-wrapp .agent-thumbnails .agent-thumb {
+		width: 100%;
+	}
+
+	.sidebar-cards .card-thumbnail {
+		display: block;
+		width: 70%;
+		float: none;
+		padding: 0;
+	    margin: 20px auto 27px auto;
+	}
+
+	/*-- /Section 1 - Agent Page --*/
+
+	/*-- Section 2 - Agent Page --*/
+
+	.places-block {
+	    padding-right: 0;
+	}
+
+	.place-thumbnails .thumbnail {
+	    width: 100%;
+	}
+
+	.places-block .print-link {
+	    position: relative;
+	    bottom: 0;
+	}
+
+	/*-- Section 2 - Agent Page --*/
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -1230,7 +1428,7 @@
 
 	.question-thumbnail {
 	    padding: 16px 0 23px 0;
-}
+	}
 
 	/*-- /Section 1 Soveti Page --*/
 
@@ -1269,6 +1467,24 @@
 
 	/*-- /Section 2 - Agents Page --*/
 
+	/*-- Section 1 - Agent Page --*/
+
+	.shape-header h2 {
+	    font-size: 17px;
+	    line-height: 17px;
+	}
+
+	h2.sliding-title {
+	    font-size: 16px;
+	    line-height: 18px;
+	}
+
+	.sidebar-cards .card-thumbnail {
+		width: 90%;
+	}
+
+	/*-- /Section 1 - Agent Page --*/
+
 }
 
 @media only screen and (max-width: 350px) {
@@ -1288,6 +1504,14 @@
 	}
 
 	/*-- /Section 3 Blog Page --*/
+
+	/*-- Section 1 - Agent Page --*/
+
+	.sidebar-cards .card-thumbnail {
+		width: 100%;
+	}
+
+	/*-- /Section 1 - Agent Page --*/
 
 }
 
