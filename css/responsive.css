@@ -876,13 +876,18 @@
 	    line-height: 21px;
 	}
 
+	.sales-table .table-row {
+	    padding-bottom: 4px;
+	    border-bottom: 1px solid #ededed;
+	}
+
 	.sales-table .table-row.table-header {
 		display: none;
 	}
 
 	.sales-table .cell {
 		vertical-align: top;
-		padding: 8px 3% 8px 0;
+		padding: 7px 3% 7px 0;
 	}
 
 	.sales-table_1 .cell-1,
@@ -919,11 +924,11 @@
 	}
 
 	.sales-table p {
-		padding: 5px 0;
+		padding: 2px 0;
 	}
 
 	.map-link {
-	    margin: 0 11% 0 0;
+	    margin: 0 0 0 63%;
 	}
 
 	/*-- /Section 1 - Agent Page --*/
@@ -1479,6 +1484,29 @@
 	    line-height: 18px;
 	}
 
+	.sales-table_1 .cell-1,
+	.sales-table_2 .cell-1 {
+	    width: 19%;
+	}
+
+	.sales-table_1 .cell-2,
+	.sales-table_2 .cell-2 {
+	    width: 42%;
+	}
+
+	.sales-table_1 .cell-3,
+	.sales-table_2 .cell-3 {
+	    width: 39%;
+	}
+
+	.sales-table .cell-1 .img-box {
+	    height: 47px;
+	}
+
+	.map-link {
+	    margin: 0;
+	}
+
 	.sidebar-cards .card-thumbnail {
 		width: 90%;
 	}
@@ -1506,6 +1534,12 @@
 	/*-- /Section 3 Blog Page --*/
 
 	/*-- Section 1 - Agent Page --*/
+
+	.sales-table p {
+		padding: 3px 0;
+	    font-size: 13px;
+	    line-height: 17px;
+	}
 
 	.sidebar-cards .card-thumbnail {
 		width: 100%;
