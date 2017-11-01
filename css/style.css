@@ -4917,6 +4917,7 @@ textarea {
 
 .rating-table {
     margin: 0 0 4px 0;
+    /*margin: 0 0 47px 0;*/
 }
 
 .rating-table .table-row {
@@ -4946,6 +4947,7 @@ textarea {
     line-height: 18px;
     font-weight: bold;
     color: #000000;
+    text-transform: none;
 }
 
 .testimonials-pagination {
@@ -4993,6 +4995,332 @@ textarea {
 }
 
 /*-- /Section 2 - Agent Page --*/
+
+/*-- Commet Popup --*/
+
+.comment-popup-wrapper {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, .7);
+}
+
+.comment-popup {
+    max-width: 1080px;
+    margin: 28px auto;
+    position: relative;
+    z-index: 2;
+    background: #ffffff;
+    border: 3px solid #1d1d1d;
+}
+
+.comment-popup-row {
+    padding: 0 3%;
+    border-bottom: 3px solid #1d1d1d;
+}
+
+.comment-popup-row:last-child {
+    border-bottom: none;
+}
+
+.comment-popup-row.row-1 {
+    display: table;
+    width: 100%;
+    min-height: 51px;
+    padding-right: 60px;
+    position: relative;
+}
+
+.comment-popup h2 {
+    padding: 10px 0;
+    text-transform: uppercase;   
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.comment-popup .row-3 h2 {
+     padding: 0 0 10px 0;
+}
+
+.close-popup {
+    display: inline-block;
+    vertical-align: middle;
+    width: 48px;
+    height: 51px;
+    background: rgb(237, 52, 62);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    border-left: 3px solid #1d1d1d;
+    border-bottom: 3px solid #1d1d1d;
+}
+
+.close-popup span {
+    display: block;
+    width: 22px;
+    height: 3px;
+    margin: 0 auto;
+    background: rgb(29, 29, 29);
+    position: relative;
+
+    -webkit-transition-property: transform, border, background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform, border, background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform, border, background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform, border, background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform, border, background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.close-popup span:last-child {
+    margin: 0 auto;
+}
+
+.close-popup:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-tap-highlight-color: transparent;
+}
+
+.close-popup:hover span {
+    background: rgb(29, 29, 29);
+}
+
+.close-popup span:first-child {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 2px;
+}
+
+.close-popup span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: -1px;
+}
+
+.comment-popup-row.row-2 {
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.comment-popup-row.row-2 .col {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px 1%;
+}
+
+.comment-popup-row.row-2 .col:nth-child(1) {
+    padding-left: 0;
+}
+
+.comment-popup-row.row-2 .col:last-child {
+    padding-right: 1.5%;
+}
+
+.comment-popup-row.row-2 .col-1 {
+    width: 10%;
+}
+
+.comment-popup-row.row-2 .col-2 {
+    width: 25%;
+}
+
+.comment-popup-row.row-2 .col-3 {
+    width: 17%;
+}
+
+.comment-popup-row.row-2 .col-4 {
+    width: 30%;
+}
+
+.comment-popup-row.row-2 .col-5 {
+    width: 18%;
+    text-align: right;
+}
+
+.comment-popup-row.row-2 .col-1 .img-box {
+    display: block;
+    width: 53px;
+    height: 53px;
+    border: 3px solid #1d1d1d;
+    overflow: hidden;
+}
+
+.comment-popup-row.row-2 h3 {
+    text-transform: uppercase;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #1d1d1d;
+}
+
+.comment-popup-row .red-link-line {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.comment-popup-row.row-3 {
+    padding-top: 31px;
+    padding-bottom: 61px;
+}
+
+.comment-popup-row.row-3 .col {
+    width: 50%;
+}
+
+.comment-popup-row.row-3 .col:nth-child(odd) {
+    padding-right: 2%;
+}
+
+.comment-popup-row.row-3 .col:nth-child(even) {
+    padding-left: 2%;
+}
+
+.comment-popup-row.row-3 h2 {
+    padding-top: 0;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.comment-popup-row .agent-rating {
+    margin: 7px 0 10px 0;
+}
+
+.add-rating .star .fa {
+    color: #ea303f;
+}
+
+.commet-input-wrapp {
+    display: block;
+    padding: 16px 0 18px 0;
+}
+
+.commet-input-wrapp h3 {
+    text-transform: uppercase;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.commet-input-wrapp h3 + p {
+    padding-top: 9px;
+}
+
+.commet-input-wrapp .rating-table {
+    margin: 0 0 47px 0; 
+}
+
+.commet-input {
+    margin: 7px 0;
+    border: 3px solid #1d1d1d;
+}
+
+.commet-input-wrapp textarea {
+    height: 160px;
+    margin: 7px 0;
+    padding: 7px 3%;
+}
+
+.checkbox-block {
+    position: relative;
+    min-height: 20px;
+    margin: 13px 0;
+}
+
+.checkbox-block input[type="checkbox"] {
+    display: block;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .01;
+}
+
+.checkbox-block label {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 0 30px;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #1c1c1c;
+}
+
+.checkbox-block label:before {
+    display: block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    border: 1px solid #1d1d1d;
+}
+
+.checkbox-block input[type="checkbox"]:checked + label:before {
+    background-image: url(../img/checked.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.commet-input-wrapp p {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #1c1c1c;
+}
+
+.copy-block {
+    margin: 58px 0 0 0;
+}
+
+.copy-block p {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #999999;
+}
+
+.comment-popup-row .sumbit-block {
+    padding: 4px 0;
+}
+
+/*-- /Commet Popup --*/
 
 /*-- Sell Page --*/
 

@@ -272,6 +272,31 @@
 
 	/*-- /Section 6 - Agents Page --*/
 
+	/*-- Commet Popup --*/
+
+	.comment-popup-row.row-2 .col-1 {
+	    width: 13%;
+	}
+
+	.comment-popup-row.row-2 .col-2 {
+	    width: 46%;
+	}
+
+	.comment-popup-row.row-2 .col-3 {
+	    width: 41%;
+	    text-align: right;
+	}
+
+	.comment-popup-row.row-2 .col-4 {
+	    width: 60%;
+	}
+
+	.comment-popup-row.row-2 .col-5 {
+	    width: 40%;
+	}
+
+	/*-- /Commet Popup --*/
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -671,6 +696,18 @@
 
 	/*-- Section 2 - Agent Page --*/
 
+	/*-- Commet Popup --*/
+
+	.comment-popup-row.row-2 .col-1 {
+	    width: 10%;
+	}
+
+	.comment-popup-row.row-2 .col-2 {
+	    width: 49%;
+	}
+
+	/*-- /Commet Popup --*/
+
 	/*-- Footer --*/
 
 	.footer .col-1 {
@@ -866,10 +903,6 @@
 	.agent-map-wrapp #map_2 {
 	    height: 314px;
 	}
-/*
-	.sales-table-block {
-	    margin: 38px 0 0 0;
-	}*/
 
 	h2.sliding-title {
 	    font-size: 20px;
@@ -932,6 +965,47 @@
 	}
 
 	/*-- /Section 1 - Agent Page --*/
+
+	/*-- Commet Popup --*/
+
+	.comment-popup-row.row-3 {
+	    padding-top: 9px;
+	    padding-bottom: 23px;
+	}
+
+	.comment-popup-row.row-3 .col {
+	    width: 100%;
+	}
+
+	.comment-popup-row.row-3 .col:nth-child(odd) {
+	    padding-right: 0;
+	}
+
+	.comment-popup-row.row-3 .col:nth-child(even) {
+	    padding-left: 0;
+	}
+
+	.commet-input-wrapp .rating-table {
+	    margin: 0 0 13px 0;
+	}
+
+	.commet-input-wrapp {
+	    padding: 10px 0 8px 0;
+	}
+
+	.copy-block {
+	    margin: 17px 0 23px 0;
+	}
+
+	.commet-input-wrapp .rating-table .table-row .cell-1 {
+		width: 55%;
+	}
+
+	.commet-input-wrapp .rating-table .table-row .cell-2 {
+		width: 45%;
+	}
+
+	/*-- /Commet Popup --*/
 
 	/*-- Footer --*/
 
@@ -1228,6 +1302,35 @@
 
 	/*-- Section 2 - Agent Page --*/
 
+	/*-- Commet Popup --*/
+
+	.comment-popup h2 {
+		font-size: 20px;
+	}
+
+	.comment-popup-row.row-2 {
+	    padding-top: 5px;
+	    padding-bottom: 7px;
+	}
+
+	.comment-popup-row.row-2 .col {
+	    padding: 5px 1%;
+	}
+
+	.comment-popup-row.row-2 .col-1 {
+	    width: 14%;
+	}
+
+	.comment-popup-row.row-2 .col-2 {
+	    width: 45%;
+	}
+
+	.comment-popup-row.row-2 h3 {
+		font-size: 13px;
+	}
+
+	/*-- /Commet Popup --*/
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -1513,6 +1616,37 @@
 
 	/*-- /Section 1 - Agent Page --*/
 
+	/*-- Commet Popup --*/
+
+	.comment-popup-row.row-2 {
+	    padding-bottom: 13px;
+	}
+
+	.comment-popup-row.row-2 .col-1 {
+	    width: 20%;
+	}
+
+	.comment-popup-row.row-2 .col-2 {
+	    width: 80%;
+	}
+
+	.comment-popup-row.row-2 .col-3 {
+	    width: 100%;
+	    text-align: left;
+	}
+
+	.comment-popup-row.row-2 .col-4 {
+	    width: 100%;
+	}
+
+	.comment-popup-row.row-2 .col-5 {
+	    width: 100%;
+	    text-align: left;
+	    padding-right: 0;
+	}
+
+	/*-- /Commet Popup --*/
+
 }
 
 @media only screen and (max-width: 350px) {
@@ -1546,6 +1680,18 @@
 	}
 
 	/*-- /Section 1 - Agent Page --*/
+
+	/*-- Commet Popup --*/
+
+	.comment-popup-row.row-2 .col-1 {
+	    width: 23%;
+	}
+
+	.comment-popup-row.row-2 .col-2 {
+	    width: 77%;
+	}
+
+	/*-- /Commet Popup --*/
 
 }
 
