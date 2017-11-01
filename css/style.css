@@ -69,12 +69,14 @@ body {
     font-size: 15px;
     line-height: 20px;
     color: #333333;
+    background: #ffffff;
 }
 
 .main-wrapper {
     max-width: 1920px;
     margin: 0 auto;
     padding: 0 27px 27px 27px;
+    background: #ffffff;
 }
 
 .wrapper {
@@ -4998,6 +5000,28 @@ textarea {
 
 /*-- Commet Popup --*/
 
+.popup-wrapp {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.popup-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .7);
+}
+
+/*
 .comment-popup-wrapper {
     display: block;
     width: 100%;
@@ -5007,7 +5031,7 @@ textarea {
     left: 0;
     z-index: 10;
     background: rgba(255, 255, 255, .7);
-}
+}*/
 
 .comment-popup {
     max-width: 1080px;

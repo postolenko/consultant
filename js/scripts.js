@@ -30,6 +30,12 @@ $(document).ready(function() {
 
     // ----------------------------
 
+    var popupName;
+    var popupBlock;
+    var popupBox;
+
+    // ---------------------------
+
     getFooterPosition();
 
     getDocumentOffsetTop();
@@ -466,6 +472,73 @@ $(document).ready(function() {
                 $(this).removeClass("active");
 
             }
+
+        });
+
+    });
+
+    $(function() {
+
+        $(".show_popup").click(function(e) {
+
+            e.preventDefault();
+
+            popupName = $(this).attr("data-popup");
+            popupBlock = $("[data-popup-name = '"+ popupName +"']");
+
+            // popupBlock.fadeIn(400);
+
+            popupBlock.css({
+                "z-index" : 10
+            });
+
+            popupBlock.animate({
+                "opacity" : 1
+            }, 400);
+
+        });
+
+         $(this).keydown(function(eventObject){
+
+            if (eventObject.which == 27) {
+
+                if ( popupBlock.is(":visible") ) {
+
+                    // popupBlock.fadeOut(300);
+
+                    popupBlock.animate({
+                        "opacity" : 0
+                    }, 400);
+
+                    setTimeout(function() {
+
+                        popupBlock.css({
+                            "z-index" : -1
+                        });
+
+                    }, 500);
+
+                }
+
+            }
+
+        });
+
+        $(".close-popup, .popup-bg").click(function() {
+
+            popupBlock = $(this).closest(".popup-wrapp");
+
+            popupBlock.animate({
+                "opacity" : 0
+            }, 400);
+
+            setTimeout(function() {
+
+                popupBlock.css({
+                    "z-index" : -1
+                });
+
+            }, 500);
 
         });
 
