@@ -55,9 +55,12 @@ $(document).ready(function() {
             spacing: "8px",
             normalFill: "#ffffff",
             ratedFill: "#eb3745",
-            fullStar: true
+            fullStar: true,
+            precision: 0
             // rating: rateVal
         });
+
+        // $(".add-rating-big").rateYo("option", "rating", 5);
 
     }
 
