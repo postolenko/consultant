@@ -41,7 +41,8 @@ $(document).ready(function() {
             starWidth: "16px",
             spacing: "4px",
             normalFill: "#ffffff",
-            ratedFill: "#eb3745"
+            ratedFill: "#eb3745",
+            fullStar: true
             // rating: rateVal
         });
         
@@ -53,7 +54,8 @@ $(document).ready(function() {
             starWidth: "29px",
             spacing: "8px",
             normalFill: "#ffffff",
-            ratedFill: "#eb3745"
+            ratedFill: "#eb3745",
+            fullStar: true
             // rating: rateVal
         });
 
