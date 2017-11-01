@@ -4140,6 +4140,10 @@ a.tel-link-resp:hover {
     transform: translate(-50%, -50%);
 }
 
+.agent-photo {
+    position: relative;
+}
+
 .proicon {
     display: inline-block;
     vertical-align: top;
@@ -4189,6 +4193,15 @@ a.tel-link-resp:hover {
     font-weight: bold;
     color: #ffffff;
     text-transform: uppercase;
+}
+
+.agent-card h2 {
+    text-transform: uppercase;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #231f20;
 }
 
 .agent-card h2 {
@@ -5045,6 +5058,57 @@ textarea {
     min-height: 51px;
     padding-right: 60px;
     position: relative;
+}
+
+.proicon-small {
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px 3px 3px 3px;
+    position: absolute;
+    top: 3px;
+    right: -2px;
+    z-index: 2;
+    background: #eb3340;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.proicon-small:before {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: -7px;
+    border-style: solid;
+    border-width: 0 7px 7px 0;
+    border-color: transparent #eb333f transparent transparent;
+}
+
+.proicon-small:after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: -7px;
+    border-style: solid;
+    border-width: 0 0 7px 7px;
+    border-color: transparent transparent #eb333f transparent;
+}
+
+.proicon-small p {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 7px;
+    line-height: 7px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 .comment-popup h2 {
