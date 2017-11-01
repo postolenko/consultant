@@ -39,7 +39,7 @@ $(document).ready(function() {
 
         $(".add-rating").rateYo({
             starWidth: "16px",
-            spacing: "4px",
+            spacing: "5px",
             normalFill: "#ffffff",
             ratedFill: "#eb3745",
             fullStar: true
