@@ -1651,6 +1651,10 @@
 		left: 0;
 	}
 
+	.agent-rating .rating-table .table-row .cell {
+	    padding: 6px 0;
+	}
+
 	.rating-big-wrapp .rating-tooltip {
 		width: 100%;
 		position: relative;
@@ -1703,10 +1707,6 @@
 
 	.comment-popup-row.row-2 .col-2 {
 	    width: 77%;
-	}
-
-	.agent-rating .rating-table .table-row .cell {
-	    padding: 6px 0;
 	}
 
 	/*-- /Commet Popup --*/
