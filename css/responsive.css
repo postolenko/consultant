@@ -1645,6 +1645,12 @@
 	    padding-right: 0;
 	}
 
+	.rating-tooltip {
+		top: initial;
+		bottom: -12px;
+		left: 0;
+	}
+
 	/*-- /Commet Popup --*/
 
 }
@@ -1689,6 +1695,22 @@
 
 	.comment-popup-row.row-2 .col-2 {
 	    width: 77%;
+	}
+
+	.agent-rating .rating-table .table-row .cell {
+	    padding: 6px 0;
+	}
+
+	.comment-popup-row .agent-rating {
+	    margin: 11px 0 5px 0;
+	}
+
+	.rating-big-wrapp .rating-tooltip {
+		width: 100%;
+		position: relative;
+		top: -10px;
+		bottom: initial;
+		left: 0;
 	}
 
 	/*-- /Commet Popup --*/
