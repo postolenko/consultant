@@ -5122,7 +5122,7 @@ textarea {
 }
 
 .comment-popup .row-3 h2 {
-     padding: 0 0 10px 0;
+    padding: 0 0 2px 0;
 }
 
 .close-popup {
@@ -5287,7 +5287,7 @@ textarea {
 }
 
 .comment-popup-row .agent-rating {
-    margin: 11px 0 10px 0;
+    margin: 11px 0 4px 0;
 }
 
 .add-rating .star .fa {
@@ -5313,7 +5313,7 @@ textarea {
 }
 
 .commet-input-wrapp .rating-table {
-    margin: 0 0 47px 0; 
+    margin: 0 0 28px 0;
 }
 
 .commet-input {
@@ -5411,6 +5411,99 @@ textarea {
 .comment-popup-row .sumbit-block {
     padding: 4px 0;
 }
+
+.rating-wrapp {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.rating-tooltip {
+    display: none;
+    vertical-align: middle;
+    position: absolute;
+    top: 2px;
+    left: 109%;
+}
+
+.rating-big-wrapp .rating-tooltip {
+    top: 21px;
+    left: 106%;
+}
+
+.agent-rating {
+    display: inline-block;
+}
+
+.rating:hover + .rating-tooltip {
+    display: inline-block;
+}
+
+.rating-tooltip p {
+    display: none;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #000000;
+}
+
+/*-- Rating Plugin --*/
+
+.c-rating {
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+}
+
+.c-rating__item {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.c-rating__item:before {
+    font-family: 'FontAwesome';
+    content: "\f006";
+    font-size: 17px;
+    line-height: 17px;
+    color: #ed343e;
+}
+
+.c-rating__item:hover:before,
+.c-rating__item.is-active:before {
+    font-family: 'FontAwesome';
+    content: "\f005";
+    font-size: 17px;
+    line-height: 17px;
+    color: #ed343e;
+}
+
+.add-rating-big .c-rating__item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+}
+
+.add-rating-big .c-rating__item:before {
+    font-family: 'FontAwesome';
+    content: "\f006";
+    font-size: 33px;
+    line-height: 33px;
+    color: #ed343e;
+}
+
+.add-rating-big .c-rating__item:hover:before,
+.add-rating-big .c-rating__item.is-active:before {
+    font-family: 'FontAwesome';
+    content: "\f005";
+    font-size: 33px;
+    line-height: 33px;
+    color: #ed343e;
+}
+
+/*-- /Rating Plugin --*/
 
 /*-- /Commet Popup --*/
 

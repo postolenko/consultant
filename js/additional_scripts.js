@@ -37,30 +37,62 @@ $(document).ready(function() {
 
     if( $(".add-rating").length > 0 )  {
 
-        $(".add-rating").rateYo({
-            starWidth: "16px",
-            spacing: "5px",
-            normalFill: "#ffffff",
-            ratedFill: "#eb3745",
-            fullStar: true
-            // rating: rateVal
+        var indexRating = 0;
+        // var idRating;
+        // var e;
+        // var currentRating;
+        // var maxRating;
+        // var callback;
+        // var myRating;
+
+        $(".add-rating").each(function() {
+
+            indexRating++;
+
+           $(this).attr("id", "rating_"+indexRating);
+            var idRating = $(this).attr("id");
+
+            var el = document.querySelector("#" + idRating);
+            var currentRating = 0;
+            // max rating, i.e. number of stars you want
+            var maxRating= 5;
+            // callback to run after setting the rating
+            // var callback = function(rating) { 
+
+            //     var parenBlock = $(this).closest(".rating-wrapp");
+            //     var ratingTooltip = parenBlock.find(".rating-tooltip");
+            //     ratingTooltip.css({
+            //         "display" : "inline-block"
+            //     });
+
+            // };
+            // rating instance
+            var myRating = rating(el, currentRating, maxRating);
+
         });
         
     }
 
     if( $(".add-rating-big").length > 0 )  {
 
-        $(".add-rating-big").rateYo({
-            starWidth: "29px",
-            spacing: "8px",
-            normalFill: "#ffffff",
-            ratedFill: "#eb3745",
-            fullStar: true,
-            precision: 0
-            // rating: rateVal
-        });
+        var indexRating = 0;
+        $(".add-rating-big").each(function() {
 
-        // $(".add-rating-big").rateYo("option", "rating", 5);
+            indexRating++;
+
+           $(this).attr("id", "ratingBig_"+indexRating);
+            var idRating = $(this).attr("id");
+
+            var el = document.querySelector("#" + idRating);
+            var currentRating = 0;
+            // max rating, i.e. number of stars you want
+            var maxRating= 5;
+            // callback to run after setting the rating
+            var callback = function(rating) { console.log(rating); };
+            // rating instance
+            var myRating = rating(el, currentRating, maxRating, callback);
+
+        });
 
     }
 

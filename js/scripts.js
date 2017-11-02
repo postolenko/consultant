@@ -544,6 +544,64 @@ $(document).ready(function() {
 
     });
 
+    $(function() {
+
+    var parenBlock;
+    var indexMark;
+    var ratingTooltip;
+    var tooltipInfo;
+
+        $(".c-rating__item").hover(function() {
+
+            parenBlock = $(this).closest(".rating-wrapp");
+
+            indexMark = $(this).attr("data-index");
+
+            ratingTooltip = parenBlock.find(".rating-tooltip");
+
+            tooltipInfo = ratingTooltip.find("p");
+
+            tooltipInfo.each(function() {
+
+                if( $(this).attr("data-index") == indexMark ) {
+
+                    $(this).filter("[data-index = '"+indexMark+"']").css({"display" : "block"});
+
+                } else {
+
+                    $(this).css({"display" : "none"});
+
+                }
+
+            });
+
+        });
+
+        $(".c-rating__item").click(function() {
+
+            parenBlock = $(this).closest(".rating-wrapp");
+            ratingTooltip = parenBlock.find(".rating-tooltip");
+            ratingTooltip.css({
+                "display" : "inline-block"
+            });
+            tooltipInfo.each(function() {
+
+                if( $(this).attr("data-index") == indexMark ) {
+
+                    $(this).filter("[data-index = '"+indexMark+"']").css({"display" : "block"});
+
+                } else {
+
+                    $(this).css({"display" : "none"});
+
+                }
+
+            });
+
+        });
+
+    });
+
     function getDocumentOffsetTop() {
 
          if( bodyWidth <= 900) {
