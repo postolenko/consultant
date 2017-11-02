@@ -1653,6 +1653,15 @@
 
 	/*-- /Section 1 - Agent Page --*/
 
+	/*-- Section 2 - Agent Page --*/
+
+	.testimonial .rating-table {
+	    width: 100%;
+	    max-width: 320px;
+	}
+
+	/*-- /Section 2 - Agent Page --*/
+
 	/*-- Commet Popup --*/
 
 	.comment-popup-row.row-2 {

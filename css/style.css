@@ -4944,7 +4944,8 @@ textarea {
 }
 
 .testimonial .rating-table {
-    max-width: 350px;
+    width: 320px;
+    /*width: 70%;*/
 }
 
 .rating-table .table-row {
@@ -4961,11 +4962,11 @@ textarea {
 }
 
 .rating-table .table-row .cell-1 {
-
+    width: 60%;
 }
 
 .rating-table .table-row .cell-2 {
-
+    width: 40%;
 }
 
 .testimonial .rating-table .table-row .cell-2 {
