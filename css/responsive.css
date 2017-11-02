@@ -20,6 +20,32 @@
 
 	/*-- /Section 2 Blog Page --*/
 
+	/*-- Section 1 - Agent Page --*/
+
+	.agent-card-wrapp .agent-thumb {
+	    width: 33.33%;
+	}
+
+	/*-- /Section 1 - Agent Page --*/
+
+	/*-- Section 2 - Agent Page --*/
+
+	.testimonials .testimonial {
+	    width: 50%;
+	}
+
+	.testimonials .testimonial:nth-child(odd) {
+		padding-right: 0;
+	    padding-right: 5%;
+	}
+
+	.testimonials .testimonial:nth-child(even) {
+	    padding-left: 5%;
+	    padding-right: 0;
+	}
+
+	/*-- /Section 2 - Agent Page --*/
+
 }
 
 @media only screen and (max-width: 1410px) {
@@ -248,6 +274,14 @@
 
 	/*-- /Header --*/
 
+	/*-- Navigation 2 --*/
+
+	.nav-2 li.dekor-item {
+		display: none;
+	}
+
+	/*-- /Navigation 2 --*/
+
 	/*-- Section 2 Blog Page --*/
 
 	.favorite-thumbnails .thumbnail {
@@ -271,6 +305,14 @@
 	}
 
 	/*-- /Section 6 - Agents Page --*/
+
+	/*-- Section 1 - Agent Page --*/
+
+	.agent-desc {
+	    width: 90%;
+	}
+
+	/*-- /Section 1 - Agent Page --*/
 
 	/*-- Commet Popup --*/
 
@@ -317,7 +359,7 @@
 
 	.header-site {
 		width: 100%;
-		z-index: 4;
+		z-index: 5;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -415,111 +457,11 @@
 
 	/*-- Navigation 2 --*/
 
-	.navigation-2 {
-		/*display: none;*/
-		display: block;
-		/*position: fixed;
-		top: 0;
-		left: 0;*/
-		width: 100%;
-		z-index: 4;
-		-webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
-		-moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
-		box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
-	}
-
-	/*.nav-2-respbtn {
-		display: block;
-	}*/
-
 	.nav-2-block {
-		border-top: 1px solid #ededed;
-		/*display: none;
-		height: 100vh !important;*/
+		margin-top: 6px;
 	}
 
-	 ul.nav-2 {
-		/*display: none;
-		height: 100vh !important;*/
-		display: block;
-	 /*   position: fixed;
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    height: 100vh;
-	    z-index: 3;*/
-	    padding: 5px 0;
-	    border-bottom: none;
-	    background: rgba(255, 255, 255, .9);
-	}
-
-	ul.nav-2 li {
-		display: block;
-		text-align: left;
-		padding: 0;
-		-webkit-flex-grow: none !important;
-		flex-grow: none !important;
-		border-left: none;
-	}
-
-	ul.nav-2 li a {
-		display: inline-block;
-		vertical-align: top;
-		/*text-align: center;*/
-		margin: 10px 0;
-		font-size: 16px;
-	    line-height: 16px;
-	    font-weight: 600;
-	   	padding: 0;
-	    border-bottom: none;
-	
-	    -webkit-transition-property: border, color, background;
-	    -webkit-transition-duration: .3s;
-	    -webkit-transition-timing-function: ease;
-
-	    -moz-transition-property: border, color, background;
-	    -moz-transition-duration: .3s;
-	    -moz-transition-timing-function: ease;
-
-	    -ms-transition-property: border, color, background;
-	    -ms-transition-duration: .3s;
-	    -ms-transition-timing-function: ease;
-
-	    -o-transition-property: border, color, background;
-	    -o-transition-duration: .3s;
-	    -o-transition-timing-function: ease;
-
-	    transition-property: border, color, background;
-	    transition-duration: .3s;
-	    transition-timing-function: ease;
-
-	}
-
-	.nav-2 li a:link,
-	.nav-2 li a:visited {
-	     color: #1d1d1b;
-	     border-bottom: 1px solid none;
-	     /*background: rgba(236, 51, 64, 0);*/
-	}
-
-	.nav-2 li a:active,
-	.nav-2 li a.active {
-	     color: #eb3340;
-	     border-bottom: 1px solid none;
-	     /*background: rgba(236, 51, 64, 1);*/
-	}
-
-	.nav-2 li a:hover {
-	     color: #eb3340;
-	     border-bottom: 1px solid none;
-	     /*background: rgba(236, 51, 64, 1);*/
-	}
-
-	.show-resp-nav {
-	    display: inline-block;
-	}
-
-	 /*-- /Navigation 2 --*/
+	/*-- /Navigation 2 --*/
 
 	/*-- Section 1 Main Page --*/
 
@@ -662,15 +604,19 @@
 
 	/*-- Section 1 - Agent Page --*/
 
+	.agent-desc {
+	    width: 100%;
+	}
+
 	.sidebar-cards .card-thumbnail {
 		display: block;
 		width: 50%;
 		float: left;
 		padding: 0 2%;
 	    margin: 20px 0 27px 0;
-	}
+	}	
 
-	/*-- Section 1 - Agent Page --*/
+	/*-- /Section 1 - Agent Page --*/
 
 	/*-- Section 2 - Agent Page --*/
 
@@ -751,6 +697,95 @@
 
 	/*-- /Header --*/
 
+	/*-- Navigation 2 --*/
+
+	.navigation-2 {
+		display: block;
+		width: 100%;
+		z-index: 4;
+
+		-webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
+		-moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
+		box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
+	}
+
+	.nav-2-block {
+		border-top: 1px solid #ededed;
+	}
+
+	 ul.nav-2 {
+		display: block;
+	    padding: 5px 0;
+	    border-bottom: none;
+	    background: rgba(255, 255, 255, .9);
+	}
+
+	ul.nav-2 li {
+		display: block;
+		text-align: left;
+		padding: 0;
+		-webkit-flex-grow: none !important;
+		flex-grow: none !important;
+		border-left: none;
+	}
+
+	ul.nav-2 li a {
+		display: inline-block;
+		vertical-align: top;
+		margin: 10px 0;
+		font-size: 16px;
+	    line-height: 16px;
+	    font-weight: 600;
+	   	padding: 0;
+	    border-bottom: none;
+	
+	    -webkit-transition-property: border, color, background;
+	    -webkit-transition-duration: .3s;
+	    -webkit-transition-timing-function: ease;
+
+	    -moz-transition-property: border, color, background;
+	    -moz-transition-duration: .3s;
+	    -moz-transition-timing-function: ease;
+
+	    -ms-transition-property: border, color, background;
+	    -ms-transition-duration: .3s;
+	    -ms-transition-timing-function: ease;
+
+	    -o-transition-property: border, color, background;
+	    -o-transition-duration: .3s;
+	    -o-transition-timing-function: ease;
+
+	    transition-property: border, color, background;
+	    transition-duration: .3s;
+	    transition-timing-function: ease;
+
+	}
+
+	.nav-2 li a:link,
+	.nav-2 li a:visited {
+	     color: #1d1d1b;
+	     border-bottom: 1px solid none;
+	}
+
+	.nav-2 li a:active,
+	.nav-2 li a.active {
+	     color: #eb3340;
+	     border-bottom: 1px solid none;
+	}
+
+	.nav-2 li a:hover {
+	     color: #eb3340;
+	     border-bottom: 1px solid none;
+	}
+
+	.show-resp-nav {
+	    display: inline-block;
+	}
+
+	/*-- /Navigation 2 --*/
+
+	/*-- Favorites Fixed Block --*/
+
 	.favorites-block {
 	    left: -29px;
 	}
@@ -759,6 +794,8 @@
 	    font-size: 14px;
 	    line-height: 14px;
 	}
+
+	/*-- /Favorites Fixed Block --*/
 
 	/*-- Section 2 Main Page --*/
 

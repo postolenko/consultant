@@ -1,3 +1,17 @@
+$(window).load(function() {
+
+    $("select").each(function() {
+
+        var parentBlock = $(this).closest(".select-block");
+
+        parentBlock.find(".select2-container").css({
+            "width" : parentBlock.width() + "px"
+        });
+
+    });
+
+});
+
 $(document).ready(function() {
 
     var w = window,
@@ -52,7 +66,7 @@ $(document).ready(function() {
 
     getTableElemsPosition();
 
-    getSelectWidth();
+    // getSelectWidth();
 
     // getRespHeaderPosition();
 
@@ -602,6 +616,26 @@ $(document).ready(function() {
 
     });
 
+    // Navigation scroll
+
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 900);                        
+
+                    return false;
+                }
+            }
+        });
+    });
+
     function getDocumentOffsetTop() {
 
          if( bodyWidth <= 900) {
@@ -835,15 +869,19 @@ $(document).ready(function() {
 
     function getSelectWidth() {
 
-        $("select").each(function() {
+        // setTimeout(function() {
 
-            var parentBlock = $(this).closest(".select-block");
+            $("select").each(function() {
 
-            parentBlock.find(".select2-container").css({
-                "width" : parentBlock.width() + "px"
+                var parentBlock = $(this).closest(".select-block");
+
+                parentBlock.find(".select2-container").css({
+                    "width" : parentBlock.width() + "px"
+                });
+
             });
 
-        });
+        // })
 
     }
 

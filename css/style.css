@@ -433,6 +433,14 @@ a:active {
     line-height: 0;
 }
 
+.medium {
+    font-weight: 500 !important;
+}
+
+.up-txt {
+    text-transform: uppercase;
+}
+
 .left {
     float: left;
 }
@@ -586,7 +594,7 @@ a:active {
 .header-site {
     display: table;
     width: 100%;
-    height: 48px;
+    /*height: 48px;*/
     position: relative;
     background: rgb(255, 255, 255);
     border-top: 3px solid #1d1d1d;
@@ -4346,10 +4354,12 @@ h2 .flag-icon {
 }
 
 .agent-card-wrapp .agent-thumb {
-    width: 33.33%;
+    width: 25%;
 }
 
 .agent-desc {
+    width: 79%;
+    max-width: 768px;
     margin: 21px 0 50px 0;
 }
 
@@ -4892,21 +4902,19 @@ textarea {
     margin: 10px 0;
 }
 
-.testimonials {
+.testimonials-wrapp {
+    overflow: hidden;
+}
 
+.testimonials {
+    width: 102%;
+    margin: 0 0 0 -1%;
 }
 
 .testimonials .testimonial {
-    width: 50%;
+    width: 33.33%;
     margin: 17px 0 18px 0;
-}
-
-.testimonials .testimonial:nth-child(odd) {
-    padding-right: 2%;
-}
-
-.testimonials .testimonial:nth-child(even) {
-    padding-left: 2%;
+    padding: 0 1%;
 }
 
 .testimonial .rating.agent-rating {
@@ -4935,6 +4943,10 @@ textarea {
     /*margin: 0 0 47px 0;*/
 }
 
+.testimonial .rating-table {
+    max-width: 350px;
+}
+
 .rating-table .table-row {
     display: table;
     width: 100%;
@@ -4954,6 +4966,10 @@ textarea {
 
 .rating-table .table-row .cell-2 {
 
+}
+
+.testimonial .rating-table .table-row .cell-2 {
+    text-align: right;
 }
 
 .rating-table .table-row .cell-1 h3 {
@@ -5319,6 +5335,10 @@ textarea {
 .commet-input {
     margin: 7px 0;
     border: 3px solid #1d1d1d;
+}
+
+.commet-input.select-block {
+    overflow: hidden;
 }
 
 .commet-input-wrapp input {
