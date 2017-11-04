@@ -32,10 +32,12 @@
 
 	.testimonials {
 	    width: 100%;
+	    margin: 0;
 	}
 
 	.testimonials .testimonial {
 	    width: 50%;
+	    padding: 0;
 	}
 
 	.testimonials .testimonial:nth-child(odd) {
