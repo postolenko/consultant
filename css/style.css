@@ -4907,14 +4907,18 @@ textarea {
 }
 
 .testimonials {
-    width: 102%;
-    margin: 0 0 0 -1%;
+    /*width: 102%;
+    margin: 0 0 0 -1%;*/
+    width: 108%;
+    margin: 0 0 0 -4%;
 }
 
 .testimonials .testimonial {
+    display: inline-block;
+    vertical-align: top;
     width: 33.33%;
     margin: 17px 0 18px 0;
-    padding: 0 1%;
+    padding: 0 4%;
 }
 
 .testimonial .rating.agent-rating {

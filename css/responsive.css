@@ -30,6 +30,10 @@
 
 	/*-- Section 2 - Agent Page --*/
 
+	.testimonials {
+	    width: 100%;
+	}
+
 	.testimonials .testimonial {
 	    width: 50%;
 	}
@@ -606,6 +610,10 @@
 
 	.agent-desc {
 	    width: 100%;
+	}
+
+	.agent-sidebar {
+	    padding-bottom: 20px;
 	}
 
 	.sidebar-cards .card-thumbnail {
