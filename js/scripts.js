@@ -824,6 +824,38 @@ $(document).ready(function() {
 
         });
 
+        $(".price-inputs-wrapp .price-input").click(function() {
+
+            parentBlock = $(this).closest(".price-inputs-wrapp");
+
+            var inputPrice = $(this).attr("data-input-price");
+
+            var priceList = parentBlock.find(".price-list");
+
+            var priceListActive = priceList.filter("[data-prices = '" + inputPrice  + "']");
+
+            if( priceListActive.is(":hidden") ) {
+
+                priceList.each(function() {
+
+                    if( $(this).attr("data-prices") != inputPrice ) {
+
+                        $(this).css({
+                            "display" : "none"
+                        });
+
+                    }
+
+                });
+
+                priceListActive.css({
+                    "display" : "block"
+                });
+
+            }
+
+        });
+
     });
 
     // Navigation scroll
