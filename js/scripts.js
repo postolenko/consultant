@@ -10,6 +10,8 @@ $(window).load(function() {
 
     });
 
+    // ----------------------------------
+
     $(".full-height").each( function() {
 
         flexHeight = $(window).height() - $(this).offset().top - parseInt($(".main-wrapper").css("padding-bottom") );
