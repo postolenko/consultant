@@ -934,6 +934,10 @@ $(document).ready(function() {
 
         }
 
+        $(".map-3_block").css( {
+            "max-width" : $(window).width() - $("#search_box").width() + "px"
+        });
+
         $(".sell-list-btn").click(function() {
 
             $("#search_box").toggleClass("hide");
