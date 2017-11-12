@@ -44,8 +44,8 @@ $(document).ready(function() {
 
     // ----------------------------
 
-    var flexibleAttr;
-    var bottomCoord;
+    // var flexibleAttr;
+    // var bottomCoord;
     var flexHeight;
 
     // ----------------------------
