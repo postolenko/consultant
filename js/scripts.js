@@ -950,10 +950,6 @@ $(document).ready(function() {
                         "width" : minSearchBoxWidth + "px"
                     });
 
-                    $(".map-3_block").css( {
-                        "max-width" : $(window).width() - $("#search_box").width() + "px"
-                    });
-
                     $(this).removeClass("active");
 
                 } else {                    
@@ -962,13 +958,13 @@ $(document).ready(function() {
                         "width" : 100 + "%"
                     });
 
-                    $(".map-3_block").css( {
-                        "max-width" : $(window).width() - $("#search_box").width() + "px"
-                    });
-
                     $(this).addClass("active");
 
                 }
+
+                $(".map-3_block").css( {
+                    "max-width" : $(window).width() - $("#search_box").width() + "px"
+                });
 
             }
 
