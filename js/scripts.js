@@ -908,6 +908,16 @@ $(document).ready(function() {
 
         var minSearchBoxWidth = 370;
 
+        if( $("#search_box").hasClass("hide") ) {
+
+            $(".sell-list-btn").removeClass("active");
+
+        } else {
+
+            $(".sell-list-btn").addClass("active");
+
+        }
+
         $(".sell-list-btn").click(function() {
 
             $("#search_box").toggleClass("hide");
