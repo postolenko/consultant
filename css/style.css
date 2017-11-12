@@ -2217,11 +2217,13 @@ a.tel-link-resp:hover {
 
 .dropdown-menu-btn span:before {
     display: block;
-    content: "";
-    position: absolute;
-    top: 6px;
-    right: 0;
+    content: "";    
+    width: 0;
     height: 0;
+    margin-top: -3px;
+    position: absolute;
+    top: 50%;
+    right: 0;
     border-style: solid;
     border-color: #1c1c1c transparent transparent transparent;
     border-width: 8px 6px 0 6px;
@@ -5584,15 +5586,15 @@ textarea {
 .sell-header .dropdown-menu-btn {
     border: none;
     min-width: 100%;
-    padding: 10px 2%;
+    padding: 10px 1%;
 }
 
 .sell-header .dropdown-menu-block  .dropdown-menu {
     min-width: 310px;
-    /*max-width: 320px;*/
 }
 
 .dropdown-menu-btn span {
+    display: block;
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
@@ -6061,7 +6063,7 @@ textarea {
 
 .two-cols-wrapp .map-3_block {
     display: block;
-    width: 49%;
+    width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -6078,14 +6080,52 @@ textarea {
 }
 
 .two-cols-wrapp .col-2 {
-    width: 51%;
+    width: 100%;
+    max-width: 670px;
     min-width: auto;
-    position: relative;
+    position: relative;    
     border-left: 3px solid #1d1d1d;
+}
+
+.sell-list-btn {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: #ffffff;
+    position: absolute;
+    top: 68px;
+    right: 380px;
+    z-index: 5;
+    font-size: 15px;
+    line-height: 17px;
+    padding: 8px 15px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .6);
+    -moz-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .6);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .6);
+}
+
+.sell-list-btn.active {
+    right: 680px;
+}
+
+.sell-list-btn .active-txt {
+    display: none;
+}
+
+.sell-list-btn.active span {
+    display: none;
+}
+
+.sell-list-btn.active span.active-txt {
+    display: block;
 }
 
 .two-cols-wrapp .col-2 .content {
     position: relative;
+    background: rgb(255, 255, 255);
 }
 
 .search-result-header {
@@ -6105,6 +6145,7 @@ textarea {
 
 .search-result-header .col-2 {
     border: none;
+    width: auto !important;
 }
 
 .search-result-header h2 {
@@ -6167,7 +6208,20 @@ textarea {
     display: inline-block;
     vertical-align: top;
     width: 50%;
+    /*width: 315px;*/
     padding: 13px 2%;
+}
+
+.two-cols-wrapp .col-2.hide .sell-thumbnails {
+    width: 100%;
+    margin: 12px 0;
+}
+
+.two-cols-wrapp .col-2.hide .sell-thumbnail {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 13px 0;
 }
 
 .sell-thumbnail .inner {

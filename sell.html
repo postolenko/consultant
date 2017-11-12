@@ -76,13 +76,24 @@
 							<a class="tel-link-resp" href="tel:+74957774445"><i class="fa fa-phone" aria-hidden="true"></i></a>
 						</div>
 
-						<div class="respmenubtn-box">
+						<div class="menu-right-block respmenubtn-box">
 
-							<button class="respmenubtn">					
+							<button class="respmenubtn">		
 								<span></span>
 								<span></span>
 								<span></span>
 							</button>
+
+							<div class="dropdown-menu-right scroll">
+								<ul class="right-nav">
+									<li><a href="#">Ипотечный центр</a></li>
+									<li><a href="#">Правовой центр</a></li>
+									<li><a href="#">Инвестиционный центр</a></li>
+									<li><a href="#">Коммерческая недвижимость</a></li>
+									<li><a href="#">Жилая недвижимость</a></li>
+								</ul>
+								<div class="append-elem sell-header-resp" data-append-elem = "1" ></div>
+							</div>
 
 						</div>
 
@@ -100,9 +111,9 @@
 
 		<!-- Sell Page -->
 
-		<div class="sell-header">
+		<div class="sell-header desktop-position append-elem"  data-append-descktop-elem = "1" data-min-screen = "768" data-header-index = "1">
 				
-			<div class="col col-1">
+			<div class="col col-1 search-col">
 				<div class="sell-search">
 					<form>
 						<input type="text" placeholder="Адрес" />
@@ -256,29 +267,33 @@
 							</div>
 						</div>
 
-						<div class="checkbox-block">
-							<div class="inner">
-								<input type="checkbox" name="menu_ch_3" id="ch_11" />
-								<label for="ch_11"><i class="blue-icon"></i>Аренда</label>
-								<div class="question-box">
-									<a class="question-icon" href="#"><i class="question"></i></a>
-									<div class="tooltip">
-										<button type="button" class="close-tooltip"></button>
-										<p>Подсказка подсказка подсказка подсказка подсказка</p>
+						<div class="checkboxes-wrapp">
+							<div class="checkbox-block">
+								<div class="inner">
+									<input type="checkbox" name="menu_ch_3" id="ch_11" />
+									<label for="ch_11"><i class="blue-icon"></i>Аренда</label>
+									<div class="question-box">
+										<a class="question-icon" href="#"><i class="question"></i></a>
+										<div class="tooltip">
+											<button type="button" class="close-tooltip"></button>
+											<p>Подсказка подсказка подсказка подсказка подсказка</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="checkbox-block">
-							<div class="inner">
-								<input type="checkbox" name="menu_ch_4" id="ch_12" />
-								<label for="ch_12"><i class="grey-icon"></i>Недавно проданные</label>
-								<div class="question-box">
-									<a class="question-icon" href="#"><i class="question"></i></a>
-									<div class="tooltip">
-										<button type="button" class="close-tooltip"></button>
-										<p>Подсказка подсказка подсказка подсказка подсказка</p>
+						<div class="checkboxes-wrapp">
+							<div class="checkbox-block">
+								<div class="inner">
+									<input type="checkbox" name="menu_ch_4" id="ch_12" />
+									<label for="ch_12"><i class="grey-icon"></i>Недавно проданные</label>
+									<div class="question-box">
+										<a class="question-icon" href="#"><i class="question"></i></a>
+										<div class="tooltip">
+											<button type="button" class="close-tooltip"></button>
+											<p>Подсказка подсказка подсказка подсказка подсказка</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -529,6 +544,11 @@
 
 		<div class="two-cols-wrapp clearfix">
 
+			<button type="button" class="sell-list-btn">
+				<span>&#10094;  Список</span>
+				<span class="active-txt">Карта &#10095;</span>
+			</button>
+
 			<!-- <div class="col-1 left"> -->
 				
 				<div class="map-3_block map_clean">
@@ -537,9 +557,9 @@
 
 			<!-- </div> -->
 
-			<div class="col-2 right full-height scroll">
+			<div class="col-2 right full-height scroll" id="search_box">
 
-				<div class="content">
+				<div class="content">					
 
 					<!-- Favorites Fixed Block-->
 
