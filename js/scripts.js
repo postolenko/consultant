@@ -10,6 +10,20 @@ $(window).load(function() {
 
     });
 
+    $(".full-height").each( function() {
+
+        flexHeight = $(window).height() - $(this).offset().top - parseInt($(".main-wrapper").css("padding-bottom") );
+
+        $(this).css({
+            "height" : flexHeight + "px"
+        });
+
+        $(this).find(".content").css({
+            "min-height" : flexHeight - $(this).find(".footer").outerHeight() + "px"
+        });
+
+    });
+
 });
 
 $(document).ready(function() {
