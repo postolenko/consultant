@@ -6897,11 +6897,13 @@ textarea {
 }
 
 .object-popup .two-cols-templ .col-1 {
+    width: 72%;
     border-left: none;
     padding-top: 5px;
 }
 
 .object-popup .two-cols-templ .col-2 {
+    width: 28%;
     border-left: none;
 }
 
