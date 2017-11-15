@@ -6,3 +6,4 @@
 # http://postolenko.github.io/consultant/agent.html
 # http://postolenko.github.io/consultant/comment.html
 # http://postolenko.github.io/consultant/sell.html
+# http://postolenko.github.io/consultant/object.html

@@ -96,4 +96,14 @@ $(document).ready(function() {
 
     }
 
+    $(".object-slider").not(".slick-initialized").slick({
+        dots: false,
+        arrows: true,  
+        // autoplay: true,
+        autoplaySpeed: 10000,
+        speed: 1200,
+        slidesToShow: 1,
+        // fade: true
+    });
+
 });
