@@ -106,4 +106,56 @@ $(document).ready(function() {
         // fade: true
     });
 
+    var chart = new Chartist.Line('.ct-chart', {
+
+        labels: ["100", "200", "300"],
+        series: [
+            [500, 1200, 2500],
+            [500, 1700, 2300],
+            [500, 1700, 2500]
+        ]
+        }, {
+        fullWidth: true,
+        // chartPadding: {
+        //     right: 0
+        // },
+        axisX:{
+            labelInterpolationFnc: function(value) {
+              return value + " мес";
+            }
+        },
+        axisY: {
+            position: 'end',
+            offset: 80,
+            labelInterpolationFnc: function(value) {
+              return value + " ";
+            },
+            scaleMinSpace: 15
+        }
+
+    });
+
+    chart.on("draw", function(data) {
+
+        var parentBlock;
+        var count = 0;
+
+        $(".ct-chart").each(function() {
+
+            $(this).find(".ct-vertical").each(function() {
+
+                parentBlock = $(this).closest("foreignObject");
+
+                if(parentBlock.find(".fa-rub").length == 0) {
+
+                    parentBlock.append("<i class='fa fa-rub'></i>");
+
+                }
+
+            });
+
+        });
+
+    });
+
 });

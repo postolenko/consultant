@@ -6423,7 +6423,8 @@ textarea {
     display: block;
     width: 100%;
     height: 100vh;
-    position: fixed;
+    /*position: fixed;*/
+    position: relative;
     top: 0;
     left: 0;
     z-index: 15;
@@ -7061,7 +7062,7 @@ a.tel-link_2:hover {
 }
 
 .object-block {
-    padding: 25px 0;
+    padding: 17px 0 15px 0;
 }
 
 .object-block h2 {
@@ -7114,6 +7115,408 @@ a.tel-link_2:hover {
     line-height: 17px;
     font-weight: normal;
     color: #000000;
+}
+
+.list-thumbnails {
+    width: 67%;
+    margin: 11px 0;
+}
+
+.thumb-list {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 8px 2% 8px 0;
+}
+
+.thumb-list h3 {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+    color: #1d1d1d;
+}
+
+.thumb-list p {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: normal;
+    color: #1d1d1d;
+}
+
+.thumb-list ul {
+
+}
+
+.thumb-list ul li {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: normal;
+    color: #1d1d1d;
+}
+
+.object-popup .sliding-block-wrapp {
+    margin: 28px 0;
+}
+
+.object-popup h2.sliding-title {
+    padding: 0 0 0 9px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.object-popup .sliding-title .red-tr {
+    top: 3px;
+    left: -10px;
+}
+
+.chart-thumbnails {
+    padding: 35px 0 10px 0;
+}
+
+.chart-thumb {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+}
+
+.chart-thumb h3 {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.chart-thumb p {
+    padding: 4px 0;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.chart-thumb p.price {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.chart-thumb p.price .fa-rub {
+    font-size: 20px;
+}
+
+.chart-thumb p .red {
+    color: #ed343e;
+}
+
+.chart-thumb p .green {
+    color: #59bc4c;
+}
+
+.chart-chose-block {
+
+}
+
+.chart-chose-block ul {
+    margin: 7px 0;
+}
+
+.chart-chose-block ul li {
+    float: left;
+    padding: 5px 18px 5px 0;
+}
+
+.chart-chose-block ul li a {
+    color: #1d1d1d;
+}
+
+.chart-chose-block ul li a:link,
+.chart-chose-block ul li a:visited {
+    color: #1d1d1d;
+}
+
+.chart-chose-block ul li a:active,
+.chart-chose-block ul li a.active {
+    color: #ed343e;
+}
+
+.chart-chose-block ul li a:hover {
+    color: #ed343e;
+}
+
+.ct-chart .ct-chart-line {
+    min-height: 325px;
+}
+
+.chart_1.ct-chart  {
+    margin: 0 0 14px -9px;
+}
+
+.chart_1.ct-chart .ct-grid {
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 1px;
+    stroke-dasharray: 0;
+}
+
+.chart_1.ct-chart .ct-grid.ct-horizontal {
+    stroke: rgba(0, 0, 0, 0);
+}
+
+.chart_1.ct-chart .ct-label {
+    fill: rgba(0, 0, 0, 1);
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    color: #1c1c1c;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.chart_1.ct-chart .ct-point {
+    stroke-width: 4px;
+}
+
+.chart_1.ct-chart .ct-series-a .ct-point,
+.chart_1.ct-chart .ct-series-a .ct-line,
+.chart_1.ct-chart .ct-series-a .ct-bar,
+.chart_1.ct-chart .ct-series-a .ct-slice-donut {
+    stroke: #fad3c8;
+}
+
+.chart_1.ct-chart .ct-series-b .ct-point,
+.chart_1.ct-chart .ct-series-b .ct-line,
+.chart_1.ct-chart .ct-series-b .ct-bar,
+.chart_1.ct-chart .ct-series-b .ct-slice-donut {
+    stroke: #f4897a;
+}
+
+.chart_1.ct-chart .ct-series-c .ct-point,
+.chart_1.ct-chart .ct-series-c .ct-line,
+.chart_1.ct-chart .ct-series-c .ct-bar,
+.chart_1.ct-chart .ct-series-c .ct-slice-donut {
+    stroke: #d70206;
+}
+
+.chart_1.ct-chart foreignObject span {
+    position: relative;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    color: #1c1c1c;
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+}
+
+.chart_1.ct-chart foreignObject .ct-horizontal {
+    margin: 10px 0 0 0;
+}
+
+.chart_1.ct-chart foreignObject .ct-vertical + .fa {
+    display: inline-block;
+    vertical-align: baseline;
+    position: relative;
+    top: -16px;
+    left: 100%;
+    margin: 0 0 0 -15px;
+}
+
+.chart-legends {
+    padding: 0 0 27px 0;
+}
+
+.chart-legends li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px 5% 6px 11px;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: normal;
+    font-style: normal;
+    color: #000000;
+}
+
+.chart-legends li i {
+    position: relative;
+    top: 2px;
+    left: -11px
+}
+
+.red-big-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
+    background: #eb3340;
+}
+
+.pink-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
+    background: #f4897a;
+}
+
+.pink-light-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
+    background: #fad3c8;
+}
+
+.object-table-block {
+    padding: 33px 0 6px 0;
+}
+
+.object-table-block:last-child {
+    margin-bottom: 20px;
+}
+
+.object-table-header {
+    padding: 0 0 4px 2%;
+}
+
+.object-table-header h3 {
+    text-transform: uppercase;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.object-table-header p {
+    padding-top: 9px;
+}
+
+.object-table-header p a {
+    text-decoration: none;
+}
+
+.object-table-header p a:link,
+.object-table-header p a:visited {
+    text-decoration: none;
+}
+
+.object-table-header p a:active,
+.object-table-header p a.active {
+    text-decoration: none;
+}
+
+.object-table-header p a:hover {
+    text-decoration: none;
+}
+
+.object-table {
+
+}
+
+.object-table .table-row {
+    display: table;
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #1c1c1c;
+}
+
+.object-table .table-cell {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.object-table .table-header {
+    /*padding-top: 0;*/
+}
+
+.object-table .table-header .table-cell {
+    padding-right: 1%;
+}
+
+.object-table .cell-1 {
+    width: 22%;
+    padding: 0 0 0 2%;
+}
+
+.object-table .cell-2 {
+    width: 25%;
+}
+
+.object-table .cell-3 {
+    width: 21%;
+}
+
+.object-table .cell-4 {
+    width: 19%;
+}
+
+.object-table .cell-5 {
+    width: 13%;
+    padding-right: 19px;
+    position: relative;
+}
+
+.object-table h3 {
+    text-transform: uppercase;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #1c1c1c;
+}
+
+.object-table p {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #1c1c1c;
+}
+
+.object-table p.green {
+    color: #59bc4c;
+}
+
+.object-table p.red {
+    color: #eb3340;
+}
+
+.object-table p .fa {
+    font-size: 13px;
+    margin: 0 0 0 4px;
+}
+
+.object-table .flag-icon {
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.object-table_2 .cell-1 {
+    width: 14%;
+    padding: 0 0 0 2%;
+}
+
+.object-table_2 .cell-2 {
+    width: 15%;
+}
+
+.object-table_2 .cell-3 {
+    width: 20%;
+}
+
+.object-table_2 .cell-4 {
+    width: 37%;
+}
+
+.object-table_2 .cell-5 {
+    width: 14%;
 }
 
 /*-- /Object Popuo --*/
