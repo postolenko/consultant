@@ -116,9 +116,9 @@ $(document).ready(function() {
         ]
         }, {
         fullWidth: true,
-        // chartPadding: {
-        //     right: 0
-        // },
+        chartPadding: {
+            left: 0
+        },
         axisX:{
             labelInterpolationFnc: function(value) {
               return value + " мес";
@@ -126,35 +126,9 @@ $(document).ready(function() {
         },
         axisY: {
             position: 'end',
-            offset: 80,
-            labelInterpolationFnc: function(value) {
-              return value + " ";
-            },
-            scaleMinSpace: 15
+            offset: 90,
+            scaleMinSpace: 28
         }
-
-    });
-
-    chart.on("draw", function(data) {
-
-        var parentBlock;
-        var count = 0;
-
-        $(".ct-chart").each(function() {
-
-            $(this).find(".ct-vertical").each(function() {
-
-                parentBlock = $(this).closest("foreignObject");
-
-                if(parentBlock.find(".fa-rub").length == 0) {
-
-                    parentBlock.append("<i class='fa fa-rub'></i>");
-
-                }
-
-            });
-
-        });
 
     });
 

@@ -7259,7 +7259,7 @@ a.tel-link_2:hover {
 }
 
 .chart_1.ct-chart  {
-    margin: 0 0 14px -9px;
+    margin: 0 0 14px 0;
 }
 
 .chart_1.ct-chart .ct-grid {
@@ -7318,13 +7318,13 @@ a.tel-link_2:hover {
     margin: 10px 0 0 0;
 }
 
-.chart_1.ct-chart foreignObject .ct-vertical + .fa {
-    display: inline-block;
-    vertical-align: baseline;
+.chart_1.ct-chart foreignObject .ct-vertical:after {
+    font-family: 'FontAwesome';
+    content: "\f158";
     position: relative;
-    top: -16px;
-    left: 100%;
-    margin: 0 0 0 -15px;
+    top: 1px;
+    font-size: 13px;
+    margin-left: 5px;
 }
 
 .chart-legends {
@@ -7436,7 +7436,7 @@ a.tel-link_2:hover {
 }
 
 .object-table .table-header {
-    /*padding-top: 0;*/
+
 }
 
 .object-table .table-header .table-cell {
