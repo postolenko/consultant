@@ -592,6 +592,70 @@ a:active {
 
 /*--  /Breadcrumbs --*/
 
+/*-- Slick --*/
+
+.slick-arrow {
+    display: block;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin: -19px 0 0 0;
+    border: 3px solid #000000;
+    background: #ed343e;
+}
+
+.slick-prev {
+    left: -4%;
+}
+
+.slick-next {
+    right: -4%;
+}
+
+.slick-prev:before {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 15px 9px 0;
+    border-color: transparent #000000 transparent transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.slick-next:before {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 0 9px 15px;
+    border-color: transparent transparent transparent #000000;
+    position: absolute;
+    top: 50%;
+    left: 56%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.slick-arrow img {
+    display: none;
+}
+
+/*-- /Slick --*/
+
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
@@ -6423,8 +6487,8 @@ textarea {
     display: block;
     width: 100%;
     height: 100vh;
-    /*position: fixed;*/
-    position: relative;
+    position: fixed;
+    /*position: relative;*/
     top: 0;
     left: 0;
     z-index: 15;
@@ -6831,66 +6895,6 @@ textarea {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
-
-.slick-arrow {
-    display: block;
-    width: 36px;
-    height: 36px;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin: -19px 0 0 0;
-    border: 3px solid #000000;
-    background: #ed343e;
-}
-
-.slick-prev {
-    left: -4%;
-}
-
-.slick-next {
-    right: -4%;
-}
-
-.slick-prev:before {
-    display: block;
-    content: "";
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 9px 15px 9px 0;
-    border-color: transparent #000000 transparent transparent;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.slick-next:before {
-    display: block;
-    content: "";
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 9px 0 9px 15px;
-    border-color: transparent transparent transparent #000000;
-    position: absolute;
-    top: 50%;
-    left: 56%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.slick-arrow img {
-    display: none;
 }
 
 .object-popup .two-cols-templ {
