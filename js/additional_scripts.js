@@ -4,11 +4,36 @@
 
 		$(".scroll").mCustomScrollbar();
 
+        var rangeVal = $(".range-slider").find(".noUi-value-large");
+
+        var rangeValTxt;
+
+        rangeVal.each(function() {
+
+            rangeValTxt = $(this).text();
+
+            if( +rangeValTxt < 1000 ) {
+
+                $(this).html( +rangeValTxt + " K" );
+
+            } else {
+
+                $(this).html( +rangeValTxt / 1000  + " M" );
+
+            }
+
+        });
+
+
 	});
 
 })(jQuery);
 
 $(document).ready(function() {
+
+    var tooltipVal;
+
+    // -----------------------
 
     $(".main-slider").not(".slick-initialized").slick({
         dots: false,
@@ -129,6 +154,39 @@ $(document).ready(function() {
             offset: 90,
             scaleMinSpace: 28
         }
+
+    });
+
+    var rangSlider = document.getElementById('range-slider');
+
+    noUiSlider.create(rangSlider, {
+        start: 500,
+        step: 1,
+        range: {
+            min: 420,
+            max: 1600
+        },
+        tooltips: true,
+        pips: {
+            mode: 'values',
+            values: [420, 1600],
+            density: 0
+        }
+    });
+
+    rangSlider.noUiSlider.on('update', function( values, handle ) {
+
+        if(+values[0] < 1000) {
+
+            tooltipVal = +values[0]  + " K";
+
+        } else {
+
+            tooltipVal = +values[0] / 1000  + " M";
+
+        }
+
+        $(".range-slider").find(".noUi-tooltip").html( tooltipVal);
 
     });
 

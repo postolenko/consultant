@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/nouislider.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/chartist.css">
@@ -22,10 +23,11 @@
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
 	<script type="text/javascript" src="vendors/js/select2.js"></script>
+	<script type="text/javascript" src="vendors/js/nouislider.js"></script>
 	<script type="text/javascript" src="vendors/js/chartist.js"></script>
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<!-- 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 	
 	<title>Домашний консультант</title>	
 
@@ -38,9 +40,9 @@
 
 	<!-- Object Popuo -->
 
-	<!-- <div class="object-popup_wrapp scroll"> -->
+	<div class="object-popup_wrapp scroll">
 
-		<div class="object-popup_wrapp">
+		<!-- <div class="object-popup_wrapp"> -->
 
 		<div class="object-popup-bg"></div>
 
@@ -501,6 +503,40 @@
 								</div>
 							</div>
 						</div>
+
+						<div class="sliding-block-wrapp">
+							<h2 class="sliding-title active"><i class="red-tr"></i>Оцени этот объект</h2>
+							<div class="sliding-block">
+								<p>Аналогичные объекты проданы за 96 000 000 <i class="fa fa-rub" aria-hidden="true"></i></p>
+								<div class="range-slider-block">
+									<div class="range-slider" id="range-slider"></div>
+								</div>
+								<div class="map-4_block">
+									<div class="map_clean" id="map_4"></div>
+									<div class="map-4-popup">
+										<h3>Оцени этот объект</h3>
+										<p>Самостоятельно выбрать аналогичный объект для определения выгодной стоимости.</p>
+										<a href="#" class="red-pill">выберите объект</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="sliding-block-wrapp">
+							<h2 class="sliding-title active"><i class="red-tr"></i>Просмотры конкурентов</h2>
+							<div class="sliding-block">
+								<div class="object-thumbnails offset-ziro">
+									<div class="thumbnail">
+										<p class="p-num">2000</p>
+										<p>просмотров<br /> с даты размещения</p>
+									</div>
+									<div class="thumbnail">
+										<p class="p-num">14</p>
+										<p>покупателей<br /> сохранило</p>
+									</div>
+								</div>
+							</div>
+						</div>
 						
 					</div>
 					<div class="col col-2 right">
@@ -654,7 +690,8 @@
 
 		<script src="js/additional_scripts.js"></script>
 		<script src="js/scripts.js"></script>
-		
+		<script src="js/maps.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoGWEyUlxHOSfMgm2TliQLggP3mej7d_I&callback=initMap"></script>
 	
 	</div>
 
