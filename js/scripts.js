@@ -104,7 +104,7 @@ $(document).ready(function() {
 
         getDocumentOffsetTop();
 
-        getFullHeight();
+        // getFullHeight();
 
         getMapParams();
 
@@ -121,6 +121,12 @@ $(document).ready(function() {
         getSelectWidth();
 
         // getRespHeaderPosition();
+
+        setTimeout(function() {
+
+            getFullHeight();
+
+        }, 300);
 
         // -------------------------
 
