@@ -709,6 +709,8 @@ $(document).ready(function() {
 
         var questionTooltip;
 
+        $(".question-box").find(".tooltip").fadeOut(50);
+
         $(".checkboxes-wrapp input[type='checkbox']").click(function() {
 
             var checkboxBlock = $(this).closest(".checkbox-block");            

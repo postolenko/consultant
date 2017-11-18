@@ -442,6 +442,10 @@ a:active {
     text-transform: uppercase;
 }
 
+.bold-txt {
+    font-weight: 600 !important;
+}
+
 .left {
     float: left;
 }
@@ -5713,16 +5717,16 @@ textarea {
     padding: 0 0 0 7%;
 }
 
-.checkbox-block label i {
-    position: relative;
-    top: 5px;
-    left: -4px;
-}
-
 .checkbox-block .inner {
     display: inline-block;
     vertical-align: top;
     position: relative;
+}
+
+.checkbox-block .inner label i {
+    position: relative;
+    top: 5px;
+    left: -4px;
 }
 
 .checkboxes-wrapp .checkbox-block label:before {
@@ -5750,6 +5754,10 @@ textarea {
     background-image: url(../img/checked_red.png);
 }
 
+.question-box {
+    position: relative;
+}
+
 .checkbox-block .question-box {
     display: inline-block;
     vertical-align: top;
@@ -5763,6 +5771,7 @@ textarea {
 .question-icon {
     display: inline-block;
     vertical-align: middle;
+    border-bottom: none !important;
 }
 
 .question {
@@ -5775,7 +5784,7 @@ textarea {
     background-repeat: no-repeat;
 }
 
-.checkbox-block .tooltip {
+.question-box .tooltip {
     display: none;
     /*display: block;*/
     width: 270px;
@@ -5791,12 +5800,12 @@ textarea {
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
 }
 
-.checkbox-block .tooltip p {
+.question-box .tooltip p {
     font-size: 14px;
     list-style: 16px;
 }
 
-.checkbox-block .tooltip:before {
+.question-box .tooltip:before {
     display: block;
     content: "";
     width: 0;
@@ -5811,7 +5820,7 @@ textarea {
     border-color: transparent #ffffff transparent transparent;
 }
 
-.checkbox-block .tooltip:after {
+.question-box .tooltip:after {
     display: block;
     content: "";
     width: 0;
@@ -6487,8 +6496,8 @@ textarea {
     display: block;
     width: 100%;
     height: 100vh;
-    position: fixed;
-    /*position: relative;*/
+    /*position: fixed;*/
+    position: relative;
     top: 0;
     left: 0;
     z-index: 15;
@@ -6818,6 +6827,7 @@ textarea {
 }
 
 .gal-thumb .inner {
+    display: block;
     height: 134px;
     overflow: hidden;
     background: #bababa;
@@ -7708,6 +7718,348 @@ a.tel-link_2:hover {
     font-weight: normal;
     color: #ed343e;
 }
+
+.object-calc {
+
+}
+
+.object-calc .sort-block {
+    width: 100%;
+    margin: 7px 0 8px 0;
+}
+
+.object-calc .sort-block:nth-child(1) {
+    margin-top: 3px;
+}
+
+.object-calc .sort-block h3 {
+    text-transform: uppercase;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #1c1c1c;
+}
+
+.object-calc .sort-block  a {
+    display: inline-block;
+    vertical-align: top;
+    margin: 2px 0 0 0;
+}
+
+.object-calc .sort-item {
+    margin: 0;
+}
+
+.sort-item-2 {
+    display: table;
+    width: 100%;
+}
+
+.sort-item-2 .sort-item-col-1 {
+    display: table-cell;
+    vertical-align: top;
+    width: 74%;
+}
+
+.sort-item-2 .sort-item-col-2 {
+    display: table-cell;
+    vertical-align: top;
+    width: 26%;
+    border-left: 3px solid #1c1c1c;
+}
+
+.sort-item-2 .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 4px;
+}
+
+.object-calc .sort-item input {
+    width: 100%;
+    height: 39px;
+    padding: 0 20px;
+    border: 1px solid transparent;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 39px;
+    font-weight: normal;
+    color: #1c1c1c;
+}
+
+.sort-block.checkbox-block {
+    margin: 18px 0 21px 0;
+}
+
+.sort-block.checkbox-block .question-icon {
+    margin: 2px 0 0 6px;
+}
+
+.sort-block.checkbox-block label:before {
+    display: block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid #221f1f;
+}
+
+.inner .sliding-title {    
+    margin: 0 0 11px 0;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #ec3340;
+    text-transform: none;
+    text-decoration: underline;
+}
+
+.inner .sliding-title i {
+    margin: 0;
+}
+
+.object-popup .inner .sliding-title .red-tr {
+    top: 1px;
+}
+
+.sort-block-header {
+
+}
+
+.sort-block-header h3 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sort-block-header .question-box {
+    display: inline-block;
+    vertical-align: top;
+    margin: 4px 0 0 2px;
+}
+
+
+.object-thumbnails_2 {
+
+}
+
+.object-thumbnails_2 .thumbnail {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    margin: 13px 0 0 0;
+    padding: 0 2% 0 0;
+}
+
+.object-thumbnails_2 h3 {
+    text-transform: uppercase;
+    padding: 5px 0;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.object-thumbnails_2 p {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.object-thumbnails_2 p.p-1 {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.object-thumbnails_2 .red-pill {
+    margin: 15px 0;
+}
+
+.ct-chart-2-wrapp {
+    position: relative;
+    max-width: 200px;
+}
+
+.ct-chart-2 .ct-grid.ct-horizontal {
+    stroke: rgba(0, 0, 0, 0);
+    stroke-width: 0;
+    stroke-dasharray: 0;
+}
+
+.ct-chart-2 .ct-grid.ct-vertical {
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 1px;
+    stroke-dasharray: 1px;
+}
+
+.ct-chart-2 .ct-label.ct-vertical {
+    display: none;
+}
+
+.ct-chart-2 .ct-label.ct-horizontal {
+    margin: 1px 0 0 0;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.ct-chart-2 .ct-bar {
+    stroke-width: 41px;
+}
+
+.ct-chart-2 .ct-series-a .ct-bar {
+    stroke: #87d300;
+}
+
+.ct-chart-2 .ct-series-b .ct-bar {
+    stroke: #d82d37;
+}
+
+.ct-chart-2 .ct-series-c .ct-bar {
+    stroke: #444444;
+}
+
+.ct-bar-val {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    min-width: 41px;
+    text-align: center;
+    min-height: 11px;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.object-article {
+    max-width: 605px;
+    margin: 24px 0 33px 0;
+}
+
+.object-article h2 {
+    text-transform: uppercase;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.object-article h3 {
+    padding: 9px 0;
+}
+
+.object-article p {
+    padding: 9px 0;
+}
+
+.map-place {
+    height: 356px;
+    margin: 13px 0;
+    overflow: hidden;
+    position: relative;
+    background: #ededed;
+}
+
+.map-place img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.object-article .sell-thumbnails_wrapp {
+    max-width: 603px;
+}
+
+.object-article .sell-thumbnails_wrapp .sell-thumbnails {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.object-popup .sidebar-table {
+    max-width: 440px;
+    margin-bottom: 26px;
+}
+
+.object-popup .sidebar-table .table-row {
+    margin: 25px 0;
+}
+
+.object-popup .sidebar-table .table-row .cell-1 {
+    width: 23%;
+}
+
+.object-popup .sidebar-table .table-row .cell-2 {
+    width: 77%;
+}
+
+.object-article .more-pill {
+    margin: 12px 0;
+}
+
+.object-footer {
+    padding: 8px 0;
+}
+
+.object-footer h2 {
+    padding: 12px 0;
+    text-transform: uppercase;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.object-footer p {
+    padding: 4px 0;
+}
+
+.object-footer a.tel-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+}
+
+.object-footer .red-link {
+
+}
+
+.two-cols-templ .col-2 .checkbox-block {
+    margin: 22px 0;
+}
+
+.checkbox-block.agent-checkbox label:before {
+    top: 8px;
+}
+
+.checkbox-block .agent-thumb {
+    margin: 0;
+}
+
+.checkbox-block .agent-thumb p {
+    font-weight: 400;
+}
+
 
 
 /*-- /Object Popuo --*/
