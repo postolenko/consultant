@@ -126,7 +126,7 @@ $(document).ready(function() {
 
             getFullHeight();
 
-        }, 350);
+        }, 300);
 
         // -------------------------
 
