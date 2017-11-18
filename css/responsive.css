@@ -276,25 +276,49 @@
 		max-width: 200px;
 	}
 
-/*	.two-cols-wrapp .map-3_block {
-    	width: 60%;
-    }
+	/*-- /Sell Page --*/
 
-	.two-cols-wrapp .col-2 {
-    	width: 40%;
-    }*/
+	/*-- Object Popuo --*/
 
-/*    .sell-thumbnails_wrapp .sell-thumbnails {
-	    width: 100%;
-	    margin: 12px 0;
+	.object-popup {
+		width: 98%;
 	}
 
-    .sell-thumbnails .sell-thumbnail {
-	    width: 100%;
-	    padding: 13px 0;
-	}*/
+	.object-nav li a {
+	    padding: 13px 21px;
+	    font-size: 15px;
+	    line-height: 19px;
+	}
 
-	/*-- /Sell Page --*/
+	.object-nav li.dropdown-menu-block a.dropdown-menu-btn span {
+	    font-size: 15px;
+	    line-height: 19px;
+	}
+
+	.slick-prev {
+	    left: -1%;
+	}
+
+	.slick-next {
+	    right: -1%;
+	}
+
+	.gal-thumb {
+	    height: 143px;
+	    padding: 6px;
+	}
+
+	.gal-thumb.big-gal-thumb {
+	    height: 289px;
+	    padding: 6px;
+	}
+
+	.gal-thumb.big-gal-thumb .inner {
+	    width: 100%;
+	    height: 277px;
+	}
+
+	/*-- /Object Popuo --*/
 
 }
 
@@ -736,6 +760,21 @@
 */
 	/*-- /Sell Page --*/
 
+	/*-- Object Popuo --*/
+
+	.object-nav li a {
+	    padding: 13px 16px;
+	    font-size: 13px;
+	    line-height: 19px;
+	}
+
+	.object-nav li.dropdown-menu-block a.dropdown-menu-btn span {
+	    font-size: 13px;
+	    line-height: 19px;
+	}
+
+	/*-- /Object Popuo --*/
+
 	/*-- Footer --*/
 
 	.footer .col-1 {
@@ -1167,8 +1206,8 @@
 		padding-right: 20px;
 	}
 
-	.checkbox-block .question-box {
-	    top: 0;
+	.checkboxes-wrapp .checkbox-block .question-box {
+	    top: -2px;
 	    right: -19px;
 	}
 
@@ -1176,7 +1215,7 @@
 	    padding: 0 0 0 4%;
 	}
 
-	.checkbox-block .inner {
+	.checkboxes-wrapp .checkbox-block .inner {
 	    width: 100%;
 	}
 
@@ -1231,6 +1270,94 @@
 	}
 
 	/*-- /Sell Page --*/
+
+	/*-- Object Popup --*/
+
+	.object-popup {
+	    margin: 0 auto;
+	    padding-top: 45px;
+	}
+
+	.object-header {
+		height: 48px;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+
+	.object-header .respmenubtn-box {
+		display: block;
+		z-index: 7;
+	}
+
+	.object-nav {
+		/*display: block;*/
+		display: none;
+		width: 100%;
+		height: 100vh;
+		padding: 63px 0 20px 0;
+		background: rgba(255, 255, 255, .9);
+		position: fixed;
+		top: 0 !important;
+		left : 0;
+		z-index: 6;
+	}
+
+	.object-nav {
+
+	}
+
+	.object-nav li {
+		display: block;
+	}
+
+	.object-nav li a {
+		width: 100%;
+		font-size: 15px;
+		line-height: 21px;
+	}
+
+	.object-nav li.dropdown-menu-block a.dropdown-menu-btn span {
+		font-size: 15px;
+		line-height: 21px;
+	}
+
+	.object-popup .two-cols-templ .col-1 {
+	    width: 100% !important;
+	}
+
+	.object-popup .two-cols-templ .col-2 {
+		width: 100% !important;
+	    border-top: none;
+	}
+
+	.object-popup .object-two-cols .col-1 {
+	    width: 100% !important;
+	}
+
+	.object-popup .object-two-cols .col-2 {
+	    width: 100% !important;
+	}
+
+	.list-thumbnails {
+	    width: 100%;
+	}
+
+	.chart-thumb {
+	    width: 50%;
+	}
+
+	.checkbox-block .question-box {
+		margin: 0;
+	}
+
+	.range-slider-block {
+	    margin: 45px auto;
+	    width: 90%;
+	}
+
+	/*-- /Object Popup --*/
 
 	/*-- Footer --*/
 
@@ -1571,6 +1698,28 @@
 	}
 
 	/*-- /Sell Page --*/
+
+	/*-- Object Popup --*/
+
+	.gallery .col-1,
+	.gallery .col-2 {
+	    width: 100%;
+	}
+
+	.object-thumbnails_2 .thumbnail {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.ct-chart-2-wrapp {
+	    max-width: 100%;
+	}
+
+	.sell-thumbnails .sell-thumbnail {
+	    width: 100%;
+	}
+
+	/*-- /Object Popup --*/
 
 }
 
@@ -1923,6 +2072,42 @@
 
 	/*-- /Sell Page --*/
 
+	/*-- Object Popup --*/
+
+	.object-popup .respmenubtn-box {
+	    top: 0;
+	}
+
+	.gal-thumb.big-gal-thumb .inner {
+	    height: 224px;
+	}
+
+	.gal-thumb.big-gal-thumb {
+	    height: 233px;
+	}
+
+	.gal-thumb {
+	    height: 113px;
+	}
+
+	.gal-thumb .inner {
+	    height: 104px;
+	}
+
+	.facts-thumbnalis .thumb {
+	    width: 50%;
+	}
+
+	.object-two-cols {
+	    margin: 0;
+	}
+
+	.chart-thumb {
+	    width: 100%;
+	}
+
+	/*-- /Object Popup --*/
+
 }
 
 @media only screen and (max-width: 350px) {
@@ -1968,6 +2153,14 @@
 	}
 
 	/*-- /Commet Popup --*/
+
+	/*-- Object Popup --*/
+
+	.gal-thumb {
+	    width: 50%;
+	}
+
+	/*-- /Object Popup --*/
 
 }
 

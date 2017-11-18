@@ -421,6 +421,26 @@ $(document).ready(function() {
 
         });
 
+        // $("[data-respnav]").find("a").click(function(e) {
+
+        //     if( $(this).hasClass(".dropdown-menu-btn") ) {
+
+        //         e.preventDefault();
+
+        //         return false;
+
+        //     } else {
+
+        //         $(this).closest("[data-respnav]").fadeOut(300);
+
+        //         navName = $(this).closest("[data-respnav]").attr("data-respnav");
+
+        //         $("[data-navbtn = '"+ navName +"']").removeClass("active");
+
+        //     }
+
+        // });
+
         $(this).keydown(function(eventObject){
 
             if (eventObject.which == 27) {

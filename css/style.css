@@ -605,6 +605,7 @@ a:active {
     cursor: pointer;
     position: absolute;
     top: 50%;
+    z-index: 2;
     margin: -19px 0 0 0;
     border: 3px solid #000000;
     background: #ed343e;
@@ -6489,7 +6490,7 @@ textarea {
 
 /*-- /Sell Page --*/
 
-/*-- Object Popuo --*/
+/*-- Object Popup --*/
 
 .object-popup_wrapp {
     display: block;
@@ -6523,7 +6524,32 @@ textarea {
 
 .object-header {
     padding-right: 60px;
+    position: relative;
+    background: #ffffff;
+    z-index: 10;
     border-bottom: 3px solid #1d1d1d;
+}
+
+.object-header .respmenubtn-box {
+    display: none;
+    right: initial;
+    border-left: none;
+    left: 0;
+    height: 100%;
+}
+
+.object-header .respmenubtn {
+    height: 100%;
+    border-left: none;
+    border-right: 3px solid #1d1d1d;
+    border-bottom: 3px solid #1d1d1d;
+}
+
+.object-header .respmenubtn.active {
+    background: transparent;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
 }
 
 .object-nav {
@@ -6726,7 +6752,8 @@ textarea {
 
 .object-header .close-popup {
     width: 52px;
-    height: 48px;
+    /*height: 48px;*/
+    height: 100%;
     border-bottom: none;
     background: transparent;
 }
@@ -7186,13 +7213,14 @@ a.tel-link_2:hover {
 }
 
 .chart-thumbnails {
-    padding: 35px 0 10px 0;
+    padding: 25px 0 0 0;
 }
 
 .chart-thumb {
     display: inline-block;
     vertical-align: top;
     width: 33.33%;
+    padding: 10px 2% 10px 0;
 }
 
 .chart-thumb h3 {
@@ -7651,7 +7679,7 @@ a.tel-link_2:hover {
 }   
 
 .map-4-popup {
-    max-width: 289px;
+    width: 289px;
     padding: 14px 2% 12px 2%;
     background: rgba(255, 255, 255, .95);
     text-align: center;
@@ -8060,9 +8088,7 @@ a.tel-link_2:hover {
     font-weight: 400;
 }
 
-
-
-/*-- /Object Popuo --*/
+/*-- /Object Popup --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

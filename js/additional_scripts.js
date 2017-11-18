@@ -247,11 +247,5 @@ $(document).ready(function() {
 
     }
 
-    $(".fancybox-media").fancybox({
-        helpers: {
-            media: {}
-        }
-    });
-
 
 });
