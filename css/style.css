@@ -670,6 +670,7 @@ a:active {
     width: 100%;
     /*height: 48px;*/
     position: relative;
+    z-index: 7;
     background: rgb(255, 255, 255);
     border-top: 3px solid #1d1d1d;
     border-bottom: 3px solid #1d1d1d;
@@ -7470,14 +7471,15 @@ a.tel-link_2:hover {
 .object-table .table-cell {
     display: table-cell;
     vertical-align: top;
+    padding: 0 1%;
 }
 
-.object-table .table-header {
-
+.object-table .table-cell:nth-child(1) {
+    padding: 0 1% 0 0;
 }
 
-.object-table .table-header .table-cell {
-    padding-right: 1%;
+.object-table .table-cell:last-child {
+    padding: 0 0 0 1%;
 }
 
 .object-table .cell-1 {
@@ -7788,6 +7790,7 @@ a.tel-link_2:hover {
     display: table-cell;
     vertical-align: top;
     width: 74%;
+    min-width: 170px;
 }
 
 .sort-item-2 .sort-item-col-2 {

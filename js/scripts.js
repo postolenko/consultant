@@ -70,7 +70,7 @@ $(document).ready(function() {
 
     getDocumentOffsetTop();
 
-    getFullHeight();
+    // getFullHeight();
 
     getMapParams();
 
@@ -359,13 +359,12 @@ $(document).ready(function() {
 
             hide_element = $('.dropdown-menu-right');
 
-            if (!hide_element.is(e.target)
-
+            if (!hide_element.is(e.target) 
                 && hide_element.has(e.target).length === 0) {
 
                     hide_element.fadeOut(300);
 
-                    $(".respmenubtn").removeClass("active");         
+                    hide_element.closest(".menu-right-block").find(".respmenubtn").removeClass("active");
             }
 
         });
@@ -376,7 +375,7 @@ $(document).ready(function() {
 
                 $('.dropdown-menu-right').fadeOut(300);
 
-                $(".respmenubtn").removeClass("active");
+                $('.dropdown-menu-right').closest(".menu-right-block").find(".respmenubtn").removeClass("active");
 
             }
 
@@ -400,9 +399,17 @@ $(document).ready(function() {
 
                 mainNav.fadeIn(300);
 
-                topOffset = $(".header-site").height();
+                if( mainNav.hasClass("main-nav-box") ) {
 
-                console.log(topOffset);
+                    topOffset = $(".header-site").outerHeight();
+
+                } else {
+
+                    topOffset = 0;
+
+                }
+
+                // topOffset = $(".header-site").height();
 
                 mainNav.css({
                     "top" : topOffset + "px",
@@ -818,18 +825,18 @@ $(document).ready(function() {
 
         });
 
-        $(document).mouseup(function (e){
+        // $(document).mouseup(function (e){
 
-            hide_element = $('.tooltip');
+        //     hide_element = $('.tooltip');
 
-            if (!hide_element.is(e.target)
+        //     if (!hide_element.is(e.target)
 
-                && hide_element.has(e.target).length === 0) {
+        //         && hide_element.has(e.target).length === 0) {
 
-                    hide_element.fadeOut(300);      
-            }
+        //             hide_element.fadeOut(300);      
+        //     }
 
-        });
+        // });
 
     });
 
