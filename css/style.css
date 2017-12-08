@@ -2136,6 +2136,7 @@ a.tel-link-resp:hover {
 .search-block-blog .search {
     display: table-cell;
     vertical-align: top;
+    position: relative;
 }
 
 .search .input-block {
@@ -2188,6 +2189,22 @@ a.tel-link-resp:hover {
     width: 350px;
 }
 
+.search .show  {
+    display: block;
+}
+
+.search .submit-btn {
+    display: none;
+}
+
+.search.active .show  {
+    display: none;
+}
+
+.search.active .submit-btn {
+    display: block;
+}
+
 .search .hide-input {
     display: block;
     width: 48px;
@@ -2214,7 +2231,10 @@ a.tel-link-resp:hover {
     width: 54px;
     height: 54px;
     cursor: pointer;
-    position: relative;
+    /*position: relative;*/
+    position: absolute;
+    top: 0;
+    left: -54px;
     z-index: 2;
     background-color: rgb(255, 255, 255);
     background-image: url(../img/search_icon.png);

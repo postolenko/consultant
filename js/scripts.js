@@ -253,7 +253,7 @@ $(document).ready(function() {
 
         });
 
-        $(".search-btn").click(function(e) {
+        $(".search-btn.show").click(function(e) {
 
             e.preventDefault();
 
