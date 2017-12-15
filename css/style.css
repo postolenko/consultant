@@ -1193,6 +1193,8 @@ a.tel-link-resp:hover {
     display: none;
 }
 
+/*-- Старый поиск --*/
+
 .search-block {
     display: table;
     width: 100%;
@@ -1410,6 +1412,169 @@ a.tel-link-resp:hover {
 .search-row  .white-pill {
     margin: 12px 0 12px 20px;
 }
+
+/*-- /Старый поиск --*/
+
+.main-search_wrapp {
+    max-width: 824px;
+}
+
+.main_search {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main_search li {
+    display: table-cell;
+    vertical-align: top;
+    width: 25%;
+    padding: 5px 14px;
+}
+
+.radio-search {
+    position: relative;
+    width: 100%;
+}
+
+.radio-search input {
+    display: block;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.radio-search label {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 1%;
+    z-index: 2;
+    border: 3px solid #1d1d1d;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #000000;
+
+    -webkit-transition-property: background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.radio-search input:checked + label {
+    background: #ec3340;
+}
+
+.radio-search label:hover {
+    background: #ec3340;
+}
+
+.white-tr {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: relative;
+    top: 10px;
+    left: 50%;
+    margin-left: -9px;
+    border-style: solid;
+    border-width: 0 9px 9px 9px;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.radio-search input:checked + label + .white-tr {
+    opacity: 1;
+}
+
+.main-sarch-block {
+    position: relative;
+    margin-top: 5px;
+    padding: 0 14px;
+}
+
+.main-sarch-block input {
+    display: block;
+    height: 45px;
+    width: 100%;
+    padding: 0 140px 0 14px;
+    border: 1px solid transparent;
+    background: #ffffff;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.main-sarch-block .submit-btn {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 116px;
+    position: absolute;
+    top: 4px;
+    right: 18px;
+    z-index: 2;
+    cursor: pointer;
+    padding: 8px 1%;
+    border: 1px solid transparent;
+    background: #ec3340;
+    text-align: center;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: normal;
+    color: #000000;
+
+    -webkit-transition-property: background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.main-sarch-block .submit-btn:active,
+.main-sarch-block .submit-btn:hover {
+    background: #ff3846;
+}
+
 
 .bottom-block {
     display: table;

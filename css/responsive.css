@@ -1470,6 +1470,22 @@
 	    min-width: 130px !important;
 	}
 
+	.main_search li {
+	    padding: 5px 2px;
+	}
+
+	.main-sarch-block {
+	    padding: 0 5px;
+	}
+
+	.main-sarch-block .submit-btn {
+	    right: 10px;
+	}
+
+	.radio-search label {
+	    font-size: 13px;
+	}
+
 	/*-- /Section 1 Main Page --*/
 
 	/*-- Section 2 Main Page --*/
@@ -1810,7 +1826,9 @@
 	    display: none;
 	}
 
-	.search-block {
+	/*-------------*/
+
+/*	.search-block {
 	    display: table;
 	    width: 100%;
 	    min-height: 350px;
@@ -1840,6 +1858,12 @@
 
 	.input-box input {
 	    max-width: 90px;
+	}*/
+
+	/*-------------*/
+
+	.radio-search label {
+	    font-size: 13px;
 	}
 
 	/*-- /Section 1 Main Page --*/
