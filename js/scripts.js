@@ -334,6 +334,8 @@ $(document).ready(function() {
 
             hide_element = $('.dropdown-menu');
 
+            console.log( e.attr("class") );
+
             if (!hide_element.is(e.target)
 
                 && hide_element.has(e.target).length === 0) {
