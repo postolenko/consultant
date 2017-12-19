@@ -152,7 +152,7 @@ $(document).ready(function() {
 
         // -------------------------
 
-        if( bodyWidth > 768 ) {
+        if( bodyWidth > 1024 ) {
 
             $(".map-3_block").css( {
                 "max-width" : $(window).width() - $("#search_box").width() + "px"
@@ -168,6 +168,26 @@ $(document).ready(function() {
 
                 $("#search_box").css({
                     "width" : 100 + "%"
+                });
+
+            }
+
+        } else if ( bodyWidth >= 768 && bodyWidth <= 1024){
+
+            $(".map-3_block").css( {
+                "max-width" : 100 + "%"
+            });
+
+            if( $("#search_box").hasClass("hide") ) {
+
+                $("#search_box").css({
+                    "width" : 0
+                });
+
+            } else {
+
+                $("#search_box").css({
+                    "width" : 370 + "px"
                 });
 
             }
@@ -915,6 +935,24 @@ $(document).ready(function() {
                 "display" : "block"
             });
 
+            parentBlock.siblings().find("li").each(function() {
+
+                if( parseInt( $(this).find(".price-val").html() ) > priceVal  ) {
+
+                    $(this).css({
+                        "display" : "block"
+                    });
+
+                } else {
+
+                    $(this).css({
+                        "display" : "none"
+                    });
+
+                }
+
+            });
+
             activeInputPrice.siblings().focus();
 
         });
@@ -977,9 +1015,61 @@ $(document).ready(function() {
 
             $("#search_box").toggleClass("hide");
 
-            if( bodyWidth <= 768 ) {
+            if( bodyWidth > 1024 ) {
 
-                if( $("#search_box").hasClass("hide") ) {                    
+                $(".map-3_block").css( {
+                    "max-width" : $(window).width() - $("#search_box").width() + "px"
+                });
+
+                if( $("#search_box").hasClass("hide") ) {
+
+                    $("#search_box").css({
+                        "width" : 370 + "px"
+                    });
+
+                    $(this).removeClass("active");
+
+                } else {
+
+                    $("#search_box").css({
+                        "width" : 100 + "%"
+                    });
+
+                    $(this).addClass("active");
+
+                }
+
+            } else if ( bodyWidth >= 768 && bodyWidth <= 1024){
+
+                $(".map-3_block").css( {
+                    "max-width" : 100 + "%"
+                });
+
+                if( $("#search_box").hasClass("hide") ) {
+
+                    $("#search_box").css({
+                        "width" : 0
+                    });
+
+                    $(this).removeClass("active");
+
+                } else {
+
+                    $("#search_box").css({
+                        "width" : 370 + "px"
+                    });
+
+                    $(this).addClass("active");
+
+                }
+
+            } else {
+
+                $(".map-3_block").css( {
+                    "max-width" : 100 + "%"
+                });
+
+                if( $("#search_box").hasClass("hide") ) {
 
                     $("#search_box").css({
                         "width" : 0
@@ -997,35 +1087,40 @@ $(document).ready(function() {
 
                 }
 
-            } else {                
-
-                if( $("#search_box").hasClass("hide") ) {
-
-                    $("#search_box").css({
-                        "width" : minSearchBoxWidth + "px"
-                    });
-
-                    $(this).removeClass("active");
-
-                } else {                    
-
-                    $("#search_box").css({
-                        "width" : 100 + "%"
-                    });
-
-                    $(this).addClass("active");
-
-                }
-
-                $(".map-3_block").css( {
-                    "max-width" : $(window).width() - $("#search_box").width() + "px"
-                });
-
             }
 
         });
 
     });
+
+    // -----------------
+
+    $(".select2-container").click(function() {
+
+        // $(".select2-dropdown.visible").css({
+        //     "opacity" : 0
+        // });
+
+        if( $(this).closest("select-col") ) {
+
+            $(".select2-dropdown").addClass("select2_2");
+
+        }
+
+        // setTimeout(function() {
+
+        //     // $(".select2-dropdown").addClass("visible");
+
+        //     $(".select2-dropdown").animate({
+        //         "opacity" : 1
+        //     }, 300);
+
+        // }, 100);
+
+
+    });
+
+    // -----------------
 
     // Navigation scroll
 

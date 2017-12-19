@@ -3339,6 +3339,8 @@ a.tel-link-resp:hover {
     border: none;
     height: 40px;
     width: 9%;
+    position: relative;
+    left: 0;
 }
 
 .questions-search-col .select-block {
@@ -5876,6 +5878,7 @@ textarea {
     height: 38px;
     position: absolute;
     top: 0;
+    left: unset;
     right: 0;
     background-color: transparent;
     background-image: url(../img/red_search.png);
@@ -6139,6 +6142,16 @@ textarea {
 
 .price-list li span {
     padding: 0 3px;
+}
+
+.sell-header .select-col {
+    width: 200px;
+    padding: 0;
+}
+
+.sell-header .select-block {
+    width: 100%;
+    padding: 0 1%;
 }
 
 .two-cols-inputs {

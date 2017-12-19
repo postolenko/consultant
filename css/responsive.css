@@ -411,6 +411,27 @@
 
 	/*-- /Commet Popup --*/
 
+	/*-- Sell --*/
+
+	.sell-list-btn {
+		right: 18px;
+	}
+
+	.sell-thumbnails .sell-thumbnail {
+	     width: 100%;
+	}
+
+	.sell-list-btn.active {
+	    right: 380px;
+	}
+
+	.two-cols-wrapp .col-2 {
+	    width: 100%;
+	    max-width: 370px;
+	}
+
+	/*-- /Sell --*/
+
 }
 
 @media only screen and (max-width: 900px) {
