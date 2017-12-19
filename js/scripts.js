@@ -1107,15 +1107,15 @@ $(document).ready(function() {
 
         }
 
-        // setTimeout(function() {
+        setTimeout(function() {
 
-        //     // $(".select2-dropdown").addClass("visible");
+            // $(".select2-dropdown").addClass("visible");
 
-        //     $(".select2-dropdown").animate({
-        //         "opacity" : 1
-        //     }, 300);
+            $(".select2-dropdown").animate({
+                "opacity" : 1
+            }, 300);
 
-        // }, 100);
+        }, 100);
 
 
     });
