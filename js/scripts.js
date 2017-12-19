@@ -1093,34 +1093,26 @@ $(document).ready(function() {
 
     });
 
-    // -----------------
+    // ----------------
 
-    $(".select2-container").click(function() {
+    $(function() {
 
-        // $(".select2-dropdown.visible").css({
-        //     "opacity" : 0
-        // });
+        $(".select-vals li").click(function() {
 
-        if( $(this).closest("select-col") ) {
+            var selectValsName = $(this).closest(".dropdown-menu").attr("data-menu-index");
 
-            $(".select2-dropdown").addClass("select2_2");
+            var selectVal = $(this).attr("data-val");
 
-        }
+            $(".menuinput_val").filter("[data-menuinput-index = '"+ selectValsName +"']").val(selectVal);
 
-        setTimeout(function() {
+            $(this).closest(".dropdown-menu-block").find(".dropdown-menu-btn[data-menu-index = '"+ selectValsName +"'] span").text(selectVal);
 
-            // $(".select2-dropdown").addClass("visible");
+            $(this).addClass("active");
+            $(this).siblings().removeClass("active");
 
-            $(".select2-dropdown").animate({
-                "opacity" : 1
-            }, 300);
-
-        }, 100);
-
+        });
 
     });
-
-    // -----------------
 
     // Navigation scroll
 
