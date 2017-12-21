@@ -216,12 +216,6 @@ $(document).ready(function() {
 
     });
 
-    $(document).scroll(function() {
-
-        getFormPostion();
-
-    });
-
     $(function() {
 
         $(".select-block").click(function() {
@@ -1503,12 +1497,5 @@ $(document).ready(function() {
         }
 
     }
-
-    function getFormPostion() {
-
-        console.log( $("#contact_form").scrollTop() );
-
-    }
-
 
 });

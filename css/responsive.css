@@ -802,6 +802,11 @@
 	    width: 100% !important;
 	}
 
+	#contact_form {
+		position: relative !important;
+		top: 0 !important;
+	}
+
 	.list-thumbnails {
 	    width: 100%;
 	}

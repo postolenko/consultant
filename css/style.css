@@ -7255,6 +7255,18 @@ a.tel-link_2:hover {
     color: #ed343e;
 }
 
+#contact_form{
+    background: #ffffff;
+    /*position: relative;*/
+    z-index: 2;
+}
+
+#contact_form.fixed {
+    position: fixed;
+    top: 10px;
+    bottom: auto;
+}
+
 .agent-contact-form .input-block:nth-child(1) {
     margin: 15px 0 18px 0;
 }
