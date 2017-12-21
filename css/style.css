@@ -7129,6 +7129,9 @@ textarea {
     min-width: 100%;
     min-height: 100%;
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .gal-thumb .img-box img {
@@ -7359,6 +7362,35 @@ a.tel-link_2:hover {
 
 .object-block h2 {
     font-weight: normal;
+}
+
+.sliding-text {
+    outline: 1px solid red;
+}
+
+.sliding-article_wrapp {
+
+}
+
+.sliding-article {
+    overflow: hidden;
+}
+
+.sliding-article {
+
+}
+
+.more-link_sliding span.active {
+    display: none;
+}
+
+.more-link_sliding.active span {
+    display: none;
+}
+
+.more-link_sliding.active span.active {
+    display: block;
+    color: #eb3340;
 }
 
 .facts-thumbnalis {
@@ -8265,6 +8297,10 @@ a.tel-link_2:hover {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+#map_5 {
+    height: 356px;
 }
 
 .object-article .sell-thumbnails_wrapp {

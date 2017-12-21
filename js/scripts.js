@@ -216,6 +216,12 @@ $(document).ready(function() {
 
     });
 
+    $(document).scroll(function() {
+
+        getFormPostion();
+
+    });
+
     $(function() {
 
         $(".select-block").click(function() {
@@ -334,8 +340,6 @@ $(document).ready(function() {
 
             hide_element = $('.dropdown-menu');
 
-            console.log( e.attr("class") );
-
             if (!hide_element.is(e.target)
 
                 && hide_element.has(e.target).length === 0) {
@@ -347,8 +351,6 @@ $(document).ready(function() {
                     hide_element.css({
                         "z-index" : 1
                     });
-
-                    // dataAttrIndex = hide_element.attr("data-menu-index");
 
                     $(".dropdown-menu-btn").removeClass("active");
 
@@ -644,9 +646,19 @@ $(document).ready(function() {
             popupName = $(this).attr("data-popup");
             popupBlock = $("[data-popup-name = '"+ popupName +"']");
 
-            popupBlock.css({
-                "z-index" : 10
-            });
+            if( popupBlock.hasClass("inner-popup") ) {
+
+                popupBlock.css({
+                    "z-index" : 16
+                });
+
+            } else {
+
+                popupBlock.css({
+                    "z-index" : 10
+                });
+
+            }            
 
             popupBlock.animate({
                 "opacity" : 1
@@ -704,10 +716,10 @@ $(document).ready(function() {
 
     $(function() {
 
-    var parenBlock;
-    var indexMark;
-    var ratingTooltip;
-    var tooltipInfo;
+        var parenBlock;
+        var indexMark;
+        var ratingTooltip;
+        var tooltipInfo;
 
         $(".c-rating__item").hover(function() {
 
@@ -870,7 +882,7 @@ $(document).ready(function() {
 
     $(function() {
 
-        var priceList ;
+        var priceList;
         var activePriceList;
         var activelistArr = [];
         var indexActiveList;
@@ -1111,6 +1123,63 @@ $(document).ready(function() {
 
             $(this).addClass("active");
             $(this).siblings().removeClass("active");
+
+        });
+
+    });
+
+    // -----------------
+
+    $(function() {
+
+        var articleMinHeigth;
+        var slidingArticle;
+        var slidingArticleLink;
+        var articleMinHeigth;
+
+        $(".sliding-article").each(function() {
+
+            articleMinHeigth = parseInt( $(this).attr("data-minheigth") );
+
+            slidingArticleLink = $(".more-link_sliding[data-sliding-link = '"+ $(this).attr("data-sliding-article") +"']");
+
+            if( $(this).height() > articleMinHeigth ) {
+
+                $(this).css({
+                    "height" : articleMinHeigth + "px"
+                });
+
+                slidingArticleLink.removeClass("active");
+
+            }
+
+        });
+
+        $(".more-link_sliding").click(function(e) {
+
+            e.preventDefault();
+
+            slidingArticle = $("[data-sliding-article = '" + $(this).attr("data-sliding-link") + "']");
+
+            articleMinHeigth = parseInt( slidingArticle.attr("data-minheigth") );
+
+            if( slidingArticle.height() > articleMinHeigth ) {
+
+                slidingArticle.animate({
+                    "height" : articleMinHeigth + "px"
+                }, 300);
+
+                $(this).removeClass("active");
+
+            } else {
+
+                slidingArticle.animate({
+                    "height" : slidingArticle.find(".inner-sliding").height() + "px"
+                }, 300);
+
+                $(this).addClass("active");
+
+            }
 
         });
 
@@ -1432,6 +1501,12 @@ $(document).ready(function() {
             });
             
         }
+
+    }
+
+    function getFormPostion() {
+
+        console.log( $("#contact_form").scrollTop() );
 
     }
 

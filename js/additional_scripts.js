@@ -4,13 +4,21 @@
 
 	$(window).on("load",function(){
 
-        // var w = window,
-        // d = document,
-        // e = d.documentElement,
-        // g = d.getElementsByTagName('body')[0],
-        // bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+        var w = window,
+        d = document,
+        e = d.documentElement,
+        g = d.getElementsByTagName('body')[0],
+        bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
-		$(".scroll").mCustomScrollbar();
+		$(".scroll").mCustomScrollbar({
+            callbacks: {
+               onScrollStart: function(){ OnScroll(); }
+            }
+        });
+
+        function OnScroll() {
+            console.log("sdsdsd");
+        }
 
         if( $("#range-slider").length > 0 ) {
 
@@ -66,41 +74,40 @@
             
         }
 
-        // if(bodyWidth <= 768) {
+        if(bodyWidth <= 768) {
 
-        //     $(".object-nav.scroll").mCustomScrollbar();
+            (".object-nav").mCustomScrollbar();
 
-        // } else {
+        } else {
 
-        //     $(".object-nav.scroll").mCustomScrollbar("destroy");
+            $(".object-nav").mCustomScrollbar("destroy");
 
-        // }
-
+        }
 
 	});
 
 
-    // $(window).resize(function() {
+    $(window).resize(function() {
 
-    //     var w = window,
-    //     d = document,
-    //     e = d.documentElement,
-    //     g = d.getElementsByTagName('body')[0],
-    //     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+        var w = window,
+        d = document,
+        e = d.documentElement,
+        g = d.getElementsByTagName('body')[0],
+        bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
-    //     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+        bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
-    //     if(bodyWidth <= 768) {
+        if(bodyWidth <= 768) {
 
-    //         $(".object-nav.scroll").mCustomScrollbar();
+            var objectScroll = $(".object-nav").mCustomScrollbar();
 
-    //     } else {
+        } else {
 
-    //         $(".object-nav.scroll").mCustomScrollbar("destroy");
+            $(".object-nav").mCustomScrollbar("destroy");
 
-    //     }
+        }
 
-    // });
+    });
 
 })(jQuery);
 

@@ -42,177 +42,294 @@
 
 	<!-- Object Popup -->
 
+	
 	<div class="object-popup_wrapp scroll">
 
-		<!-- <div class="object-popup_wrapp"> -->
+		<div class="popup-wrapp inner_popup scroll" data-popup-name = "calc_popup">
+
+			<div class="popup-bg "></div>
+
+			<!-- Пересмотреть стили для .popup -->
+
+			<div class="popup" style="width: 500px; height: 700px; background: #ffffff; outline: 3px solid #333333; position: relative; z-index: 2; margin: 20px auto;">
+
+				<h3>Калькулятор</h3>
+
+			</div>
+
+		</div>
 
 		<div class="object-popup-bg"></div>
 
-			<div class="object-popup">
-				
-				<div class="object-header">
+		<div class="object-popup">
+			
+			<div class="object-header">
 
-					<div class="respmenubtn-box">
-						<button class="respmenubtn show_nav" data-navbtn = "object_nav">			
-							<span></span>
-							<span></span>
-							<span></span>
-						</button>
-					</div>
-					
-					<ul class="object-nav offset-ziro scroll" data-respnav = "object_nav">
-						<li><a href="#">Связаться</a></li>
-						<li><a href="#">Сохранить</a></li>
-						<li><a href="#">Поделиться</a></li>
-						<li><a href="#">Спрятать</a></li>
-						<li class="dropdown-menu-block"><a href="#" class="dropdown-menu-btn" data-menu-index = "1">
-							<span>Дополнительно</span></a>
-							<div class="dropdown-menu" data-menu-index = "1">
-								<ul>
-									<li><a href="#">Распечатать</a></li>
-									<li><a href="#">Получать обновления по объекту</a></li>
-									<li><a href="#">Получать новые объявления</a></li>
-									<li><a href="#">Сообщить о проблеме</a></li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-
-					<button type="button" class="close-popup">
+				<div class="respmenubtn-box">
+					<button class="respmenubtn show_nav" data-navbtn = "object_nav">			
+						<span></span>
 						<span></span>
 						<span></span>
 					</button>
-
 				</div>
+				
+				<ul class="object-nav offset-ziro scroll" data-respnav = "object_nav">
+					<li><a href="#">Связаться</a></li>
+					<li><a href="#">Сохранить</a></li>
+					<li><a href="#">Поделиться</a></li>
+					<li><a href="#">Спрятать</a></li>
+					<li class="dropdown-menu-block"><a href="#" class="dropdown-menu-btn" data-menu-index = "1">
+						<span>Дополнительно</span></a>
+						<div class="dropdown-menu" data-menu-index = "1">
+							<ul>
+								<li><a href="#">Распечатать</a></li>
+								<li><a href="#">Получать обновления по объекту</a></li>
+								<li><a href="#">Получать новые объявления</a></li>
+								<li><a href="#">Сообщить о проблеме</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
 
-				<div class="object-header-2">
-					<div class="object-row">
-						<ul class="object-nav-2">
-							<li><a href="#">Общий доступ</a></li>
-							<li><a href="#">Собственник</a></li>
-						</ul>
-					</div>
+				<button type="button" class="close-popup">
+					<span></span>
+					<span></span>
+				</button>
+
+			</div>
+
+			<div class="object-header-2">
+				<div class="object-row">
+					<ul class="object-nav-2">
+						<li><a href="#">Общий доступ</a></li>
+						<li><a href="#">Собственник</a></li>
+					</ul>
 				</div>
+			</div>
 
-				<div class="object-slider-wrapp">
+			<div class="object-slider-wrapp">
 
-					<div class="object-slider">
+				<div class="object-slider">
+					
+					<div class="gallery offset-ziro">
 						
-						<div class="gallery offset-ziro">
-							
-							<div class="col col-1">
-								<div class="gal-thumb big-gal-thumb">
-									<a data-fancybox = "gallery_1"  href="https://www.youtube.com/watch?v=EGinRFkWYCk" class="inner">
-										<div class="img-box">
-											<img src="img/photo.jpg" alt="">
-										</div>
-										<button type="button" class="play-btn"></button>
-									</a>
-								</div>
+						<div class="col col-1">
+							<div class="gal-thumb big-gal-thumb">
+								<a data-fancybox = "gallery_1"  href="https://www.youtube.com/watch?v=EGinRFkWYCk" class="inner">
+									<div class="img-box" style="background-image: url(img/photo.jpg)">
+										<!-- <img src="img/photo.jpg" alt=""> -->
+									</div>
+									<button type="button" class="play-btn"></button>
+								</a>
 							</div>
-
-							<div class="col col-2">
-								<div class="gal-thumb">
-									<a data-fancybox = "gallery_1" href="img/photo.jpg" class="inner">
-										<div class="img-box">
-											<img src="img/photo.jpg" alt="">
-										</div>
-									</a>
-								</div>
-								<div class="gal-thumb">
-									<a data-fancybox = "gallery_1" href="img/photo.jpg" class="inner">
-										<div class="img-box">
-											<img src="img/photo.jpg" alt="">
-										</div>
-									</a>
-								</div>
-								<div class="gal-thumb">
-									<a data-fancybox = "gallery_1" href="img/photo.jpg" class="inner">
-										<div class="img-box">
-											<img src="img/photo.jpg" alt="">
-										</div>
-									</a>
-								</div>
-								<div class="gal-thumb">
-									<a data-fancybox = "gallery_1" href="img/photo.jpg" class="inner">
-										<div class="img-box">
-											<img src="img/photo.jpg" alt="">
-										</div>
-									</a>
-								</div>
-								<div class="gal-thumb">
-									<a data-fancybox = "gallery_1" href="img/photo.jpg" class="inner">
-										<div class="img-box">
-											<img src="img/photo.jpg" alt="">
-										</div>
-									</a>
-								</div>
-								<div class="gal-thumb">
-									<a data-fancybox = "gallery_1" href="img/photo.jpg" class="inner">
-										<div class="img-box">
-											<img src="img/photo.jpg" alt="">
-										</div>
-									</a>
-								</div>
-							</div>
-
 						</div>
 
-						<div class="gallery offset-ziro">
-							
-							<div class="col col-1">
-								<div class="gal-thumb big-gal-thumb">
-									<a data-fancybox = "gallery_2" href="https://www.youtube.com/watch?v=EGinRFkWYCk" class="inner">
-										<div class="img-box">
-											<img src="img/photo.jpg" alt="">
-										</div>
-										<button type="button" class="play-btn"></button>
-									</a>
+						<div class="col col-2">
+							<div class="gal-thumb">
+								<a data-fancybox = "gallery_1" href="img/photo.jpg" class="inner">
+									<div class="img-box" style="background-image: url(img/photo.jpg)">
+										<!-- <img src="img/photo.jpg" alt=""> -->
+									</div>
+								</a>
+							</div>
+							<div class="gal-thumb">
+								<a data-fancybox = "gallery_1" href="img/photo.jpg" class="inner">
+									<div class="img-box" style="background-image: url(img/photo.jpg)">
+										<!-- <img src="img/photo.jpg" alt=""> -->
+									</div>
+								</a>
+							</div>
+							<div class="gal-thumb">
+								<a data-fancybox = "gallery_1" href="img/photo.jpg" class="inner">
+									<div class="img-box" style="background-image: url(img/photo.jpg)">
+										<!-- <img src="img/photo.jpg" alt=""> -->
+									</div>
+								</a>
+							</div>
+							<div class="gal-thumb">
+								<a data-fancybox = "gallery_1" href="img/photo.jpg" class="inner">
+									<div class="img-box" style="background-image: url(img/photo.jpg)">
+										<!-- <img src="img/photo.jpg" alt=""> -->
+									</div>
+								</a>
+							</div>
+							<div class="gal-thumb">
+								<a data-fancybox = "gallery_1" href="img/photo.jpg" class="inner">
+									<div class="img-box" style="background-image: url(img/photo.jpg)">
+										<!-- <img src="img/photo.jpg" alt=""> -->
+									</div>
+								</a>
+							</div>
+							<div class="gal-thumb">
+								<a data-fancybox = "gallery_1" href="img/photo.jpg" class="inner">
+									<div class="img-box" style="background-image: url(img/photo.jpg)">
+										<!-- <img src="img/photo.jpg" alt=""> -->
+									</div>
+								</a>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="gallery offset-ziro">
+						
+						<div class="col col-1">
+							<div class="gal-thumb big-gal-thumb">
+								<a data-fancybox = "gallery_2" href="https://www.youtube.com/watch?v=EGinRFkWYCk" class="inner">
+									<div class="img-box" style="background-image: url(img/photo.jpg)">
+										<!-- <img src="img/photo.jpg" alt=""> -->
+									</div>
+									<button type="button" class="play-btn"></button>
+								</a>
+							</div>
+						</div>
+
+						<div class="col col-2">
+							<div class="gal-thumb">
+								<a data-fancybox = "gallery_2" href="img/photo.jpg" class="inner">
+									<div class="img-box" style="background-image: url(img/photo.jpg)">
+										<!-- <img src="img/photo.jpg" alt=""> -->
+									</div>
+								</a>
+							</div>
+							<div class="gal-thumb">
+								<a data-fancybox = "gallery_2" href="img/photo.jpg" class="inner">
+									<div class="img-box" style="background-image: url(img/photo.jpg)">
+										<!-- <img src="img/photo.jpg" alt=""> -->
+									</div>
+								</a>
+							</div>
+							<div class="gal-thumb">
+								<a data-fancybox = "gallery_2" href="img/photo.jpg" class="inner">
+									<div class="img-box" style="background-image: url(img/photo.jpg)">
+										<!-- <img src="img/photo.jpg" alt=""> -->
+									</div>
+								</a>
+							</div>
+							<div class="gal-thumb">
+								<a data-fancybox = "gallery_2" href="img/photo.jpg" class="inner">
+									<div class="img-box" style="background-image: url(img/photo.jpg)">
+										<!-- <img src="img/photo.jpg" alt=""> -->
+									</div>
+								</a>
+							</div>
+							<div class="gal-thumb">
+								<a data-fancybox = "gallery_2" href="img/photo.jpg" class="inner">
+									<div class="img-box" style="background-image: url(img/photo.jpg)">
+										<!-- <img src="img/photo.jpg" alt=""> -->
+									</div>
+								</a>
+							</div>
+							<div class="gal-thumb">
+								<a data-fancybox = "gallery_2" href="img/photo.jpg" class="inner">
+									<div class="img-box" style="background-image: url(img/photo.jpg)">
+										<!-- <img src="img/photo.jpg" alt=""> -->
+									</div>
+								</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="two-cols-templ object-row clearfix">
+
+				<div class="col col-1 left">
+
+					<div class="object-two-cols clearfix">
+						<div class="col-1 left">
+							<h2><i class="red-icon"></i>Дом на продажу</h2>
+							<p class="big-p">85 000 000 <i class="fa fa-rub" aria-hidden="true"></i></p>
+							<p>Предварительная стоимость<br /> 85 000 000 <i class="fa fa-rub" aria-hidden="true"></i></p>
+							<div class="p-two-cols offset-ziro">
+								<div class="p-col">
+									<p>Предпологаемый платеж<br /> 85 000 <i class="fa fa-rub" aria-hidden="true"></i>/м</p>
+								</div>
+								<div class="p-col">
+									<a href="#" class="show_popup" data-popup = "calc_popup"><i class="calc-icon"></i></a>
 								</div>
 							</div>
+							<a href="#">Предварительное одобрение</a>
+						</div>
+						<div class="col-2 left">
+							<h2>ул. Тимура Фрунзе, 11с15</h2>
+							<p>3 beds 3 baths 2,866 sqft</p>
+							<div class="sliding-article_wrapp">
+								<div class="sliding-article" data-sliding-article = "art_1" data-minheigth = "140">
+									<div class="inner-sliding">
+										<p>«Сердце Столицы» — городской квартал нового поколения, раскинувшийся на берегу Москвы-реки рядом с деловым центром “Москва- Сити”. На роскошной территории в 14 гектар создается целый новый мир: современный, комфортный, зеленый, дружелюбный и разнообразный — сверкающий самыми яркими гранями Жизни!</p>
 
-							<div class="col col-2">
-								<div class="gal-thumb">
-									<a data-fancybox = "gallery_2" href="img/photo.jpg" class="inner">
-										<div class="img-box">
-											<img src="img/photo.jpg" alt="">
-										</div>
-									</a>
+										<p>«Сердце Столицы» — городской квартал нового поколения, раскинувшийся на берегу Москвы-реки рядом с деловым центром “Москва- Сити”. На роскошной территории в 14 гектар создается целый новый мир: современный, комфортный, зеленый, дружелюбный и разнообразный — сверкающий самыми яркими гранями жизни!</p>
+
+										<p>«Сердце Столицы» — городской квартал нового поколения, раскинувшийся на берегу Москвы-реки рядом с деловым центром “Москва- Сити”. На роскошной территории в 14 гектар создается целый новый мир: современный, комфортный, зеленый, дружелюбный и разнообразный — сверкающий самыми яркими гранями жизни!</p>
+									</div>
 								</div>
-								<div class="gal-thumb">
-									<a data-fancybox = "gallery_2" href="img/photo.jpg" class="inner">
-										<div class="img-box">
-											<img src="img/photo.jpg" alt="">
-										</div>
-									</a>
+								<a href="#" class="more-link_sliding" data-sliding-link = "art_1" ><span>Читать далее</span><span class="active">Скрыть</span></a>
+							</div>
+						</div>
+					</div>						
+
+					<div class="object-block">
+
+						<h2 class="up-txt">Факты и особенности</h2>
+
+						<div class="facts-thumbnalis offset-ziro">
+
+							<div class="thumb">
+								<div class="icon-box">
+									<img src="img/fact-icon_1.png" alt="" />
 								</div>
-								<div class="gal-thumb">
-									<a data-fancybox = "gallery_2" href="img/photo.jpg" class="inner">
-										<div class="img-box">
-											<img src="img/photo.jpg" alt="">
-										</div>
-									</a>
+								<div class="col-2">
+									<h4>Тип объекта</h4>
+									<p>Дом</p>
 								</div>
-								<div class="gal-thumb">
-									<a data-fancybox = "gallery_2" href="img/photo.jpg" class="inner">
-										<div class="img-box">
-											<img src="img/photo.jpg" alt="">
-										</div>
-									</a>
+							</div>
+							<div class="thumb">
+								<div class="icon-box">
+									<img src="img/fact-icon_2.png" alt="" />
 								</div>
-								<div class="gal-thumb">
-									<a data-fancybox = "gallery_2" href="img/photo.jpg" class="inner">
-										<div class="img-box">
-											<img src="img/photo.jpg" alt="">
-										</div>
-									</a>
+								<div class="col-2">
+									<h4>Год постройки</h4>
+									<p>1987</p>
 								</div>
-								<div class="gal-thumb">
-									<a data-fancybox = "gallery_2" href="img/photo.jpg" class="inner">
-										<div class="img-box">
-											<img src="img/photo.jpg" alt="">
-										</div>
-									</a>
+							</div>
+							<div class="thumb">
+								<div class="icon-box">
+									<img src="img/fact-icon_3.png" alt="" />
+								</div>
+								<div class="col-2">
+									<h4>Система отопления</h4>
+									<p>Центральная</p>
+								</div>
+							</div>
+							<div class="thumb">
+								<div class="icon-box">
+									<img src="img/fact-icon_4.png" alt="" />
+								</div>
+								<div class="col-2">
+									<h4>Система охлаждения</h4>
+									<p>Центральная</p>
+								</div>
+							</div>
+							<div class="thumb">
+								<div class="icon-box">
+									<img src="img/fact-icon_5.png" alt="" />
+								</div>
+								<div class="col-2">
+									<h4>Парковка</h4>
+									<p>Гараж</p>
+								</div>
+							</div>
+							<div class="thumb">
+								<div class="icon-box">
+									<img src="img/fact-icon_6.png" alt="" />
+								</div>
+								<div class="col-2">
+									<h4>Размер участка</h4>
+									<p>100 Га</p>
 								</div>
 							</div>
 
@@ -220,628 +337,446 @@
 
 					</div>
 
-				</div>
+					<div class="object-block">
 
-				<div class="two-cols-templ object-row clearfix">
+						<h2 class="up-txt">Элементы интерьера</h2>
 
-					<div class="col col-1 left">
-
-						<div class="object-two-cols clearfix">
-							<div class="col-1 left">
-								<h2><i class="red-icon"></i>Дом на продажу</h2>
-								<p class="big-p">85 000 000 <i class="fa fa-rub" aria-hidden="true"></i></p>
-								<p>Предварительная стоимость<br /> 85 000 000 <i class="fa fa-rub" aria-hidden="true"></i></p>
-								<div class="p-two-cols offset-ziro">
-									<div class="p-col">
-										<p>Предпологаемый платеж<br /> 85 000 <i class="fa fa-rub" aria-hidden="true"></i>/м</p>
-									</div>
-									<div class="p-col">
-										<i class="calc-icon"></i>
-									</div>
-								</div>
-								<a href="#">Предварительное одобрение</a>
+						<div class="list-thumbnails offset-ziro">
+							<div class="thumb-list">
+								<h3>Bedrooms</h3>
+								<p>Beds: 3</p>
 							</div>
-							<div class="col-2 left">
-								<h2>ул. Тимура Фрунзе, 11с15</h2>
-								<p>3 beds 3 baths 2,866 sqft</p>
-								<p>«Сердце Столицы» — городской квартал нового поколения, раскинувшийся на берегу Москвы-реки рядом с деловым центром “Москва- Сити”. На роскошной территории в 14 гектар создается целый новый мир: современный, комфортный, зеленый, дружелюбный и разнообразный — сверкающий самыми яркими гранями жизни!</p>
+							<div class="thumb-list">
+								<h3>Appliances</h3>
+								<p>Dishwasher, Garbage disposal, Microwave</p>
 							</div>
-						</div>						
-
-						<div class="object-block">
-
-							<h2 class="up-txt">Факты и особенности</h2>
-
-							<div class="facts-thumbnalis offset-ziro">
-
-								<div class="thumb">
-									<div class="icon-box">
-										<img src="img/fact-icon_1.png" alt="" />
-									</div>
-									<div class="col-2">
-										<h4>Тип объекта</h4>
-										<p>Дом</p>
-									</div>
-								</div>
-								<div class="thumb">
-									<div class="icon-box">
-										<img src="img/fact-icon_2.png" alt="" />
-									</div>
-									<div class="col-2">
-										<h4>Год постройки</h4>
-										<p>1987</p>
-									</div>
-								</div>
-								<div class="thumb">
-									<div class="icon-box">
-										<img src="img/fact-icon_3.png" alt="" />
-									</div>
-									<div class="col-2">
-										<h4>Система отопления</h4>
-										<p>Центральная</p>
-									</div>
-								</div>
-								<div class="thumb">
-									<div class="icon-box">
-										<img src="img/fact-icon_4.png" alt="" />
-									</div>
-									<div class="col-2">
-										<h4>Система охлаждения</h4>
-										<p>Центральная</p>
-									</div>
-								</div>
-								<div class="thumb">
-									<div class="icon-box">
-										<img src="img/fact-icon_5.png" alt="" />
-									</div>
-									<div class="col-2">
-										<h4>Парковка</h4>
-										<p>Гараж</p>
-									</div>
-								</div>
-								<div class="thumb">
-									<div class="icon-box">
-										<img src="img/fact-icon_6.png" alt="" />
-									</div>
-									<div class="col-2">
-										<h4>Размер участка</h4>
-										<p>100 Га</p>
-									</div>
-								</div>
-
+							<div class="thumb-list">
+								<h3>Heating and Cooling</h3>
+								<ul>
+									<li>Heating: Forced air</li>
+									<li>Heating: Gas</li>
+									<li>Cooling: Central</li>
+								</ul>
 							</div>
-
-						</div>
-
-						<div class="object-block">
-
-							<h2 class="up-txt">Элементы интерьера</h2>
-
-							<div class="list-thumbnails offset-ziro">
-								<div class="thumb-list">
-									<h3>Bedrooms</h3>
-									<p>Beds: 3</p>
-								</div>
-								<div class="thumb-list">
-									<h3>Appliances</h3>
-									<p>Dishwasher, Garbage disposal, Microwave</p>
-								</div>
-								<div class="thumb-list">
-									<h3>Heating and Cooling</h3>
-									<ul>
-										<li>Heating: Forced air</li>
-										<li>Heating: Gas</li>
-										<li>Cooling: Central</li>
-									</ul>
-								</div>
-								<div class="thumb-list">
-									<h3>Flooring</h3>
-									<ul>
-										<li>Floor size: 1,377 sqft</li>
-										<li>Flooring: Hardwood, Tile</li>
-									</ul>
-								</div>
-								<div class="thumb-list">
-									<h3>Other Interior Features</h3>
-									<p>Room count: 7</p>
-								</div>
+							<div class="thumb-list">
+								<h3>Flooring</h3>
+								<ul>
+									<li>Floor size: 1,377 sqft</li>
+									<li>Flooring: Hardwood, Tile</li>
+								</ul>
 							</div>
-
-						</div>
-
-						<div class="sliding-block-wrapp">
-							<h2 class="sliding-title active"><i class="red-tr"></i>Детали предварительной оценки</h2>
-							<div class="sliding-block">
-								<div class="chart-thumbnails offset-ziro">
-									<div class="chart-thumb">
-										<h3>Предварительная оценка стоимости</h3>
-										<p class="price">85 000 000 <i class="fa fa-rub" aria-hidden="true"></i></p>
-										<p><span class="red">–123 900 <i class="fa fa-rub" aria-hidden="true"></i></span> Last 30 days</p>
-									</div>
-									<div class="chart-thumb">
-										<h3>Предварительная стоимость аренды</h3>
-										<p class="price">85 000 <i class="fa fa-rub" aria-hidden="true"></i>/м</p>
-										<p><span class="green">+ 123 900 <i class="fa fa-rub" aria-hidden="true"></i></span> Last 30 days</p>
-									</div>
-									<div class="chart-thumb">
-										<p>Чтобы разблокировать прогноз предварительной оценки необходимо</p>
-										<a href="#">создать бесплатный аккаунт</a>
-									</div>
-								</div>
-								<div class="chart-chose-block">
-									<ul>
-										<li><a href="#">1 год</a></li>
-										<li><a href="#">5 лет</a></li>
-										<li><a href="#" class="active">10 лет</a></li>
-									</ul>
-								</div>
-								<div>
-									<div class="chart_1 ct-chart"></div>
-								</div>
-								<div>
-									<ul class="chart-legends">
-										<li><i class="red-big-icon"></i>Principal</li>
-										<li><i class="pink-icon"></i>Interest</li>
-										<li><i class="pink-light-icon"></i>Remaining</li>
-									</ul>
-								</div>
+							<div class="thumb-list">
+								<h3>Other Interior Features</h3>
+								<p>Room count: 7</p>
 							</div>
 						</div>
 
-						<div class="sliding-block-wrapp">
-							<h2 class="sliding-title active"><i class="red-tr"></i>История цены/налога</h2>
-							<div class="sliding-block">
-								<div class="object-table-block">
-									<div class="object-table-header">
-										<h3>История цены</h3>
+					</div>
+
+					<div class="sliding-block-wrapp">
+						<h2 class="sliding-title active"><i class="red-tr"></i>Детали предварительной оценки</h2>
+						<div class="sliding-block">
+							<div class="chart-thumbnails offset-ziro">
+								<div class="chart-thumb">
+									<h3>Предварительная оценка стоимости</h3>
+									<p class="price">85 000 000 <i class="fa fa-rub" aria-hidden="true"></i></p>
+									<p><span class="red">–123 900 <i class="fa fa-rub" aria-hidden="true"></i></span> Last 30 days</p>
+								</div>
+								<div class="chart-thumb">
+									<h3>Предварительная стоимость аренды</h3>
+									<p class="price">85 000 <i class="fa fa-rub" aria-hidden="true"></i>/м</p>
+									<p><span class="green">+ 123 900 <i class="fa fa-rub" aria-hidden="true"></i></span> Last 30 days</p>
+								</div>
+								<div class="chart-thumb">
+									<p>Чтобы разблокировать прогноз предварительной оценки необходимо</p>
+									<a href="#">создать бесплатный аккаунт</a>
+								</div>
+							</div>
+							<div class="chart-chose-block">
+								<ul>
+									<li><a href="#">1 год</a></li>
+									<li><a href="#">5 лет</a></li>
+									<li><a href="#" class="active">10 лет</a></li>
+								</ul>
+							</div>
+							<div>
+								<div class="chart_1 ct-chart"></div>
+							</div>
+							<div>
+								<ul class="chart-legends">
+									<li><i class="red-big-icon"></i>Principal</li>
+									<li><i class="pink-icon"></i>Interest</li>
+									<li><i class="pink-light-icon"></i>Remaining</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="sliding-block-wrapp">
+						<h2 class="sliding-title active"><i class="red-tr"></i>История цены/налога</h2>
+						<div class="sliding-block">
+							<div class="object-table-block">
+								<div class="object-table-header">
+									<h3>История цены</h3>
+								</div>
+								<div class="object-table object-table_1">
+									<div class="table-row table-header">
+										<div class="table-cell cell-1">
+											<h3>Дата</h3>
+										</div>
+										<div class="table-cell cell-2">
+											<h3>История</h3>
+										</div>
+										<div class="table-cell cell-3">
+											<h3>Цена</h3>
+										</div>
+										<div class="table-cell cell-4">
+											<h3>Р/М2</h3>
+										</div>
+										<div class="table-cell cell-5">
+											<h3>Источник</h3>
+										</div>
 									</div>
-									<div class="object-table object-table_1">
-										<div class="table-row table-header">
-											<div class="table-cell cell-1">
-												<h3>Дата</h3>
-											</div>
-											<div class="table-cell cell-2">
-												<h3>История</h3>
-											</div>
-											<div class="table-cell cell-3">
-												<h3>Цена</h3>
-											</div>
-											<div class="table-cell cell-4">
-												<h3>Р/М2</h3>
-											</div>
-											<div class="table-cell cell-5">
-												<h3>Источник</h3>
-											</div>
+									<div class="table-row">
+										<div class="table-cell cell-1">
+											<p>12.05.17</p>
 										</div>
-										<div class="table-row">
-											<div class="table-cell cell-1">
-												<p>12.05.17</p>
-											</div>
-											<div class="table-cell cell-2">
-												<p>Listed for sale</p>
-											</div>
-											<div class="table-cell cell-3">
-												<p>14 000 000<i class="fa fa-rub" aria-hidden="true"></i></p>
-											</div>
-											<div class="table-cell cell-4">
-												<p>85 000<i class="fa fa-rub" aria-hidden="true"></i></p>
-											</div>
-											<div class="table-cell cell-5">
-												<p>Owner</p>
-												<i class="flag-icon"></i>
-											</div>
+										<div class="table-cell cell-2">
+											<p>Listed for sale</p>
 										</div>
-										<div class="table-row">
-											<div class="table-cell cell-1">
-												<p>12.05.17</p>
-											</div>
-											<div class="table-cell cell-2">
-												<p>Listed for sale</p>
-											</div>
-											<div class="table-cell cell-3">
-												<p>14 000 000<i class="fa fa-rub" aria-hidden="true"></i></p>
-											</div>
-											<div class="table-cell cell-4">
-												<p>85 000<i class="fa fa-rub" aria-hidden="true"></i></p>
-											</div>
-											<div class="table-cell cell-5">
-												<p>Owner</p>
-												<i class="flag-icon"></i>
-											</div>
+										<div class="table-cell cell-3">
+											<p>14 000 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+										</div>
+										<div class="table-cell cell-4">
+											<p>85 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+										</div>
+										<div class="table-cell cell-5">
+											<p>Owner</p>
+											<i class="flag-icon"></i>
+										</div>
+									</div>
+									<div class="table-row">
+										<div class="table-cell cell-1">
+											<p>12.05.17</p>
+										</div>
+										<div class="table-cell cell-2">
+											<p>Listed for sale</p>
+										</div>
+										<div class="table-cell cell-3">
+											<p>14 000 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+										</div>
+										<div class="table-cell cell-4">
+											<p>85 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+										</div>
+										<div class="table-cell cell-5">
+											<p>Owner</p>
+											<i class="flag-icon"></i>
 										</div>
 									</div>
 								</div>
-								<div class="object-table-block">
-									<div class="object-table-header">
-										<h3>История налога</h3>
-										<p>Найти на сайте росреестра <a href="#">www</a></p>
+							</div>
+							<div class="object-table-block">
+								<div class="object-table-header">
+									<h3>История налога</h3>
+									<p>Найти на сайте росреестра <a href="#">www</a></p>
+								</div>
+								<div class="object-table object-table_2">
+									<div class="table-row table-header">
+										<div class="table-cell cell-1">
+											<h3>Год</h3>
+										</div>
+										<div class="table-cell cell-2">
+											<h3>Налог</h3>
+										</div>
+										<div class="table-cell cell-3">
+											<h3>Изменения</h3>
+										</div>
+										<div class="table-cell cell-4">
+											<h3>Кадастровая стоимость</h3>
+										</div>
+										<div class="table-cell cell-5">
+											<h3>Изменения</h3>
+										</div>
 									</div>
-									<div class="object-table object-table_2">
-										<div class="table-row table-header">
-											<div class="table-cell cell-1">
-												<h3>Год</h3>
-											</div>
-											<div class="table-cell cell-2">
-												<h3>Налог</h3>
-											</div>
-											<div class="table-cell cell-3">
-												<h3>Изменения</h3>
-											</div>
-											<div class="table-cell cell-4">
-												<h3>Кадастровая стоимость</h3>
-											</div>
-											<div class="table-cell cell-5">
-												<h3>Изменения</h3>
-											</div>
+									<div class="table-row">
+										<div class="table-cell cell-1">
+											<p>2015</p>
 										</div>
-										<div class="table-row">
-											<div class="table-cell cell-1">
-												<p>2015</p>
-											</div>
-											<div class="table-cell cell-2">
-												<p>658 000<i class="fa fa-rub" aria-hidden="true"></i></p>
-											</div>
-											<div class="table-cell cell-3">
-												<p class="green">+9,6%</p>
-											</div>
-											<div class="table-cell cell-4">
-												<p>56 000 000<i class="fa fa-rub" aria-hidden="true"></i></p>
-											</div>
-											<div class="table-cell cell-5">
-												<p class="red">-5%</p>
-												<i class="flag-icon"></i>
-											</div>
+										<div class="table-cell cell-2">
+											<p>658 000<i class="fa fa-rub" aria-hidden="true"></i></p>
 										</div>
-										<div class="table-row">
-											<div class="table-cell cell-1">
-												<p>2015</p>
-											</div>
-											<div class="table-cell cell-2">
-												<p>658 000<i class="fa fa-rub" aria-hidden="true"></i></p>
-											</div>
-											<div class="table-cell cell-3">
-												<p class="green">+9,6%</p>
-											</div>
-											<div class="table-cell cell-4">
-												<p>56 000 000<i class="fa fa-rub" aria-hidden="true"></i></p>
-											</div>
-											<div class="table-cell cell-5">
-												<p class="red">-5%</p>
-												<i class="flag-icon"></i>
-											</div>
+										<div class="table-cell cell-3">
+											<p class="green">+9,6%</p>
+										</div>
+										<div class="table-cell cell-4">
+											<p>56 000 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+										</div>
+										<div class="table-cell cell-5">
+											<p class="red">-5%</p>
+											<i class="flag-icon"></i>
+										</div>
+									</div>
+									<div class="table-row">
+										<div class="table-cell cell-1">
+											<p>2015</p>
+										</div>
+										<div class="table-cell cell-2">
+											<p>658 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+										</div>
+										<div class="table-cell cell-3">
+											<p class="green">+9,6%</p>
+										</div>
+										<div class="table-cell cell-4">
+											<p>56 000 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+										</div>
+										<div class="table-cell cell-5">
+											<p class="red">-5%</p>
+											<i class="flag-icon"></i>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+					</div>
 
-						<div class="sliding-block-wrapp">
-							<h2 class="sliding-title active"><i class="red-tr"></i>Оцени этот объект</h2>
-							<div class="sliding-block">
-								<p>Аналогичные объекты проданы за 96 000 000 <i class="fa fa-rub" aria-hidden="true"></i></p>
-								<div class="range-slider-block">
-									<div class="range-slider" id="range-slider"></div>
-								</div>
-								<div class="map-4_block">
-									<div class="map_clean" id="map_4"></div>
-									<div class="map-4-popup">
-										<h3>Оцени этот объект</h3>
-										<p>Самостоятельно выбрать аналогичный объект для определения выгодной стоимости.</p>
-										<a href="#" class="red-pill">выберите объект</a>
-									</div>
+					<div class="sliding-block-wrapp">
+						<h2 class="sliding-title active"><i class="red-tr"></i>Оцени этот объект</h2>
+						<div class="sliding-block">
+							<p>Аналогичные объекты проданы за 96 000 000 <i class="fa fa-rub" aria-hidden="true"></i></p>
+							<div class="range-slider-block">
+								<div class="range-slider" id="range-slider"></div>
+							</div>
+							<div class="map-4_block">
+								<div class="map_clean" id="map_4"></div>
+								<div class="map-4-popup">
+									<h3>Оцени этот объект</h3>
+									<p>Самостоятельно выбрать аналогичный объект для определения выгодной стоимости.</p>
+									<a href="#" class="red-pill">выберите объект</a>
 								</div>
 							</div>
 						</div>
+					</div>
 
-						<div class="sliding-block-wrapp">
-							<h2 class="sliding-title active"><i class="red-tr"></i>Просмотры конкурентов</h2>
-							<div class="sliding-block">
-								<div class="object-thumbnails offset-ziro">
-									<div class="thumbnail">
-										<p class="p-num">2000</p>
-										<p>просмотров<br /> с даты размещения</p>
-									</div>
-									<div class="thumbnail">
-										<p class="p-num">14</p>
-										<p>покупателей<br /> сохранило</p>
-									</div>
+					<div class="sliding-block-wrapp">
+						<h2 class="sliding-title active"><i class="red-tr"></i>Просмотры конкурентов</h2>
+						<div class="sliding-block">
+							<div class="object-thumbnails offset-ziro">
+								<div class="thumbnail">
+									<p class="p-num">2000</p>
+									<p>просмотров<br /> с даты размещения</p>
+								</div>
+								<div class="thumbnail">
+									<p class="p-num">14</p>
+									<p>покупателей<br /> сохранило</p>
 								</div>
 							</div>
 						</div>
+					</div>
 
-						<div class="sliding-block-wrapp">
-							<h2 class="sliding-title active"><i class="red-tr"></i>Ипотека</h2>
-							<div class="sliding-block">
-								<div class="object-two-cols object-calc clearfix">
-									<div class="col-1 left">
-										<form>
-											<div class="sort-block">
-												<h3>Стоимость объекта</h3>
-												<div class="sort-item">
+					<div class="sliding-block-wrapp">
+						<h2 class="sliding-title active"><i class="red-tr"></i>Ипотека</h2>
+						<div class="sliding-block">
+							<div class="object-two-cols object-calc clearfix">
+								<div class="col-1 left">
+									<form>
+										<div class="sort-block">
+											<h3>Стоимость объекта</h3>
+											<div class="sort-item">
+												<input type="text" name="name" />
+											</div>
+										</div>
+							
+										<div class="sort-block">
+											<h3>Первоначальный взнос</h3>
+											<div class="sort-item sort-item-2">
+												<div class="sort-item-col-1">
 													<input type="text" name="name" />
 												</div>
+												<div class="sort-item-col-2 select-block">
+													<select>
+														<option>20%</option>
+														<option>30%</option>
+														<option>10%</option>
+													</select>
+												</div>
 											</div>
+										</div>
 								
-											<div class="sort-block">
-												<h3>Первоначальный взнос</h3>
-												<div class="sort-item sort-item-2">
-													<div class="sort-item-col-1">
-														<input type="text" name="name" />
-													</div>
-													<div class="sort-item-col-2 select-block">
-														<select>
-															<option>20%</option>
-															<option>30%</option>
-															<option>10%</option>
-														</select>
-													</div>
-												</div>
+										<div class="sort-block">
+											<h3>Срок кредитоваания</h3>
+											<div class="sort-item">
+												<input type="text" name="name" />
 											</div>
+										</div>
 									
-											<div class="sort-block">
-												<h3>Срок кредитоваания</h3>
-												<div class="sort-item">
-													<input type="text" name="name" />
-												</div>
+										<div class="sort-block">
+											<h3>Процентная ставка</h3>
+											<div class="sort-item">
+												<input type="text" name="name" />
 											</div>
-										
-											<div class="sort-block">
-												<h3>Процентная ставка</h3>
-												<div class="sort-item">
-													<input type="text" name="name" />
-												</div>
-												<a href="#">см. текущие предложения</a>
-											</div>
-									
-											<div class="checkbox-block">
-												<div class="inner">
-													<input type="checkbox" name="ch" id="ch_19">
-													<label for="ch_19">Включить налоги, страхование</label>
-													<div class="question-box">
-														<a class="question-icon" href="#"><i class="question"></i></a>
-														<div class="tooltip">
-															<button type="button" class="close-tooltip"></button>
-															<p>Подсказка подсказка подсказка подсказка подсказка</p>
-														</div>
+											<a href="#">см. текущие предложения</a>
+										</div>
+								
+										<div class="checkbox-block">
+											<div class="inner">
+												<input type="checkbox" name="ch" id="ch_19">
+												<label for="ch_19">Включить налоги, страхование</label>
+												<div class="question-box">
+													<a class="question-icon" href="#"><i class="question"></i></a>
+													<div class="tooltip">
+														<button type="button" class="close-tooltip"></button>
+														<p>Подсказка подсказка подсказка подсказка подсказка</p>
 													</div>
 												</div>
 											</div>
+										</div>
 
-											<div class="sliding-block-wrapp inner">
-												<h2 class="sliding-title active"><i class="red-tr"></i>Расширенный калькулятор</h2>
-												<div class="sliding-block">
-													<div class="sort-block">
+										<div class="sliding-block-wrapp inner">
+											<h2 class="sliding-title active"><i class="red-tr"></i>Расширенный калькулятор</h2>
+											<div class="sliding-block">
+												<div class="sort-block">
 
-														<div class="sort-block-header">
-															<h3>Налог на имущество</h3>
-															<div class="question-box">
-																<a class="question-icon" href="#"><i class="question"></i></a>
-																<div class="tooltip">
-																	<button type="button" class="close-tooltip"></button>
-																	<p>Подсказка подсказка подсказка подсказка подсказка</p>
-																</div>
-															</div>
-														</div>
-
-														<div class="sort-item sort-item-2">
-															<div class="sort-item-col-1">
-																<input type="text" name="name" />
-															</div>
-															<div class="sort-item-col-2 select-block">
-																<select>
-																	<option>20%</option>
-																	<option>30%</option>
-																	<option>10%</option>
-																</select>
-															</div>
-														</div>
-
-													</div>
-
-													<div class="sort-block">
-
-														<div class="sort-block-header">
-															<h3>Страхование</h3>
-															<div class="question-box">
-																<a class="question-icon" href="#"><i class="question"></i></a>
-																<div class="tooltip">
-																	<button type="button" class="close-tooltip"></button>
-																	<p>Подсказка подсказка подсказка подсказка подсказка</p>
-																</div>
-															</div>
-														</div>
-
-														<div class="sort-item sort-item-2">
-															<div class="sort-item-col-1">
-																<input type="text" name="name" />
-															</div>
-															<div class="sort-item-col-2 select-block">
-																<select>
-																	<option>20%</option>
-																	<option>30%</option>
-																	<option>10%</option>
-																</select>
-															</div>
-														</div>
-														
-													</div>
-
-													<div class="checkbox-block">
-														<div class="inner">
-															<input type="checkbox" name="ch" id="ch_20">
-															<label for="ch_20">Включить КСП</label>
-															<div class="question-box">
-																<a class="question-icon" href="#"><i class="question"></i></a>
-																<div class="tooltip">
-																	<button type="button" class="close-tooltip"></button>
-																	<p>Подсказка подсказка подсказка подсказка подсказка</p>
-																</div>
+													<div class="sort-block-header">
+														<h3>Налог на имущество</h3>
+														<div class="question-box">
+															<a class="question-icon" href="#"><i class="question"></i></a>
+															<div class="tooltip">
+																<button type="button" class="close-tooltip"></button>
+																<p>Подсказка подсказка подсказка подсказка подсказка</p>
 															</div>
 														</div>
 													</div>
 
-													<div class="sort-block">
-														<h3>Коммунальные платежи</h3>
-														<div class="sort-item">
+													<div class="sort-item sort-item-2">
+														<div class="sort-item-col-1">
 															<input type="text" name="name" />
 														</div>
+														<div class="sort-item-col-2 select-block">
+															<select>
+																<option>20%</option>
+																<option>30%</option>
+																<option>10%</option>
+															</select>
+														</div>
 													</div>
 
 												</div>
-											</div>
-										</form>
-									</div>
-										
-									<div class="col-2 left">
-										<img src="img/circle_diagramm.jpg" alt="" style="display: block; margin: 48px auto 0 auto; max-width: 96%;">
-									</div>
-								</div>
-							</div>
-						</div>
 
-						<div class="sliding-block-wrapp">
-							<h2 class="sliding-title active"><i class="red-tr"></i>Расходы объекта</h2>
-							<div class="sliding-block">
-								<div class="object-thumbnails_2 offset-ziro">
-									<div class="thumbnail">
-										<h3>Безопасность</h3>
-										<p class="p-1">Cox Communications </p>
-										<p>Protect, monitor and manage your home while away with Cox Homelife</p>
-										<a href="#" class="red-pill">Больше</a>
-									</div>
-									<div class="thumbnail">
-										<h3>Безопасность</h3>
-										<p class="p-1">Cox Communications </p>
-										<p>Protect, monitor and manage your home while away with Cox Homelife</p>
-										<a href="#" class="red-pill">Больше</a>
-									</div>
-								</div>
-							</div>
-						</div>
+												<div class="sort-block">
 
-						<div class="sliding-block-wrapp">
-							<h2 class="sliding-title active"><i class="red-tr"></i>Район</h2>
-							<div class="sliding-block">
-								<div class="object-thumbnails_2 offset-ziro">
-									<div class="thumbnail chart-thumb">
-										<h3>Предварительная оценка стоимости</h3>
-										<p class="price">85 000 000 <i class="fa fa-rub" aria-hidden="true"></i></p>
-										<p><span class="red">–12,4%</span> past 30 days</p>
-									</div>
-
-									<div class="thumbnail">
-										<h3>Залоговые объекты</h3>
-										<div class="ct-chart-2-wrapp">
-											<div class="ct-chart-2"></div>
-										</div>
-									</div>
-								</div>
-
-								<p>Zillow predicts 74112 home values will increase 3.6% next year, compared to a 2.8% increase for Tulsa as a whole. Among 74112 homes, this home is 11.5% more expensive than the midpoint (median) home, and is priced 43.2% more per square foot.</p>
-
-								<div class="object-article">
-
-									<h2 class="up-txt">Карта района</h2>
-
-									<div class="map-place">
-										<img src="img/map_place.jpg" alt="" />
-									</div>
-
-								</div>
-
-								<div class="object-article">
-
-									<h2>Ближайшие объекты</h2>
-
-									<div class="sell-thumbnails_wrapp">
-
-										<div class="sell-thumbnails offset-ziro">
-
-											<div class="sell-thumbnail">
-												<div class="inner">
-													<a href="#" class="save-link"></a>
-													<a href="#" class="sell-inner">
-														<div class="img-box">
-															<img src="img/photo.jpg" alt="" />
+													<div class="sort-block-header">
+														<h3>Страхование</h3>
+														<div class="question-box">
+															<a class="question-icon" href="#"><i class="question"></i></a>
+															<div class="tooltip">
+																<button type="button" class="close-tooltip"></button>
+																<p>Подсказка подсказка подсказка подсказка подсказка</p>
+															</div>
 														</div>
-														<div class="thumb-header">
-															<p>15 фотографий</p>
+													</div>
+
+													<div class="sort-item sort-item-2">
+														<div class="sort-item-col-1">
+															<input type="text" name="name" />
 														</div>
-														<div class="descript">
-															<p class="p-1"><i class="red-icon"></i>Дом на продажу</p>
-															<p class="p-2">85 000 000 <i class="fa fa-rub" aria-hidden="true"></i></p>
-															<p>ул. Тимура Фрунзе, 11с15</p>
+														<div class="sort-item-col-2 select-block">
+															<select>
+																<option>20%</option>
+																<option>30%</option>
+																<option>10%</option>
+															</select>
 														</div>
-													</a>
+													</div>
+													
 												</div>
-											</div>
 
-											<div class="sell-thumbnail">
-												<div class="inner">
-													<a href="#" class="save-link"></a>
-													<a href="#" class="sell-inner">
-														<div class="img-box">
-															<img src="img/photo.jpg" alt="" />
+												<div class="checkbox-block">
+													<div class="inner">
+														<input type="checkbox" name="ch" id="ch_20">
+														<label for="ch_20">Включить КСП</label>
+														<div class="question-box">
+															<a class="question-icon" href="#"><i class="question"></i></a>
+															<div class="tooltip">
+																<button type="button" class="close-tooltip"></button>
+																<p>Подсказка подсказка подсказка подсказка подсказка</p>
+															</div>
 														</div>
-														<div class="thumb-header">
-															<p>15 фотографий</p>
-														</div>
-														<div class="descript">
-															<p class="p-1"><i class="red-icon"></i>Дом на продажу</p>
-															<p class="p-2">85 000 000 <i class="fa fa-rub" aria-hidden="true"></i></p>
-															<p>ул. Тимура Фрунзе, 11с15</p>
-														</div>
-													</a>
+													</div>
 												</div>
+
+												<div class="sort-block">
+													<h3>Коммунальные платежи</h3>
+													<div class="sort-item">
+														<input type="text" name="name" />
+													</div>
+												</div>
+
 											</div>
-
 										</div>
-
-									</div>
-
+									</form>
 								</div>
-
+									
+								<div class="col-2 left">
+									<img src="img/circle_diagramm.jpg" alt="" style="display: block; margin: 48px auto 0 auto; max-width: 96%;">
+								</div>
 							</div>
 						</div>
+					</div>
 
-						<div class="sliding-block-wrapp">
-							<h2 class="sliding-title active"><i class="red-tr"></i>Ближайшие учебные учреждения</h2>
-							<div class="sliding-block">
+					<div class="sliding-block-wrapp">
+						<h2 class="sliding-title active"><i class="red-tr"></i>Расходы объекта</h2>
+						<div class="sliding-block">
+							<div class="object-thumbnails_2 offset-ziro">
+								<div class="thumbnail">
+									<h3>Безопасность</h3>
+									<p class="p-1">Cox Communications </p>
+									<p>Protect, monitor and manage your home while away with Cox Homelife</p>
+									<a href="#" class="red-pill">Больше</a>
+								</div>
+								<div class="thumbnail">
+									<h3>Безопасность</h3>
+									<p class="p-1">Cox Communications </p>
+									<p>Protect, monitor and manage your home while away with Cox Homelife</p>
+									<a href="#" class="red-pill">Больше</a>
+								</div>
+							</div>
+						</div>
+					</div>
 
-								<div class="object-article">
+					<div class="sliding-block-wrapp">
+						<h2 class="sliding-title active"><i class="red-tr"></i>Район</h2>
+						<div class="sliding-block">
+							<div class="object-thumbnails_2 offset-ziro">
+								<div class="thumbnail chart-thumb">
+									<h3>Предварительная оценка стоимости</h3>
+									<p class="price">85 000 000 <i class="fa fa-rub" aria-hidden="true"></i></p>
+									<p><span class="red">–12,4%</span> past 30 days</p>
+								</div>
 
-									<div class="sidebar-table">
-										<div class="table-row">
-											<div class="cell cell-1">
-												<h3>0,5 км</h3>
-											</div>
-											<div class="cell cell-2">
-												<p>Средняя общеобразовательная<br /> школа №596</p>
-											</div>
-										</div>
-										<div class="table-row">
-											<div class="cell cell-1">
-												<h3>0,7 км</h3>
-											</div>
-											<div class="cell cell-2">
-												<p>Гимназия №36</p>
-											</div>
-										</div>
+								<div class="thumbnail">
+									<h3>Залоговые объекты</h3>
+									<div class="ct-chart-2-wrapp">
+										<div class="ct-chart-2"></div>
 									</div>
+								</div>
+							</div>
 
-									<h3 class="bold-txt">Другие школы в</h3>
+							<p>Zillow predicts 74112 home values will increase 3.6% next year, compared to a 2.8% increase for Tulsa as a whole. Among 74112 homes, this home is 11.5% more expensive than the midpoint (median) home, and is priced 43.2% more per square foot.</p>
 
-									<p>Disclaimer: School attendance zone boundaries are provided by a third party and subject to change. Check with the applicable school district prior to making a decision based on these boundaries.</p>
+							<div class="object-article">
 
-									<p>About the ratings: GreatSchools ratings are based on a comparison of test results for all schools in the state. It is designed to be a starting point to help parents make baseline comparisons, not the only factor in selecting the right school for your family.</p>
+								<h2 class="up-txt">Карта района</h2>
 
+								<div class="map-place">
+									<!-- <img src="img/map_place.jpg" alt="" /> -->
+									<div id="map_5"></div>
 								</div>
 
 							</div>
 
 							<div class="object-article">
 
-								<h2 class="bold-txt">Аналогичные объекты в продаже</h2>
+								<h2>Ближайшие объекты</h2>
 
 								<div class="sell-thumbnails_wrapp">
 
@@ -889,26 +824,118 @@
 
 								</div>
 
-								<div class="align-center">
-									<button type="button" class="red-pill more-pill">Больше</button>
-								</div>
-
 							</div>
 
-							<div class="object-footer">
+						</div>
+					</div>
 
-								<h2>Объект размещен собственником</h2>
+					<div class="sliding-block-wrapp">
+						<h2 class="sliding-title active"><i class="red-tr"></i>Ближайшие учебные учреждения</h2>
+						<div class="sliding-block">
 
-								<p><a class="tel-link" href="tel:9183611402">(918) 361-1402</a></p>
+							<div class="object-article">
 
-								<p><a href="#">Report problem with listing</a></p>
+								<div class="sidebar-table">
+									<div class="table-row">
+										<div class="cell cell-1">
+											<h3>0,5 км</h3>
+										</div>
+										<div class="cell cell-2">
+											<p>Средняя общеобразовательная<br /> школа №596</p>
+										</div>
+									</div>
+									<div class="table-row">
+										<div class="cell cell-1">
+											<h3>0,7 км</h3>
+										</div>
+										<div class="cell cell-2">
+											<p>Гимназия №36</p>
+										</div>
+									</div>
+								</div>
+
+								<h3 class="bold-txt">Другие школы в</h3>
+
+								<p>Disclaimer: School attendance zone boundaries are provided by a third party and subject to change. Check with the applicable school district prior to making a decision based on these boundaries.</p>
+
+								<p>About the ratings: GreatSchools ratings are based on a comparison of test results for all schools in the state. It is designed to be a starting point to help parents make baseline comparisons, not the only factor in selecting the right school for your family.</p>
 
 							</div>
 
 						</div>
-						
+
+						<div class="object-article">
+
+							<h2 class="bold-txt">Аналогичные объекты в продаже</h2>
+
+							<div class="sell-thumbnails_wrapp">
+
+								<div class="sell-thumbnails offset-ziro">
+
+									<div class="sell-thumbnail">
+										<div class="inner">
+											<a href="#" class="save-link"></a>
+											<a href="#" class="sell-inner">
+												<div class="img-box">
+													<img src="img/photo.jpg" alt="" />
+												</div>
+												<div class="thumb-header">
+													<p>15 фотографий</p>
+												</div>
+												<div class="descript">
+													<p class="p-1"><i class="red-icon"></i>Дом на продажу</p>
+													<p class="p-2">85 000 000 <i class="fa fa-rub" aria-hidden="true"></i></p>
+													<p>ул. Тимура Фрунзе, 11с15</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="sell-thumbnail">
+										<div class="inner">
+											<a href="#" class="save-link"></a>
+											<a href="#" class="sell-inner">
+												<div class="img-box">
+													<img src="img/photo.jpg" alt="" />
+												</div>
+												<div class="thumb-header">
+													<p>15 фотографий</p>
+												</div>
+												<div class="descript">
+													<p class="p-1"><i class="red-icon"></i>Дом на продажу</p>
+													<p class="p-2">85 000 000 <i class="fa fa-rub" aria-hidden="true"></i></p>
+													<p>ул. Тимура Фрунзе, 11с15</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="align-center">
+								<button type="button" class="red-pill more-pill">Больше</button>
+							</div>
+
+						</div>
+
+						<div class="object-footer">
+
+							<h2>Объект размещен собственником</h2>
+
+							<p><a class="tel-link" href="tel:9183611402">(918) 361-1402</a></p>
+
+							<p><a href="#">Report problem with listing</a></p>
+
+						</div>
+
 					</div>
-					<div class="col col-2 right">
+					
+				</div>
+				<div class="col col-2 right">
+					<div id="contact_form">
+						
 						<h2 class="up-txt">Связаться с нами:</h2>
 						<a class="tel-link_2" href="tel:+79655896565">+7 965 589 65 65</a>
 						<div class="agent-contact-form">
@@ -931,94 +958,96 @@
 							</form>
 						</div>
 
-						<div class="checkbox-block">
-							<input type="checkbox" name="menu_ch_4" id="ch_10" />
-							<label for="ch_10">хочу получить информацию о финансировании</label>
-						</div>
-
-						<div class="checkbox-block agent-checkbox">
-							<input type="checkbox" name="menu_ch_4" id="ch_11" />
-							<label for="ch_11">
-								<div class="agent-thumb">
-									<div class="inner">
-										<div class="agent-col agent-col-1">
-											<div class="img-box">
-												<img src="img/agent_photo.jpg" alt="">
-											</div>
-										</div>
-										<div class="agent-col agent-col-2">
-											<div class="rating">
-												<div class="star">
-													<i class="fa fa-star" aria-hidden="true"></i>
-												</div>
-												<div class="star">
-													<i class="fa fa-star" aria-hidden="true"></i>
-												</div>
-												<div class="star">
-													<i class="fa fa-star" aria-hidden="true"></i>
-												</div>
-												<div class="star">
-													<i class="fa fa-star" aria-hidden="true"></i>
-												</div>
-
-												<div class="star">
-													<i class="fa fa-star" aria-hidden="true"></i>
-												</div>
-											</div>
-											<h3>Иван Рогожин</h3>
-											<p>Кол-во продаж [25]</p>
-											<a href="tel:+7 965 658 25 25">+7 965 658 25 25</a><br>
-										</div>
-									</div>
-								</div>
-							</label>
-						</div>
-
-						<div class="checkbox-block agent-checkbox">
-							<input type="checkbox" name="menu_ch_4" id="ch_12" />
-							<label for="ch_12">
-								<div class="agent-thumb">
-									<div class="inner">
-										<div class="agent-col agent-col-1">
-											<div class="img-box">
-												<img src="img/agent_photo.jpg" alt="">
-											</div>
-										</div>
-										<div class="agent-col agent-col-2">
-											<div class="rating">
-												<div class="star">
-													<i class="fa fa-star" aria-hidden="true"></i>
-												</div>
-												<div class="star">
-													<i class="fa fa-star" aria-hidden="true"></i>
-												</div>
-												<div class="star">
-													<i class="fa fa-star" aria-hidden="true"></i>
-												</div>
-												<div class="star">
-													<i class="fa fa-star" aria-hidden="true"></i>
-												</div>
-
-												<div class="star">
-													<i class="fa fa-star" aria-hidden="true"></i>
-												</div>
-											</div>
-											<h3>Алексей Нечаев</h3>
-											<p>Кол-во продаж [25]</p>
-											<a href="tel:+7 965 658 25 25">+7 965 658 25 25</a><br>
-										</div>
-									</div>
-								</div>
-							</label>
-						</div>
-
-						<a href="#">Узнайте, как появиться в списке в качестве агента</a>
-
 					</div>
 
+					<div class="checkbox-block">
+						<input type="checkbox" name="menu_ch_4" id="ch_10" />
+						<label for="ch_10">хочу получить информацию о финансировании</label>
+					</div>
+
+					<div class="checkbox-block agent-checkbox">
+						<input type="checkbox" name="menu_ch_4" id="ch_11" />
+						<label for="ch_11">
+							<div class="agent-thumb">
+								<div class="inner">
+									<div class="agent-col agent-col-1">
+										<div class="img-box">
+											<img src="img/agent_photo.jpg" alt="">
+										</div>
+									</div>
+									<div class="agent-col agent-col-2">
+										<div class="rating">
+											<div class="star">
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</div>
+											<div class="star">
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</div>
+											<div class="star">
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</div>
+											<div class="star">
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</div>
+
+											<div class="star">
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</div>
+										</div>
+										<h3>Иван Рогожин</h3>
+										<p>Кол-во продаж [25]</p>
+										<a href="tel:+7 965 658 25 25">+7 965 658 25 25</a><br>
+									</div>
+								</div>
+							</div>
+						</label>
+					</div>
+
+					<div class="checkbox-block agent-checkbox">
+						<input type="checkbox" name="menu_ch_4" id="ch_12" />
+						<label for="ch_12">
+							<div class="agent-thumb">
+								<div class="inner">
+									<div class="agent-col agent-col-1">
+										<div class="img-box">
+											<img src="img/agent_photo.jpg" alt="">
+										</div>
+									</div>
+									<div class="agent-col agent-col-2">
+										<div class="rating">
+											<div class="star">
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</div>
+											<div class="star">
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</div>
+											<div class="star">
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</div>
+											<div class="star">
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</div>
+
+											<div class="star">
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</div>
+										</div>
+										<h3>Алексей Нечаев</h3>
+										<p>Кол-во продаж [25]</p>
+										<a href="tel:+7 965 658 25 25">+7 965 658 25 25</a><br>
+									</div>
+								</div>
+							</div>
+						</label>
+					</div>
+
+					<a href="#">Узнайте, как появиться в списке в качестве агента</a>
+
 				</div>
-				
+
 			</div>
+			
+		</div>
 
 	</div>
 
@@ -1141,9 +1170,9 @@
 		<!-- /Footer -->
 
 		<script src="js/additional_scripts.js"></script>
-		<script src="js/scripts.js"></script>
-		<script src="js/maps.js"></script>
+		<script src="js/scripts.js"></script>		
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoGWEyUlxHOSfMgm2TliQLggP3mej7d_I&callback=initMap"></script>
+		<script src="js/maps.js"></script>
 	
 	</div>
 
