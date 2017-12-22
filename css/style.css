@@ -7257,11 +7257,11 @@ a.tel-link_2:hover {
 
 #contact_form{
     background: #ffffff;
-    /*position: relative;*/
-    z-index: 2;
 }
 
 #contact_form.fixed {
+    padding-left: 10px;
+    z-index: 2;
     position: fixed;
     top: 10px;
     bottom: auto;
