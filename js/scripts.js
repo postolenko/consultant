@@ -116,11 +116,11 @@ $(document).ready(function() {
 
         getDropdownRightMenuHeight();
 
-        getShapeHeaderParams();
-
-        getSelectWidth();
+        getShapeHeaderParams();        
 
         // getRespHeaderPosition();
+
+        getSelectWidth();
 
         setTimeout(function() {
 
@@ -1179,6 +1179,76 @@ $(document).ready(function() {
 
     });
 
+    // -----------------
+
+    $(function() {
+
+        var rangeLine;
+        var rangeWidth;
+        var startRange;
+        var endRange;
+        var rangeOnePercent;
+        var rangeVal;
+        var rangeTxt;
+        var leftOffset;
+
+        $(".range-line-block").each(function() {
+
+            rangeLine = $(this).find(".range-line");
+
+            rangeWidth = rangeLine.width();
+
+            startRange = parseInt( $(this).find(".range-start").attr("data-range-val") );
+            endRange = parseInt( $(this).find(".range-end").attr("data-range-val") );
+
+            rangeOnePercent = ( endRange - startRange ) / 100;
+
+            $(this).find(".range-val").each(function() {
+
+                rangeVal = parseInt( $(this).attr("data-range-val") );
+
+                rangeTxt = $(this).find(".val-txt");
+
+                if( rangeVal < 1000000 ) {
+
+                    rangeTxt.html( new String( ( rangeVal / 1000 ) ).replace(".", ",") + " K" );
+
+                } else if( rangeVal >= 100000 ) {
+
+                    rangeTxt.html( new String( ( rangeVal / 1000000 ) ).replace(".", ",") + " M" );
+
+                }
+
+                if( !$(this).hasClass("range-default") ) {
+
+                    leftOffset = ( rangeVal - startRange ) / rangeOnePercent;
+
+                    $(this).css({
+                        "left" : leftOffset + "%"
+                    });
+
+                }
+
+            });
+
+        });
+
+        $(".range-val").click(function() {
+
+            var rangeInput = $(this).closest(".range-line-block").find(".range-input");
+
+            rangeVal = parseInt( $(this).attr("data-range-val") );
+
+            rangeInput.val(rangeVal);
+
+            $(this).addClass("active");
+
+            $(this).siblings().removeClass("active");
+
+        });
+
+    })
+
     // Navigation scroll
 
     $(function() {
@@ -1435,19 +1505,19 @@ $(document).ready(function() {
 
     function getSelectWidth() {
 
-        // setTimeout(function() {
+        $("select").each(function() {
 
-            $("select").each(function() {
+            var parentBlock = $(this).closest(".select-block");
 
-                var parentBlock = $(this).closest(".select-block");
-
-                parentBlock.find(".select2-container").css({
-                    "width" : parentBlock.width() + "px"
-                });
-
+            parentBlock.find(".select2-container").css({
+                "width" : "auto"
             });
 
-        // })
+            parentBlock.find(".select2-container").css({
+                "width" : parentBlock.width() + "px"
+            });
+
+        });
 
     }
 
@@ -1474,8 +1544,6 @@ $(document).ready(function() {
             $(".resp-navigation").each(function() {
 
                 respNavigationIndex = parseInt($(this).attr("data-header-index"));
-
-                console.log(respNavigationIndex);
 
                 if( respNavigationIndex == 0 ) {
 

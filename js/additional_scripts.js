@@ -108,7 +108,7 @@
 
         if(bodyWidth <= 768) {
 
-            (".object-nav").mCustomScrollbar();
+            $(".object-nav").mCustomScrollbar();
 
         } else {
 
