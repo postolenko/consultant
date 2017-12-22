@@ -823,6 +823,50 @@ a:active {
      border-bottom: 1px solid #ee343f;
 }
 
+.inner-nav-btn {
+    /*display: block;*/
+    display: none;
+    width: 10px;
+    height: 10px;
+    width: 22px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    background: #ffffff;
+    border: 1px solid transparent;
+}
+
+.inner-nav-btn:before {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    margin-top: -4px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-style: solid;
+    border-color: #1c1c1c transparent transparent transparent;
+    border-width: 8px 6px 0 6px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.inner-nav-btn.active:before {
+    border-color: transparent transparent #eb3340 transparent;
+    border-width: 0 6px 8px 6px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 .inner-nav_wrapp {
     display: none;
     width: 100%;

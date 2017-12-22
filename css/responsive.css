@@ -75,7 +75,7 @@
 	/*-- Header --*/
 
 	.main-nav li {
-	    padding: 5px 2%;
+	    padding: 5px 0;
 	}
 
 	/*-- /Header --*/
@@ -174,8 +174,13 @@
 	    width: 32%;
 	}
 
-	.main-nav li {
-	    padding: 5px 1%;
+	.main-nav > li {
+		margin: 0 1.5%;
+	    padding: 5px 0 0 0;
+	}
+
+	.inner-nav {
+	    width: 32%;
 	}
 
 	/*-- /Header --*/
@@ -331,7 +336,7 @@
 	/*-- Header --*/
 
 	.main-nav li {
-	    padding: 5px .7%;
+	    margin: 0 1%;
 	}
 
 	.main-nav li a {
@@ -483,7 +488,9 @@
 	ul.main-nav > li {
 		display: block;
 		text-align: center;
+		margin: 0 26px 0 3%;
 		padding: 0;
+		position: relative;
 	}
 
 	.main-nav > li:before {
@@ -539,6 +546,19 @@
 	     color: #ffffff;
 	     border-bottom: none;
 	     background: rgba(236, 51, 64, 1);
+	}
+
+	.inner-nav-btn {
+	    display: block;
+	}
+
+	.inner-nav_wrapp {
+		position: relative;
+		text-align: left;
+	}
+
+	.main-nav li:hover .inner-nav_wrapp {
+	    display: none;
 	}
 
 	.show-resp-nav {
@@ -869,6 +889,20 @@
 
 	.header-site .right-col .col-3 {
 		width: 53%;
+	}
+
+	.inner-nav {
+	    width: 48%;
+	}
+
+	.inner-nav h3 {
+	    font-size: 16px;
+	    line-height: 20px;
+	}
+
+	.inner-nav ul li a {
+	    font-size: 15px;
+	    line-height: 16px;
 	}
 
 	/*-- /Header --*/
@@ -1475,6 +1509,10 @@
 
 	.header-site .right-col .col-3 {
 		width: 49%;
+	}
+
+	.inner-nav {
+	    width: 100%;
 	}
 
 	a.tel-link {

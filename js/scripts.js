@@ -1276,7 +1276,34 @@ $(document).ready(function() {
 
         });
 
-    })
+    });
+
+    // -----------------
+    $(function() {
+
+        $(".inner-nav-btn").click(function() {
+
+            parentBlock = $(this).closest("li");
+
+            var innerNav = parentBlock.find(".inner-nav_wrapp");
+
+            if(innerNav.is(":hidden")) {
+
+                innerNav.slideDown(200);
+
+                $(this).addClass("active");
+
+            } else {
+
+                innerNav.slideUp(200);
+
+                $(this).removeClass("active");
+
+            }
+
+        });
+
+    });
 
     // Navigation scroll
 
