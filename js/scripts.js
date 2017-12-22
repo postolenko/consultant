@@ -357,6 +357,35 @@ $(document).ready(function() {
     });
 
 
+    // $(function() {
+
+    //     $(".show-resp-nav").click(function() {
+
+    //         var respNav = $(".main-nav-box")
+
+    //         if( respNav.is(":hidden") ) {
+                
+    //             respNav.fadeIn(200);
+
+    //             respNav.css({
+    //                 "top" : 
+    //             });
+
+    //             $(this).addClass("active");
+
+    //         } else {
+
+    //             respNav.fadeOut(200);
+
+    //             $(this).removeClass("active");
+
+    //         }
+
+    //     });
+
+    // });
+
+
     $(function() {
 
         $(".respmenubtn").click(function() {
