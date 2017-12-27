@@ -134,44 +134,6 @@
 
     });
 
-    // function OnScroll() {
-
-    //     if( $("#contact_form").length > 0 ) {
-
-    //         var contactFormCoord = $("#contact_form").offset().top;
-
-    //         if(contactFormCoord <= 0 && !$("#contact_form").hasClass("fixed")) {
-
-    //             $(".contact_form_wrapp").css({
-    //                 "height" : $("#contact_form").height() + "px"
-    //             });
-
-    //             $("#contact_form").addClass("fixed");
-
-    //             $("#contact_form").css({
-    //                 "width" : $(".contact_form_wrapp").width() + "px",
-    //                 "left" : $(".contact_form_wrapp").offset().left  + "px"
-    //             });
-
-    //         } else if( contactFormCoord <= $(".contact_form_wrapp").offset().top) {
-
-    //             $("#contact_form").removeClass("fixed");
-
-    //             $("#contact_form").css({
-    //                 "width" : 100 + "%",
-    //                 "left" : 0
-    //             });
-
-    //             $(".contact_form_wrapp").css({
-    //                 "padding-top" : 0
-    //             });
-
-    //         }
-
-    //     }
-
-    // }
-
 })(jQuery);
 
 $(document).ready(function() {
@@ -209,17 +171,47 @@ $(document).ready(function() {
 
         new PerfectScrollbar(this, {
           wheelSpeed: .5
-          // wheelPropagation: true,
-          // minScrollbarLength: 20
         });
 
     });
 
-   // new PerfectScrollbar('#search_box', {
-   //    wheelSpeed: .5
-   //    // wheelPropagation: true,
-   //    // minScrollbarLength: 20
-   //  });
+    $("#object_page").on('ps-scroll-y', () => {
+
+        if( $("#contact_form").length > 0 ) {
+
+            var contactFormCoord = $("#contact_form").offset().top;
+
+            if(contactFormCoord <= 0 && !$("#contact_form").hasClass("fixed")) {
+
+                $(".contact_form_wrapp").css({
+                    "height" : $("#contact_form").height() + "px"
+                });
+
+                $("#contact_form").addClass("fixed");
+
+                $("#contact_form").css({
+                    "width" : $(".contact_form_wrapp").width() + "px",
+                    "left" : $(".contact_form_wrapp").offset().left  + "px"
+                });
+
+            } else if( contactFormCoord <= $(".contact_form_wrapp").offset().top) {
+
+                $("#contact_form").removeClass("fixed");
+
+                $("#contact_form").css({
+                    "width" : 100 + "%",
+                    "left" : 0
+                });
+
+                $(".contact_form_wrapp").css({
+                    "padding-top" : 0
+                });
+
+            }
+
+        }
+
+    });
 
     // ---------------------------------
 
