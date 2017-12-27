@@ -75,7 +75,8 @@
 	/*-- Header --*/
 
 	.main-nav li {
-	    padding: 5px 0;
+	    padding: 5px 0 0 0;
+	    margin: 0 2%;
 	}
 
 	/*-- /Header --*/
@@ -2305,8 +2306,16 @@
 	.main-nav-box {
 		display: block !important;
 		top: 0 !important;
-		height : auto;
+		height : auto !important;
 		/*opacity: 1 !important;*/
+	}
+
+	.inner-nav_wrapp {
+	    display: none !important;
+	}
+
+	.main-nav li:hover .inner-nav_wrapp {
+	    display: block !important;
 	}
 
 	.nav-2-block {
@@ -2324,10 +2333,15 @@
 
 @media only screen and (min-width: 769px) {
 
-	.object-nav {
+	.object-nav.ps {
 		display: block !important;
 		top: 0 !important;
+		overflow: unset !important;
 		height : auto !important;
+	}
+
+	.object-nav.ps .ps__rail-y {
+		display: none !important;
 	}
 
 }

@@ -2,55 +2,17 @@
 
 	$(window).on("load",function(){
 
-        var w = window,
-        d = document,
-        e = d.documentElement,
-        g = d.getElementsByTagName('body')[0],
-        bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+        // var w = window,
+        // d = document,
+        // e = d.documentElement,
+        // g = d.getElementsByTagName('body')[0],
+        // bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
-		$(".scroll").mCustomScrollbar({
-            callbacks: {
-               whileScrolling: function(){ OnScroll(); }
-            }
-        });
-
-        function OnScroll() {
-
-            if( $("#contact_form").length > 0 ) {
-
-                var contactFormCoord = $("#contact_form").offset().top;
-
-                if(contactFormCoord <= 0 && !$("#contact_form").hasClass("fixed")) {
-
-                    $(".contact_form_wrapp").css({
-                        "height" : $("#contact_form").height() + "px"
-                    });
-
-                    $("#contact_form").addClass("fixed");
-
-                    $("#contact_form").css({
-                        "width" : $(".contact_form_wrapp").width() + "px",
-                        "left" : $(".contact_form_wrapp").offset().left  + "px"
-                    });
-
-                } else if( contactFormCoord <= $(".contact_form_wrapp").offset().top) {
-
-                    $("#contact_form").removeClass("fixed");
-
-                    $("#contact_form").css({
-                        "width" : 100 + "%",
-                        "left" : 0
-                    });
-
-                    $(".contact_form_wrapp").css({
-                        "padding-top" : 0
-                    });
-
-                }
-
-            }
-
-        }
+		// $(".scroll").mCustomScrollbar({
+  //           // callbacks: {
+  //           //    whileScrolling: function(){ OnScroll(); }
+  //           // }
+  //       });
 
         if( $("#range-slider").length > 0 ) {
 
@@ -106,15 +68,39 @@
             
         }
 
-        if(bodyWidth <= 768) {
+        // if(bodyWidth <= 768) {
 
-            $(".object-nav").mCustomScrollbar();
+        //     $(".object-nav").mCustomScrollbar();
 
-        } else {
+        // } else {
 
-            $(".object-nav").mCustomScrollbar("destroy");
+        //     $(".object-nav").mCustomScrollbar("destroy");
 
-        }
+        // }
+
+        // if(bodyWidth <= 900) {
+
+        //     $(".main-nav-box").mCustomScrollbar();
+
+        // } else {
+
+        //     $(".main-nav-box").mCustomScrollbar("destroy");
+
+        // }
+
+        $(".full-height").each( function() {
+
+            flexHeight = $(window).height() - $(this).offset().top - parseInt($(".main-wrapper").css("padding-bottom") );
+
+            $(this).css({
+                "height" : flexHeight + "px"
+            });
+
+            $(this).find(".content").css({
+                "min-height" : flexHeight - $(this).find(".footer").outerHeight() + "px"
+            });
+
+        });
 
 	});
 
@@ -127,15 +113,15 @@
         g = d.getElementsByTagName('body')[0],
         bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
-        if(bodyWidth <= 768) {
+        // if(bodyWidth <= 768) {
 
-            $(".object-nav").mCustomScrollbar();
+        //     $(".object-nav").mCustomScrollbar();
 
-        } else {
+        // } else {
 
-            $(".object-nav").mCustomScrollbar("destroy");
+        //     $(".object-nav").mCustomScrollbar("destroy");
 
-        }
+        // }
 
         if( bodyWidth > 900 && $("#contact_form").hasClass("fixed") ) {
 
@@ -147,6 +133,44 @@
         }
 
     });
+
+    // function OnScroll() {
+
+    //     if( $("#contact_form").length > 0 ) {
+
+    //         var contactFormCoord = $("#contact_form").offset().top;
+
+    //         if(contactFormCoord <= 0 && !$("#contact_form").hasClass("fixed")) {
+
+    //             $(".contact_form_wrapp").css({
+    //                 "height" : $("#contact_form").height() + "px"
+    //             });
+
+    //             $("#contact_form").addClass("fixed");
+
+    //             $("#contact_form").css({
+    //                 "width" : $(".contact_form_wrapp").width() + "px",
+    //                 "left" : $(".contact_form_wrapp").offset().left  + "px"
+    //             });
+
+    //         } else if( contactFormCoord <= $(".contact_form_wrapp").offset().top) {
+
+    //             $("#contact_form").removeClass("fixed");
+
+    //             $("#contact_form").css({
+    //                 "width" : 100 + "%",
+    //                 "left" : 0
+    //             });
+
+    //             $(".contact_form_wrapp").css({
+    //                 "padding-top" : 0
+    //             });
+
+    //         }
+
+    //     }
+
+    // }
 
 })(jQuery);
 
@@ -179,7 +203,25 @@ $(document).ready(function() {
 
     $("select").select2({
         minimumResultsForSearch: Infinity
+    });    
+
+    $(".scroll").each(function() {
+
+        new PerfectScrollbar(this, {
+          wheelSpeed: .5
+          // wheelPropagation: true,
+          // minScrollbarLength: 20
+        });
+
     });
+
+   // new PerfectScrollbar('#search_box', {
+   //    wheelSpeed: .5
+   //    // wheelPropagation: true,
+   //    // minScrollbarLength: 20
+   //  });
+
+    // ---------------------------------
 
     if( $(".add-rating").length > 0 )  {
 
