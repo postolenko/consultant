@@ -456,6 +456,10 @@
 		padding-top: 48px;
 	}
 
+	.lang-swt {
+	    padding: 7px 8px 2px 8px;
+	}
+
 	.header-site {
 		width: 100%;
 		/*z-index: 7;*/
@@ -784,15 +788,6 @@
 
 	.sell-header .search-col {
 	    padding-top: 12px;
-	}
-
-	/*-- /Sell Page --*/
-
-	/*-- Sell Page --*/
-
-	.sell-list-btn,
-    .sell-list-btn.active {
-	    right: 18px;
 	}
 
 	/*-- /Sell Page --*/
@@ -1257,6 +1252,20 @@
 
 	/*-- Sell Page --*/
 
+	.top-nav li {
+		display: none;
+	}
+
+	.top-nav li.resp {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.top-nav li a {
+	    font-size: 11px;
+	    line-height: 11px;
+	}
+
 	.sell-header-resp .col {
 		display: block !important;
 		width: 100% !important;
@@ -1290,6 +1299,11 @@
 	    top: 0;
 	    left: 0 !important;
 	    text-align: left;
+	}
+
+	.dropdown-menu-block.single .dropdown-menu {
+		position: absolute !important;
+		left: initial !important;
 	}
 
 	.dropdown-menu .checkboxes-wrapp {
@@ -1350,6 +1364,15 @@
     	width: 0;
     }
 
+    .search-result-header .col-2 {
+	    overflow: unset !important;
+	}
+
+    .sell-list-btn,
+    .sell-list-btn.active {
+	    right: 18px;
+	}	
+
     .two-cols-wrapp .col-2 .sell-thumbnails_wrapp .sell-thumbnails {
 	    width: 104%;
 	    margin: 12px 0 12px -2%;
@@ -1358,6 +1381,12 @@
 	.two-cols-wrapp .col-2 .sell-thumbnails .sell-thumbnail {
 	    width: 50%;
 	    padding: 13px 2%;
+	}
+
+	.dropdown-menu-right  .question-box .tooltip {
+	    width: 270px;
+	    top: 100%;
+	    left: -251px;
 	}
 
 	/*-- /Sell Page --*/

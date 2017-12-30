@@ -793,7 +793,7 @@ a:active {
      border-bottom: 2px solid #9f9f9f;
 }
 
-.lang-swt .dropdown-menu {
+.lang-swt .lang-menu {
     /*display: inline-block;*/
     display: none;
     vertical-align: top;
@@ -801,7 +801,7 @@ a:active {
     min-width: 100px;
     padding: 9px 0;
     position: absolute;
-    top: 100%;
+    top: 99%;
     right: 0;
     text-align: left;
     background: rgb(255, 255, 255);
@@ -810,11 +810,11 @@ a:active {
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
 }
 
-.lang-swt:hover .dropdown-menu {
+.lang-swt:hover .lang-menu {
     display: inline-block;
 }
 
-.lang-swt .dropdown-menu li a {
+.lang-swt .lang-menu li a {
     display: block;
     padding: 8px 10%;
     cursor: pointer;
@@ -842,18 +842,18 @@ a:active {
     transition-timing-function: ease;
 }
 
-.lang-swt .dropdown-menu li a:link,
-.lang-swt .dropdown-menu li a:visited {
+.lang-swt .lang-menu li a:link,
+.lang-swt .lang-menu li a:visited {
     color: #333333;
     background: rgba(235, 51, 65, 0);
 }
 
-.lang-swt .dropdown-menu li a:hover {
+.lang-swt .lang-menu li a:hover {
     color: #ffffff;
     background: rgba(235, 51, 65, 1);
 }
 
-.lang-swt .dropdown-menu li a.active {
+.lang-swt .lang-menu li a.active {
     color: #ffffff;
     background: rgba(235, 51, 65, 1);
 }
@@ -861,11 +861,18 @@ a:active {
 /*-- /Top Block --*/
 
 .header-site {
+    position: relative;
+    z-index: 8;
+}
+
+.header-site .row-1 {
+    position: relative;
+    z-index: 6;
+}
+
+.header-site .row-2 {
     display: table;
     width: 100%;
-    /*height: 48px;*/
-    position: relative;
-    z-index: 7;
     background: rgb(255, 255, 255);
     border-top: 3px solid #1d1d1d;
     border-bottom: 3px solid #1d1d1d;
@@ -6168,7 +6175,7 @@ textarea {
     display: table;
     width: 100%;
     position: relative;
-    z-index: 6;
+    z-index: 7;
     border-collapse: collapse;
     border-bottom: 3px solid #1d1d1d;
 }
@@ -6787,7 +6794,7 @@ textarea {
     position: absolute;
     top: 68px;
     right: 380px;
-    z-index: 5;
+    z-index: 6;
     font-size: 15px;
     line-height: 17px;
     padding: 8px 15px;
@@ -6910,6 +6917,7 @@ textarea {
 
 .dropdown-menu-block.single .dropdown-menu {
     min-width: 200px;
+    top: 100% !important;
 }
 
 .dropdown-menu-block.single ul li {
@@ -6921,7 +6929,7 @@ textarea {
     overflow: hidden;
 }
 
-.sell-thumbnails_wrapp  .sell-thumbnails {
+.sell-thumbnails_wrapp .sell-thumbnails {
     width: 104%;
     margin: 12px 0 12px -2%;
 }
@@ -7243,6 +7251,29 @@ textarea {
 
 .two-cols-wrapp ul.footer-nav li {
     margin: 5px 3% 5px 0;
+}
+
+.dropdown-menu-right  .dropdown-menu-block {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.dropdown-menu-right .dropdown-menu-btn {
+    border: 1px solid #000000;
+    min-width: 100%;
+    padding: 8px 2%;
+    text-align: left;
+}
+
+.dropdown-menu-right .col {
+    display: block !important;
+    width: 100% !important;
+    border-right: unset !important;
+    padding: 0 !important;
+}
+
+.dropdown-menu-right .sell-search {
+    border: 1px solid #000000;
 }
 
 /*-- /Sell Page --*/
