@@ -675,9 +675,6 @@ a:active {
 .top-block {
     position: relative;
     z-index: 3;
-    padding: 0;
-    max-width: 1330px;
-    margin: 0 auto;
 }
 
 .top-nav {
