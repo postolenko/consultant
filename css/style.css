@@ -83,7 +83,7 @@ body {
     display: block;
     min-height: 100%;
     min-width: 100%;    
-    margin: 27px auto 0 auto;
+    margin: 0 auto;
     position: relative;
     z-index: 2;
     border-left: 3px solid #1d1d1d;
@@ -386,6 +386,11 @@ p a:hover {
      text-decoration: none;
 }
 
+p a.no-line:link,
+p a.no-line:visited {
+     text-decoration: none;
+}
+
 img {
     outline: none;
     border: 1px solid transparent;
@@ -664,6 +669,199 @@ a:active {
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
+
+/*-- Top Block --*/
+
+.top-block {
+    position: relative;
+    z-index: 3;
+    padding: 0;
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+.top-nav {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 7% 0 2%;
+}
+
+.top-nav li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 8px;
+}
+
+.top-nav li a {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+    color: #646464;
+    padding: 0;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+
+    -webkit-transition-property: border, color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border, color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border, color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border, color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+
+}
+
+.top-nav li a:link,
+.top-nav li a:visited {
+     color: #646464;
+     border-bottom: 2px solid transparent;
+}
+
+.top-nav li a:active,
+.top-nav li a.active {
+     color: #000000;
+     border-bottom: 2px solid #9f9f9f;
+}
+
+.top-nav li a:hover {
+     color: #000000;
+     border-bottom: 2px solid #9f9f9f;
+}
+
+.lang-swt {
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px 8px;
+}
+
+.lang-swt > a {
+    text-transform: uppercase;
+    padding-right: 0;
+    padding-bottom: 2px;
+    text-align: left;
+    border-bottom: 2px solid transparent;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+    color: #646464;
+    -webkit-transition-property: border, color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border, color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border, color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border, color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.lang-swt > a:link,
+.lang-swt > a:visited {
+     color: #646464;
+     border-bottom: 2px solid transparent;
+}
+
+.lang-swt > a:active,
+.lang-swt > a.active {
+     color: #000000;
+     border-bottom: 2px solid #9f9f9f;
+}
+
+.lang-swt > a:hover {
+     color: #000000;
+     border-bottom: 2px solid #9f9f9f;
+}
+
+.lang-swt .dropdown-menu {
+    /*display: inline-block;*/
+    display: none;
+    vertical-align: top;
+    width: auto;
+    min-width: 100px;
+    padding: 9px 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-align: left;
+    background: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+    -moz-box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+}
+
+.lang-swt:hover .dropdown-menu {
+    display: inline-block;
+}
+
+.lang-swt .dropdown-menu li a {
+    display: block;
+    padding: 8px 10%;
+    cursor: pointer;
+    color: #333333;
+    background: rgba(235, 51, 65, 0);
+
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.lang-swt .dropdown-menu li a:link,
+.lang-swt .dropdown-menu li a:visited {
+    color: #333333;
+    background: rgba(235, 51, 65, 0);
+}
+
+.lang-swt .dropdown-menu li a:hover {
+    color: #ffffff;
+    background: rgba(235, 51, 65, 1);
+}
+
+.lang-swt .dropdown-menu li a.active {
+    color: #ffffff;
+    background: rgba(235, 51, 65, 1);
+}
+
+/*-- /Top Block --*/
 
 .header-site {
     display: table;
@@ -6501,6 +6699,7 @@ textarea {
 }
 
 .dropdown-menu-block input.menuinput_val {
+    width: 0;
     opacity: 0;
     overflow: hidden;
     height: 0;
@@ -6628,6 +6827,8 @@ textarea {
 .search-result-header {
     border-bottom: 3px solid #1d1d1d;
     padding: 6px 4%;
+    position: relative;
+    z-index: 5;
 }
 
 .search-result-header .col {
@@ -6690,6 +6891,33 @@ textarea {
 
 .search-result-content {
     padding: 0 4%;
+}
+
+.search-result-header .dropdown-menu-block.single {
+    margin: -1px 0 0 0;
+}
+
+.dropdown-menu-block.single .dropdown-menu-btn {
+    border: 1px solid transparent;
+    min-width: 81px;
+    width: auto;
+    padding: 0;
+}
+
+.dropdown-menu-block.single .dropdown-menu-btn span {
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+}
+
+.dropdown-menu-block.single .dropdown-menu {
+    min-width: 200px;
+}
+
+.dropdown-menu-block.single ul li {
+    display: block;
+    padding: 8px 10%;
 }
 
 .sell-thumbnails_wrapp {
@@ -6874,6 +7102,114 @@ textarea {
 .sell-thumbnail .descript p.p-2 .fa-rub {
     font-size: 18px;
     top: 0;
+}
+
+.black-links {
+    margin: 0 -15px;
+    text-align: center;
+}
+
+.black-links li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 15px;
+    
+}
+
+.black-links li a {
+    display: block;
+    width: 182px;
+    padding: 3px 1%;
+    background: #0f0c09;
+    text-align: center;
+    font-family: "Geometria", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.black-links li a:link,
+.black-links li a:visited {
+    background: #0f0c09;
+}
+
+.black-links li a:hover {
+    background: #ec353e;
+}
+
+.black-links li a:active,
+.black-links li a.active {
+    background: #ec353e;
+}
+
+.black-links li a span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 98%;
+}
+
+.black-links li a:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 1%;
+    min-height: 52px;
+}
+
+.two-cols-wrapp .pagination {
+    margin: 0;
+    text-align: left;
+    padding: 19px 0;
+}
+
+.sell-article {
+    border-top: 3px solid #000000;
+    padding: 15px 4% 25px 4%;
+}
+
+.sell-article h2,
+.sell-article p {
+    padding: 9px 0;
+}
+
+.sell-article-table {
+    display: table;
+    width: 100%;
+    margin: 9px 0;
+}
+
+.sell-article-table .table-row {
+    display: table-row;
+}
+
+.sell-article-table .cell {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+}
+
+.sell-article-table .cell p {
+    padding: 0;
 }
 
 .two-cols-wrapp footer {
