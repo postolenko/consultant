@@ -26,6 +26,18 @@ $(window).load(function() {
 
     });
 
+    // ------------------------
+
+    if( $(window).width() <= 900) {
+
+        $(".main-wrapper").css({"padding-top": $(".header-site").outerHeight(true) + "px" });
+
+    } else {
+
+        $(".main-wrapper").css({"padding-top": 0 + "px" });
+
+    }
+
 });
 
 $(document).ready(function() {
@@ -68,7 +80,7 @@ $(document).ready(function() {
 
     getFooterPosition();
 
-    getDocumentOffsetTop();
+    // getDocumentOffsetTop();
 
     // getFullHeight();
 
@@ -102,7 +114,7 @@ $(document).ready(function() {
 
         // -------------------------
 
-        getDocumentOffsetTop();
+        // getDocumentOffsetTop();
 
         // getFullHeight();
 
@@ -127,6 +139,18 @@ $(document).ready(function() {
             getFullHeight();
 
         }, 300);
+
+        // -------------------------
+
+        if( bodyWidth <= 900) {
+
+            $(".main-wrapper").css({"padding-top": $(".header-site").outerHeight(true) + "px" });
+
+        } else {
+
+            $(".main-wrapper").css({"padding-top": 0 + "px" });
+
+        }
 
         // -------------------------
 
@@ -1348,19 +1372,19 @@ $(document).ready(function() {
         });
     });
 
-    function getDocumentOffsetTop() {
+    // function getDocumentOffsetTop() {
 
-        if( bodyWidth <= 900) {
+    //     // if( bodyWidth <= 900) {
 
-            $(".main-wrapper").css({"padding-top": $(".header-site").height() + "px" });
+    //     //     $(".main-wrapper").css({"padding-top": $(".header-site").outerHeight(true) + "px" });
 
-        } else {
+    //     // } else {
 
-            $(".main-wrapper").css({"padding-top": 0 + "px" });
+    //     //     $(".main-wrapper").css({"padding-top": 0 + "px" });
 
-        }
+    //     // }
 
-    }
+    // }
 
 
     function getFooterPosition() {
