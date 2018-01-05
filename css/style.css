@@ -3639,12 +3639,14 @@ a.tel-link-resp:hover {
 
 .single-search-block .search-btn {
     width: 51px;
-    height: 48px;
+    height: 54px;
     position: absolute;
-    top: 0;
+    top: -3px;
     right: 0;
     border: none;
+    border-top: 3px solid #1d1d1d;
     border-left: 3px solid #1d1d1d;
+    border-bottom: 3px solid #1d1d1d;
 }
 
 /*-- /Section 4 Blog Page --*/
