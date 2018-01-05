@@ -4153,6 +4153,7 @@ a.tel-link-resp:hover {
     height: 40px;
     position: absolute;
     top: 0;
+    left: unset;
     right: 0;
     z-index: 2;
     border: none;
