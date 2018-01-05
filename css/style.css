@@ -4572,6 +4572,8 @@ a.tel-link-resp:hover {
     top: 0;
     left: 0;
     z-index: 2;
+    font-size: 0;
+    line-height: 0;
     background: rgba(199, 199, 199, .9);
 }
 
