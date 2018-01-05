@@ -1031,7 +1031,7 @@ a:active {
     display: none;
     width: 10px;
     height: 10px;
-    width: 22px;
+    width: 26px;
     height: 30px;
     cursor: pointer;
     position: absolute;
@@ -1061,11 +1061,11 @@ a:active {
 }
 
 .inner-nav-btn.active:before {
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    -ms-transform: rotate(0);
-    -o-transform: rotate(0);
-    transform: rotate(0);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 .inner-nav_wrapp {
