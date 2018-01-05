@@ -1037,7 +1037,7 @@ a:active {
     position: absolute;
     top: 4px;
     right: 0;
-    background: #ffffff;
+    background: transparent;
     border: 1px solid transparent;
 }
 
@@ -1061,13 +1061,11 @@ a:active {
 }
 
 .inner-nav-btn.active:before {
-    border-color: transparent transparent #eb3340 transparent;
-    border-width: 0 6px 8px 6px;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
 }
 
 .inner-nav_wrapp {
