@@ -180,9 +180,9 @@
 	    padding: 5px 0 0 0;
 	}
 
-/*	.inner-nav {
+	.inner-nav {
 	    width: 32%;
-	}*/
+	}
 
 	/*-- /Header --*/
 
@@ -895,9 +895,9 @@
 		width: 53%;
 	}
 
-/*	.inner-nav {
+	.inner-nav {
 	    width: 48%;
-	}*/
+	}
 
 	.inner-nav h3 {
 	    font-size: 16px;
@@ -1549,9 +1549,9 @@
 		width: 49%;
 	}
 
-/*	.inner-nav {
+	.inner-nav {
 	    width: 100%;
-	}*/
+	}
 
 	a.tel-link {
 		display: none;

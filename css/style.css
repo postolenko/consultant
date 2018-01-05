@@ -1093,8 +1093,8 @@ a:active {
 .inner-nav {
     display: inline-block;
     vertical-align: top;
-    width: 100%;
-    max-width: 360px;
+    width: 31%;
+    /*max-width: 320px;*/
     padding: 10px 1%;
     text-align: left;
 }
