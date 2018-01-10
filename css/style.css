@@ -883,7 +883,7 @@ a:active {
 .logo-box {
     display: table-cell;
     vertical-align: middle;
-    width: 248px;
+    width: 247px;
     position: relative;
     background: rgb(235, 51, 64); 
     border-right: 3px solid #1d1d1d;
@@ -898,6 +898,8 @@ a:active {
     display: block;
     width: auto;
     height: auto;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .header-site .right-col {
