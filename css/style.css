@@ -3735,9 +3735,48 @@ a.tel-link-resp:hover {
 }
 
 .question-thumbnail {
+    display: table;
+    width: 100%;
     padding: 16px 4% 44px 0;
     -webkit-column-break-inside: avoid;
     break-inside: avoid;
+}
+
+.question-cell-1 {
+    display: table-cell;
+    vertical-align: top;
+    width: 102px;
+    padding: 5px 2% 0 0;
+}
+
+.question-cell-2 {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+}
+
+.question-cell-1 .img-box {
+    display: block;
+    width: 100%;
+    height: 78px;
+    max-width: 78px;
+    overflow: hidden;
+}
+
+.question-cell-1 .img-box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .question-thumbnail .question-title {

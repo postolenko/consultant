@@ -154,7 +154,16 @@
 		line-height: 14px;
 	}
 
-	/*-- /Header --*/
+	/*-- /Header --*/	
+
+	/*-- Section 1 Soveti Page --*/
+
+	.questions-block {
+	    -webkit-columns: 2;
+	    columns: 2;
+	}
+
+	/*-- /Section 1 Soveti Page --*/
 
 }
 
@@ -1121,8 +1130,8 @@
 	/*-- Section 1 Soveti Page --*/
 
 	.questions-block {
-	    -webkit-columns: 2;
-	    columns: 2;
+	    -webkit-columns: 1;
+	    columns: 1;
 	}
 
 	/*-- /Section 1 Soveti Page --*/
