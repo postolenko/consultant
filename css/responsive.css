@@ -105,6 +105,15 @@
 
 	/*-- /Section 2 Blog Page --*/
 
+	/*-- Section 1 Soveti Page --*/
+
+	.questions-block {
+	    -webkit-columns: 2;
+	    columns: 2;
+	}
+
+	/*-- /Section 1 Soveti Page --*/
+
 	/*-- Footer --*/
 
 	.footer .col-1 {
@@ -155,15 +164,6 @@
 	}
 
 	/*-- /Header --*/	
-
-	/*-- Section 1 Soveti Page --*/
-
-	.questions-block {
-	    -webkit-columns: 2;
-	    columns: 2;
-	}
-
-	/*-- /Section 1 Soveti Page --*/
 
 }
 
