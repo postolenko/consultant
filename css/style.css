@@ -9119,10 +9119,6 @@ footer {
     border-top: 3px solid #ffffff;
 }
 
-.footer.no-border {
-    border-top: none;
-}
-
 .footer-table {
     display: table;
     width: 100%;
