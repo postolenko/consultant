@@ -883,15 +883,18 @@ a:active {
 .logo-box {
     display: table-cell;
     vertical-align: middle;
+    border-collapse: collapse;
     width: 247px;
-    position: relative;
-    background: rgb(235, 51, 64); 
+    /*position: relative;*/
+    /*background: rgb(235, 51, 64); */
     border-right: 3px solid #1d1d1d;
 }
 
 .logo-box a.logo {
     display: block;
-    min-height: 48px;
+    height: 48px;
+    position: relative;
+    overflow: hidden;
 }
 
 .logo-box a.logo img {

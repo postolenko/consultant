@@ -94,6 +94,8 @@ $(document).ready(function() {
 
     getTableElemsPosition();
 
+    getHeightElements();
+
     // getSelectWidth();
 
     // getRespHeaderPosition();
@@ -139,6 +141,8 @@ $(document).ready(function() {
             getFullHeight();
 
         }, 300);
+
+        getHeightElements();
 
         // -------------------------
 
@@ -1419,7 +1423,7 @@ $(document).ready(function() {
     function getFullHeight() {
 
         $(".full-height").css({
-            "min-height" : "auto"
+            "height" : "auto"
         });
 
         $(".full-height").each( function() {
@@ -1634,6 +1638,29 @@ $(document).ready(function() {
             });
 
         }
+
+    }
+
+    function getHeightElements() {
+
+        $("[data-flexible]").css({
+            "height" : "auto"
+        });
+
+        $("[data-flexible]").each(function() {
+
+            var flexElemName = $(this).attr("data-flexible");
+
+            var topCoord =  $(this).offset().top;
+
+            var bottomCoord = $("[data-coord = '"+ flexElemName +"']").offset().top;
+
+            $(this).css({
+                "height" : bottomCoord - topCoord + "px"
+            });
+
+
+        });
 
     }
 
