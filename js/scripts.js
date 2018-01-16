@@ -56,6 +56,18 @@ $(document).ready(function() {
 
     // ----------------------------
 
+    var parent;
+    var searchInput;
+    var dataAttrIndex;
+    var dropdownMenu;
+
+    // ----------------------------
+
+    var navLink;
+    var innerNav;
+
+     // ---------------------------
+
     // var flexibleAttr;
     // var bottomCoord;
     var flexHeight;
@@ -100,6 +112,8 @@ $(document).ready(function() {
 
     // getRespHeaderPosition();
 
+    getElemensHeight();
+
     $(window).resize(function() {
 
         if( $(".footer").length > 0 && $(".two-cols-wrapp").length == 0 ) {
@@ -143,6 +157,8 @@ $(document).ready(function() {
         }, 300);
 
         getHeightElements();
+
+        getElemensHeight();
 
         // -------------------------
 
@@ -262,10 +278,10 @@ $(document).ready(function() {
 
     $(function() {
 
-        var parent;
-        var searchInput;
-        var dataAttrIndex;
-        var dropdownMenu;
+        // var parent;
+        // var searchInput;
+        // var dataAttrIndex;
+        // var dropdownMenu;
 
         $(".dropdown-menu-btn").click(function() {
 
@@ -1332,23 +1348,54 @@ $(document).ready(function() {
     // -----------------
     $(function() {
 
+        // var navLink;
+        // var innerNav;
+
         $(".inner-nav-btn").click(function() {
 
             parentBlock = $(this).closest("li");
 
-            var innerNav = parentBlock.find(".inner-nav_wrapp");
+            navLink = $(this).prev("a");
 
-            if(innerNav.is(":hidden")) {
+            innerNav = parentBlock.find(".inner-nav_wrapp");
 
-                innerNav.slideDown(200);
-
-                $(this).addClass("active");
-
-            } else {
+            if( parentBlock.hasClass("active")) {
 
                 innerNav.slideUp(200);
 
-                $(this).removeClass("active");
+                navLink.removeClass("active");
+
+                parentBlock.removeClass("active");
+
+            } else {
+
+                $(".main-nav > li").each(function() {
+
+                    innerNav = $(this).find(".inner-nav_wrapp");
+
+                    if( innerNav.is(":visible") ) {
+
+                        navLink = $(this).children("a");
+
+                        innerNav.slideUp(200);
+
+                        navLink.removeClass("active");
+
+                        $(this).removeClass("active");
+
+                    }
+
+                });
+
+                innerNav = parentBlock.find(".inner-nav_wrapp");
+
+                navLink = $(this).prev("a");
+
+                innerNav.slideDown(200);
+
+                navLink.addClass("active");
+
+                parentBlock.addClass("active");
 
             }
 
@@ -1693,6 +1740,22 @@ $(document).ready(function() {
             });
             
         }
+
+    }
+
+    function getElemensHeight() {
+
+        $(".child_h").css({
+            "height" : "auto"
+        });
+
+        $(".parent_h").each(function() {
+
+            $(this).find(".child_h").css({
+                "height" : $(this).height() + "px"
+            });
+
+        });
 
     }
 

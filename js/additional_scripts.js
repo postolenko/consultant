@@ -132,6 +132,16 @@
 
         }
 
+        $(".scroll").each(function() {
+
+            const ps = new PerfectScrollbar(this, {
+              wheelSpeed: .5
+            });
+            
+            ps.update();
+
+        });
+
     });
 
 })(jQuery);
