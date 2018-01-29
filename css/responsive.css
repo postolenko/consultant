@@ -1700,8 +1700,6 @@
 
 	/*-- /Section 4 Main Page --*/
 
-
-
 	/*-- Section 5 Main Page --*/
 
 	.seo-blocks.thumb-6 .seo-block {
@@ -1846,6 +1844,18 @@
 	}
 
 	/*-- Section 2 - Agent Page --*/
+
+	/*-- Section 1 Soveti Page --*/
+
+	.questions-search-col {
+	    width: 100%;
+	}
+
+	.questions-search {
+		min-width: 100%;
+	}
+
+	/*-- /Section 1 Soveti Page --*/
 
 	/*-- Commet Popup --*/
 
