@@ -2076,7 +2076,41 @@ a.tel-link-resp:hover {
     vertical-align: top;
     width: 25%;
     text-align: center;
+    background: rgba(236, 51, 64, 0);
     border-right: 3px solid #1d1d1d;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.section-nav li a:link,
+.section-nav li a:visited {
+    background: rgba(236, 51, 64, 0);
+}
+
+.section-nav li:active,
+.section-nav li.active {
+    background: rgba(236, 51, 64, 1);
+}
+
+.section-nav li:hover {
+    background: rgba(236, 51, 64, 1);
 }
 
 .section-nav li:last-child {
@@ -2095,47 +2129,11 @@ a.tel-link-resp:hover {
     line-height: 18px;
     font-weight: bold;
     color: #231f20;
+    position: relative;
     text-transform: uppercase;
-    background: rgba(236, 51, 64, 0);
-
-    -webkit-transition-property: background;
-    -webkit-transition-duration: .3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: background;
-    -moz-transition-duration: .3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: background;
-    -ms-transition-duration: .3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: background;
-    -o-transition-duration: .3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: background;
-    transition-duration: .3s;
-    transition-timing-function: ease;
-
 }
 
-.section-nav li a:link,
-.section-nav li a:visited {
-    background: rgba(236, 51, 64, 0);
-}
-
-.section-nav li a:active,
-.section-nav li a.active {
-    background: rgba(236, 51, 64, 1);
-}
-
-.section-nav li a:hover {
-    background: rgba(236, 51, 64, 1);
-}
-
-.section-nav li a:before,
-.section-nav li a:after {
+.section-nav li a:before {
     display: table-cell;
     vertical-align: middle;
     content: "";
@@ -2154,7 +2152,7 @@ a.tel-link-resp:hover {
     width: 92%;
     position: relative;
     z-index: 2;
-    margin: 28px 0 0 -8%;
+    margin: 31px 0 0 -8%;
 }
 
 .thumbnails-1 .thumbnail {
@@ -2226,10 +2224,10 @@ a.tel-link-resp:hover {
 .thumbnails p {
     font-family: "Geometria", Arial, Verdana, sans-serif;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 17px;
     font-weight: bold;
     color: #1c1c1c;
-    padding: 5px 0;
+    padding: 1px 0;
 }
 
 .thumbnails-1 p {
@@ -3200,6 +3198,10 @@ a.tel-link-resp:hover {
     margin: 0 3% 0 0 ;
 }
 
+.thumbnails-header .select-block {
+    min-width: 170px;
+}
+
 .thumbnails-header h2 {
     text-transform: uppercase;
     font-size: 14px;
@@ -3250,16 +3252,6 @@ a.tel-link-resp:hover {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-
-/*.two-cols-article h3 {
-    font-family: "Geometria", Arial, Verdana, sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: normal;
-    color: #1d1d1d;
-    text-transform: uppercase;
-    padding: 0 0 13px 0;
-}*/
 
 .two-cols-article .article-title {
     display: inline-block;
@@ -3441,10 +3433,6 @@ a.tel-link-resp:hover {
     text-align: right;
 }
 
-/*.socials-block.border {
-    border-top: 3px solid #1d1d1d;
-}*/
-
 .socials-block.inner-socials h2,
 .socials-block.inner-socials .socials-list {
     display: inline-block;
@@ -3494,7 +3482,7 @@ a.tel-link-resp:hover {
     font-family: "Geometria", Arial, Verdana, sans-serif;
     font-size: 14px;
     line-height: 14px;
-    font-weight: bold;
+    font-weight: normal;
     color: #eb3340;
     border-bottom: 1px solid #eb3340;
 
@@ -3609,7 +3597,7 @@ a.tel-link-resp:hover {
 }
 
 .sidebar-block .red-pill {
-    margin: 8px 0;
+    margin: 8px 0 23px 0;
 }
 
 /*-- /Sidebar --*/
