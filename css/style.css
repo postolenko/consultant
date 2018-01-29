@@ -5041,6 +5041,39 @@ h2 .flag-icon {
     padding: 15px 0;
 }
 
+.show-dropdown-desc {
+    border-bottom: 1px solid #eb3340;
+    font-weight: normal;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.show-dropdown-desc:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.show-dropdown-desc:active,
+.show-dropdown-desc.active {
+    border-bottom: 1px solid transparent;
+}
+
 .show-dropdown-desc span.active-txt {
     display: none;
 }
@@ -5059,17 +5092,12 @@ h2 .flag-icon {
 }
 
 .shape-header {
-    /*display: table;*/
-    /*width: 100%;*/
     position: relative;
-    /*margin: 0;*/
     font-size: 0;
     line-height: 0;
 }
 
 .shape-header .line {
-    /*display: table-cell;
-    vertical-align: top;*/
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -5082,7 +5110,6 @@ h2 .flag-icon {
     vertical-align: middle;
     padding: 0 25px 0 24px;
     text-transform: uppercase;
-    /*width: auto;*/
     font-family: "Geometria", Arial, Verdana, sans-serif;
     font-size: 24px;
     line-height: 24px;
@@ -5104,7 +5131,6 @@ h2 .flag-icon {
     top: 50%;
     right: 0;
     margin-top: -1.5px;
-    /*width: 100%;*/
 }
 
 .map-sect {
@@ -5257,6 +5283,7 @@ h2.sliding-title {
 .sales-table .table-row {
     display: block;
     border: none;
+    margin: 0;
     font-size: 0;
     line-height: 0;
 }
@@ -5359,8 +5386,12 @@ h2.sliding-title {
     transform: translate(-50%, -50%);
 }
 
+.map-link_wrapp {
+    max-width: 1310px;
+}
+
 .map-link {
-    margin: 0 0 0 72%;
+    width: 28%;
 }
 
 .sales-table .red-link-line {
@@ -5450,16 +5481,19 @@ textarea {
 
 .sidebar-table .table-row .cell-1 {
     width: 40%;
+    padding-right: 1%;
 }
 
 .sidebar-table .table-row .cell-2 {
     width: 60%;
+    padding-left: 1%;
 }
 
 .sidebar-table h3 {
+    padding: 5px 0;
     font-family: "Geometria", Arial, Verdana, sans-serif;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 18px;
     font-weight: bold;
     color: #000000;
 }
@@ -5685,17 +5719,45 @@ textarea {
 .printer {
     display: inline-block;
     vertical-align: top;
-    width: 55px;
-    height: 54px;
+    width: 51px;
+    height: 51px;
     background-image: url(../img/printer.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: center;
 }
 
 .places-block .print-link {
     position: absolute;
     bottom: 12px;
     right: 0;
+}
+
+.print-link {
+    border: 2px solid #322f31;
+    background: rgba(236, 53, 62, 0);
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.print-link:hover {
+    background: rgba(236, 53, 62, 1);
 }
 
 /*-- /Section 2 - Agent Page --*/
@@ -6365,7 +6427,7 @@ textarea {
     height: 18px;
     position: absolute;
     top: -2px;
-    right: -20px;
+    right: -23px;
 }
 
 .question-icon {
